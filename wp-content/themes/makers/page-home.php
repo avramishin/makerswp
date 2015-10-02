@@ -19,7 +19,7 @@ get_header(); ?>
     <div class="main-actions">
         <ul>
             <li>
-                <a href="<?php bloginfo('url') ?>/join-us/" title="Want to start a company?">
+                <a href="<?php bloginfo('url') ?>/join-us-founder/" title="Want to start a company?">
                     <div class="table-cell">
                         <p>Entrepreneurs/Founder</p>
                         <h4>Start acting on your ideas!</h4>
@@ -28,7 +28,7 @@ get_header(); ?>
                 </a>
             </li>
             <li>
-                <a href="<?php bloginfo('url') ?>/join-us/" title="You want to invest?">
+                <a href="<?php bloginfo('url') ?>/join-us-investor/" title="You want to invest?">
                     <div class="table-cell">
                         <p>Investors</p>
                         <h4>Invest in the future of digital!</h4>
@@ -37,7 +37,7 @@ get_header(); ?>
                 </a>
             </li>
             <li>
-                <a href="<?php bloginfo('url') ?>/join-us/" title="You want to join the team?">
+                <a href="<?php bloginfo('url') ?>/join-us-career/" title="You want to join the team?">
                     <div class="table-cell">
                         <p>Jobseekers</p>
                         <h4>Join our revolution!</h4>
