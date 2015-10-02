@@ -37,6 +37,7 @@ get_header(); ?>
                     <section class="content">
                         <?php
                         the_post();
+                        the_content();
                         ?>
                     </section>
                 <?php endwhile; ?>
