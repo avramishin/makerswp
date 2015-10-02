@@ -1,9 +1,13 @@
-<?php include('_header.php'); ?>
-
+<?php
+/**
+ * Template Name: Join Us - Career
+ * @package WordPress
+ */
+get_header(); ?>
 <main>
 
   <div class="hero">
-    <img src="/images/hero.jpg" alt="">
+    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/hero.jpg" alt="">
     <div class="overlay"></div>
     <div class="texture"></div>
     <div class="hero-inner">
@@ -16,9 +20,9 @@
     <div class="sub-navigation-inner">
       <nav>
         <ul class="sub-navigation-menu">
-          <li><a href="join-us-investor.php">Investor</a></li>
-          <li><a href="join-us-founder.php">Founder</a></li>
-          <li class="active"><a href="join-us-career.php">Career</a></li>
+          <li><a href="<?php bloginfo('url') ?>/join-us-investor/">Investor</a></li>
+          <li><a href="<?php bloginfo('url') ?>/join-us-founder/">Founder</a></li>
+          <li class="active"><a href="<?php bloginfo('url') ?>/join-us-career/">Career</a></li>
         </ul>
       </nav>
       <div class="sub-nav-newsletter">
@@ -40,7 +44,7 @@
   </div>
 
   <div class="bottom-quote">
-    <img src="/images/bottom-quote-marius-schulze.jpg" alt="">
+    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/bottom-quote-marius-schulze.jpg" alt="">
     <div class="bottom-quote-text">
       <div class="container right">
         <h2>
@@ -58,7 +62,7 @@
       <header class="center">
         <h2>Jobs</h2>
         <div class="search">
-          <form action="/join-us/career/" method="get">
+          <form action="<?php bloginfo('url') ?>/join-us-career/" method="get">
             <label for="search">Search</label>
             <input type="text" id="search" name="s" placeholder="Enter what you are loooking for..." value="">
             <input type="submit" value="Search">
@@ -157,5 +161,4 @@
   </div>
 
 </main>
-
-<?php include('_footer.php'); ?>
+<?php get_footer(); ?>
