@@ -49,6 +49,20 @@
     ga('create', 'UA-XXXXX-X', 'auto');
     ga('send', 'pageview');
 </script>
-
+<script type='text/javascript'>
+    (function (d, s, c) {
+        if (window._jobscore_loader) {
+            return;
+        } else {
+            window._jobscore_loader = true;
+        }
+        var o = d.createElement(s);
+        o.type = 'text/javascript';
+        o.async = true;
+        var sc = d.getElementsByTagName(s)[0];
+        sc.parentNode.insertBefore(o, sc);
+        o.src = ('https:' == d.location.protocol ? 'https:' : 'http:') + '//widgets.jobscore.com/jobs/' + c + '/widget.js';
+    })(document, 'script', 'makersdo');
+</script>
 </body>
 </html>

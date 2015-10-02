@@ -71,121 +71,15 @@ get_header(); ?>
             <article>
                 <header class="center">
                     <h2>Jobs</h2>
-
-                    <div class="search">
-                        <form action="<?php bloginfo('url') ?>/join-us-career/" method="get">
-                            <label for="search">Search</label>
-                            <input type="text" id="search" name="s" placeholder="Enter what you are loooking for..."
-                                   value="">
-                            <input type="submit" value="Search">
-                            <input type="hidden" value="jobs" name="post_type" id="post_type"/>
-                        </form>
-                    </div>
                 </header>
                 <section class="content">
-                    <ul class="categories">
-                        <li class="active"><a href="#" title="All">All</a></li>
-                        <li><a href="#" title="Big Data">Big Data</a></li>
-                        <li><a href="#" title="Education">Education</a></li>
-                    </ul>
-                    <ul class="posts jobs">
-                        <li>
-                            <div class="table">
-                                <div class="table-cell">
-                                    <a href="#" title="Business Development Manager International">
-                                        <h4>Business Development Manager International</h4>
+                    <div>
+                        <!-- Place this exact code where you want the Jobscore job widget to appear on the page.  The widget will expand to the size of the containing div -->
+                        <div class='jobscore-jobs' data-group-by='department' >
+                            <div class='js-fallback' style='color:#888'><a style='color:#888;text-decoration:underline;' href='https://careers.jobscore.com/jobs/makersdo'>Makers.do jobs</a> powered by <a style='color:#888' href='https://www.jobscore.com/'><img style='padding:0;' align='bottom' src='https://careers.jobscore.com/images/new/jobscore_logo_embed.png' alt='Applicant Tracking, Social Recruiting and Software Hiring Solution - JobScore'></a></div>
+                        </div><!-- /jobscore-jobs -->
+                    </div>
 
-                                        <p class="post-job-category">
-                                            <a href="http://negoto.tvatteriet.se/join-us/career-category/big-data/"
-                                               rel="tag">Big Data</a>
-                                            <a href="http://negoto.tvatteriet.se/join-us/career-category/education/"
-                                               rel="tag">Education</a>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="table">
-                                <div class="table-cell">
-                                    <a href="#" title="Business Development Manager International">
-                                        <h4>Business Development Manager International</h4>
-
-                                        <p class="post-job-category">
-                                            <a href="http://negoto.tvatteriet.se/join-us/career-category/big-data/"
-                                               rel="tag">Big Data</a>
-                                            <a href="http://negoto.tvatteriet.se/join-us/career-category/education/"
-                                               rel="tag">Education</a>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="table">
-                                <div class="table-cell">
-                                    <a href="#" title="Business Development Manager International">
-                                        <h4>Business Development Manager International</h4>
-
-                                        <p class="post-job-category">
-                                            <a href="http://negoto.tvatteriet.se/join-us/career-category/big-data/"
-                                               rel="tag">Big Data</a>
-                                            <a href="http://negoto.tvatteriet.se/join-us/career-category/education/"
-                                               rel="tag">Education</a>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="table">
-                                <div class="table-cell">
-                                    <a href="#" title="Business Development Manager International">
-                                        <h4>Business Development Manager International</h4>
-
-                                        <p class="post-job-category">
-                                            <a href="http://negoto.tvatteriet.se/join-us/career-category/big-data/"
-                                               rel="tag">Big Data</a>
-                                            <a href="http://negoto.tvatteriet.se/join-us/career-category/education/"
-                                               rel="tag">Education</a>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="table">
-                                <div class="table-cell">
-                                    <a href="#" title="Business Development Manager International">
-                                        <h4>Business Development Manager International</h4>
-
-                                        <p class="post-job-category">
-                                            <a href="http://negoto.tvatteriet.se/join-us/career-category/big-data/"
-                                               rel="tag">Big Data</a>
-                                            <a href="http://negoto.tvatteriet.se/join-us/career-category/education/"
-                                               rel="tag">Education</a>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="table">
-                                <div class="table-cell">
-                                    <a href="#" title="Business Development Manager International">
-                                        <h4>Business Development Manager International</h4>
-
-                                        <p class="post-job-category">
-                                            <a href="http://negoto.tvatteriet.se/join-us/career-category/big-data/"
-                                               rel="tag">Big Data</a>
-                                            <a href="http://negoto.tvatteriet.se/join-us/career-category/education/"
-                                               rel="tag">Education</a>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
                 </section>
             </article>
         </div>
