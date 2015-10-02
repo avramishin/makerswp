@@ -30,13 +30,12 @@ get_header(); ?>
 
         <div class="container">
             <article>
-                <?php while (have_posts()) : ?>
+                <?php while (have_posts()) : the_post(); ?>
                     <header class="center">
                         <h2><?php the_title() ?></h2>
                     </header>
                     <section class="content">
                         <?php
-                        the_post();
                         the_content();
                         ?>
                     </section>
