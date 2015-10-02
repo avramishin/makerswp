@@ -30,7 +30,7 @@
       </div>
     </footer>
 
-    <script src="/js/main.js"></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/main.js"></script>
     <script>
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
         function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;

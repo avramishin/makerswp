@@ -9,13 +9,12 @@
     <title>
       Makers - We like to build startups    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="http://localhost/makers-html/" />
     <link rel="apple-touch-icon" href="http://www.makers.do/apple-touch-icon.png">
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    <script src="js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/vendor/jquery-2.1.4.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic|Montserrat:400,700" type="text/css">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/normalize.min.css">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/style.css">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Makers">
