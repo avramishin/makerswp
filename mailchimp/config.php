@@ -1,0 +1,3 @@
+<?php
+$MAILCHIMP_API_KEY = "bc9d29d8ee4328bdea455104ab1f3072-us11";
+
