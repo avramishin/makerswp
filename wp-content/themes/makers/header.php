@@ -29,7 +29,7 @@
     <![endif]-->
 
     <header class="header">
-      <a href="/" class="logo">
+      <a href="<?php bloginfo('url') ?>" class="logo">
         <h1>Makers</h1>
       </a>
       <nav class="navigation show" role="navigation">
@@ -37,10 +37,10 @@
           <span>Menu</span>
         </a>
         <ul class="main-navigation">
-          <li><a href="about.php" title="">About</a></li>
-          <li><a href="companies.php" title="">Companies</a></li>
-          <li><a href="blog.php" title="">Blog</a></li>
-          <li class="join-us"><a href="join-us.php" title="">Join us</a></li>
+          <li><a href="<?php bloginfo('url') ?>/about/" title="">About</a></li>
+          <li><a href="<?php bloginfo('url') ?>/companies/" title="">Companies</a></li>
+          <li><a href="<?php bloginfo('url') ?>/blog/" title="">Blog</a></li>
+          <li class="join-us"><a href="<?php bloginfo('url') ?>/join-us/" title="">Join us</a></li>
         </ul>
       </nav>
       <div class="social-container">

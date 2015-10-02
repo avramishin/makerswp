@@ -7,7 +7,7 @@ get_header(); ?>
 <main>
 
   <div class="hero">
-    <img src="/images/hero.jpg" alt="">
+    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/hero.jpg" alt="">
     <div class="overlay"></div>
     <div class="texture"></div>
     <div class="hero-inner">
@@ -20,9 +20,9 @@ get_header(); ?>
     <div class="sub-navigation-inner">
       <nav>
         <ul class="sub-navigation-menu">
-          <li><a href="join-us-investor.php">Investor</a></li>
-          <li><a href="join-us-founder.php">Founder</a></li>
-          <li><a href="join-us-career.php">Career</a></li>
+          <li><a href="<?php bloginfo('url') ?>/join-us-investor/">Investor</a></li>
+          <li><a href="<?php bloginfo('url') ?>/join-us-founder/">Founder</a></li>
+          <li><a href="<?php bloginfo('url') ?>/join-us-career/">Career</a></li>
         </ul>
       </nav>
       <div class="sub-nav-newsletter">
@@ -45,19 +45,19 @@ get_header(); ?>
 
   <div class="grid">
     <div class="desktop-only">
-      <img src="/images/grid/about-grid-1.jpg" alt="">
+      <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/grid/about-grid-1.jpg" alt="">
     </div>
     <div class="grid-item-wide">
-      <img src="/images/grid/about-grid-2.jpg" alt="">
+      <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/grid/about-grid-2.jpg" alt="">
     </div>
     <div class="desktop-only">
-      <img src="/images/grid/about-grid-3.jpg" alt="">
+      <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/grid/about-grid-3.jpg" alt="">
     </div>
     <div>
-      <img src="/images/grid/about-grid-4.jpg" alt="">
+      <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/grid/about-grid-4.jpg" alt="">
     </div>
     <div>
-      <img src="/images/grid/about-grid-text.png" alt="">
+      <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/grid/about-grid-text.png" alt="">
       <div class="grid-text">
         <div class="table">
           <div class="table-cell">
@@ -68,7 +68,7 @@ get_header(); ?>
       </div>
     </div>
     <div class="grid-item-wide desktop-only">
-      <img src="/images/grid/about-grid-5.jpg" alt="">
+      <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/grid/about-grid-5.jpg" alt="">
     </div>
   </div>
 
@@ -78,23 +78,23 @@ get_header(); ?>
         <h2 style="text-align: center;">Whom we are looking for</h2>
         <ul class="list-3">
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="/images/icons/icon-number-one.png" alt="icon-cloud" width="56" /></p>
+            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-number-one.png" alt="icon-cloud" width="56" /></p>
             <p style="text-align: center;">Entrepreneurial people</p>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="/images/icons/icon-number-two.png" alt="icon-cloud" width="56" /></p>
+            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-number-two.png" alt="icon-cloud" width="56" /></p>
             <p style="text-align: center;">Out-of-the-box thinkers</p>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="/images/icons/icon-number-three.png" alt="icon-cloud" width="56" /></p>
+            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-number-three.png" alt="icon-cloud" width="56" /></p>
             <p style="text-align: center;">Hands-on doers</p>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="/images/icons/icon-number-four.png" alt="icon-cloud" width="56" /></p>
+            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-number-four.png" alt="icon-cloud" width="56" /></p>
             <p style="text-align: center;">Inspiring leaders</p>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="/images/icons/icon-number-five.png" alt="icon-cloud" width="56" /></p>
+            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-number-five.png" alt="icon-cloud" width="56" /></p>
             <p style="text-align: center;">And people who never liked making coffee</p>
           </li>
         </ul>
@@ -124,7 +124,7 @@ get_header(); ?>
   </div>-->
   
   <div class="bottom-quote">
-    <img src="/images/bottom-quote-founder-group.jpg" alt="">
+    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/bottom-quote-founder-group.jpg" alt="">
     <div class="bottom-quote-text">
       <div class="container right">
         <h2>
