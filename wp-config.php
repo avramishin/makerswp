@@ -29,7 +29,7 @@ define('DB_USER', 'makerswp');
 define('DB_PASSWORD', 'makerswp');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'lab.makers.do');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
