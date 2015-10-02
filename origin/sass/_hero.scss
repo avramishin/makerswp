@@ -1,0 +1,106 @@
+.home .hero img {
+  height: rem(400);
+
+  @include media($brk-gt-s) {
+    height: auto;
+  }
+}
+
+.hero {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  img {
+    height: rem(270);
+    left: 0;
+    position: relative;
+    top: 0;
+    width: auto;
+
+    @include media($brk-gt-s) {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  h2 {
+    color: $white-color;
+    font-family: $font-family-sans-serif;
+    font-size: ceil(($base-font-size * 1.7));
+    font-weight: bold;
+    line-height: 1.4;
+
+    @include media($brk-gt-s) {
+      font-size: ceil(($base-font-size * 2.27));
+    }
+
+    @include media($brk-gt-m) {
+      font-size: floor(($base-font-size * 3.14));
+    }
+
+    @include media($brk-gt-l) {
+      font-size: ceil(($base-font-size * 4.28));
+    }
+  }
+
+  p {
+    color: $white-color;
+    font-family: $font-family-serif;
+    font-size: 16px;
+    font-style: italic;
+    margin-top: rem(10);
+
+    @include media($brk-gt-s) {
+      font-size: 18px;
+    }
+
+    @include media($brk-gt-m) {
+      font-size: 20px;
+      margin-top: rem(15);
+    }
+
+    @include media($brk-gt-l) {
+      font-size: 22px;
+      margin-top: rem(20);
+    }
+  }
+
+  .button {
+    margin-top: rem(20);
+
+    @include media($brk-gt-m) {
+      margin-top: rem(25);
+    }
+
+    @include media($brk-gt-l) {
+      margin-top: rem(30);
+    }
+  }
+
+  .hero-inner {
+    @include transform(translate(-50%, -50%));
+    left: 50%;
+    margin: auto;
+    max-width: rem(450);
+    padding: rem(10);
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+
+    @include media($brk-gt-s) {
+      max-width: rem(600);
+    }
+
+    @include media($brk-gt-m) {
+      max-width: rem(800);
+    }
+  }
+
+  .texture {
+    @include position(absolute, 0 0 0 0);
+    @include background(url('images/hero-pattern.png'), linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), center no-repeat rgba(0, 0, 0, 0.1) scroll);
+    // background: url('images/hero-pattern.png');
+  }
+}

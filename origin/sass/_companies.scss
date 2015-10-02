@@ -1,0 +1,75 @@
+.company-type {
+  @include clearfix;
+  margin: 0;
+  padding: 0;
+
+  li {
+    @include span-columns(6);
+    @include omega(2n);
+    margin: rem(5) 0;
+    padding: 0;
+    text-align: center;
+
+    @include media($brk-gt-s) {
+      @include omega-reset(2n);
+      @include span-columns(3);
+      @include omega(4n);
+    }
+
+    @include media($brk-gt-m) {
+      @include omega-reset(4n);
+      @include span-columns(2);
+      @include omega(6n);
+    }
+
+    &.active {
+      a {
+        background: $primary-color;
+        color: $white-color;
+      }
+    }
+
+    a {
+      display: inline-block;
+      padding: rem(20) 0;
+      transition: all .4s ease-in-out;
+      width: 100%;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $white-color;
+      }
+    }
+  }
+}
+
+.companies {
+  @include clearfix;
+  margin: 0;
+  padding: rem(50) 0;
+
+  li {
+    @include span-columns(6);
+    border: 1px solid $border-color-posts;
+    height: rem(154);
+    padding: rem(10);
+    text-align: center;
+    margin-bottom: 2.35765%;
+    width: 100%;
+
+    @include media($brk-gt-s) {
+      @include span-columns(4);
+      height: rem(174);
+    }
+
+    @include media($brk-gt-m) {
+      @include span-columns(3);
+      height: rem(194);
+    }
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+}

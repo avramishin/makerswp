@@ -1,0 +1,247 @@
+.header {
+  left: 0;
+  min-height: $navigation-height;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: background-color .4s ease-in-out;
+  width: 100%;
+  z-index: 9999;
+
+  @include media($brk-gt-s) {
+    padding: 0 rem(10);
+    top: rem(15);
+  }
+
+  &.fixed {
+    background-color: $plate-color;
+    box-shadow: 0 3px 8px -4px rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+  }
+
+  .logo {
+    @include hide-text;
+    background: url('images/makers-logo.png') no-repeat center center;
+    float: left;
+    height: $navigation-height;
+    margin: 0 rem(10);
+    width: 154px;
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+      only screen and (min--moz-device-pixel-ratio: 1.3),
+      only screen and (-o-min-device-pixel-ratio: 1.3 / 1),
+      only screen and (min-resolution: 125dpi),
+      only screen and (min-resolution: 1.3dppx) {
+      background-image: url('images/makers-logo_2x.png');
+      background-size: 154px 26px;
+    }
+  }
+
+  .navigation {
+    float: none;
+    min-height: $navigation-height;
+    z-index: 9999999;
+
+    @include media($brk-gt-s) {
+      float: right;
+    }
+
+    @include media($brk-gt-m) {
+      float: left;
+      margin-left: rem(15);
+    }
+
+    ul {
+      li {
+        background: $navigation-bg-color;
+        font-size: rem(15);
+        line-height: $navigation-height;
+        text-align: right;
+        text-transform: uppercase;
+        z-index: 9999;
+
+        @include media($brk-gt-s) {
+          background: transparent;
+          display: inline;
+          line-height: $navigation-height;
+          text-decoration: none;
+          width: auto;
+        }
+
+        a {
+          color: $white-color;
+          display: inline-block;
+          padding: 0 rem(15);
+          transition: background-color .4s ease-in-out;
+          width: 100%;
+
+          @include media($brk-gt-s) {
+            width: auto;
+          }
+
+          &:focus,
+          &:hover {
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+
+    .main-navigation-button {
+      @include hide-text;
+      cursor: pointer;
+      display: inline-block;
+      float: right;
+      height: $navigation-height;
+      position: relative;
+      transition: background-color .4s ease-in-out;
+      width: $navigation-height;
+
+      @include media($brk-gt-s) {
+        display: none;
+      }
+
+      &:hover {
+        background-color: $navigation-bg-color;
+
+        span,
+        span::before,
+        span::after {
+            background-color: $white-color;
+        }
+      }
+
+      span {
+        background-color: $white-color; //#4e5359
+        border-radius: 5em;
+        display: inline-block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        transition: background-color .4s ease-in-out;
+        width: 18px;
+
+        &::before,
+        &::after {
+          background-color: $white-color;
+          border-radius: 5em;
+          content: '';
+          height: 100%;
+          left: 50%;
+          position: absolute;
+          transition: background-color .4s ease-in-out, transform .2s;
+          width: 100%;
+        }
+
+        &::before {
+          -webkit-transform: translateX(-50%) translateY(5px);
+          -moz-transform: translateX(-50%) translateY(5px);
+          -ms-transform: translateX(-50%) translateY(5px);
+          -o-transform: translateX(-50%) translateY(5px);
+          transform: translateX(-50%) translateY(5px);
+        }
+
+        &::after {
+          -webkit-transform: translateX(-50%) translateY(-5px);
+          -moz-transform: translateX(-50%) translateY(-5px);
+          -ms-transform: translateX(-50%) translateY(-5px);
+          -o-transform: translateX(-50%) translateY(-5px);
+          transform: translateX(-50%) translateY(-5px);
+        }
+      }
+    }
+
+    &.show {
+      .main-navigation-button {
+        background-color: $navigation-bg-color;
+
+        span,
+        span::before,
+        span::after {
+            background-color: $white-color;
+        }
+      }
+    }
+
+    .main-navigation {
+      -webkit-transform-style: preserve-3d;
+      clear: both;
+      display: none;
+      margin: 0 auto;
+      overflow: visible;
+      padding: 0;
+      width: 100%;
+      z-index: 9999;
+
+      @include media($brk-gt-s) {
+        display: inline;
+        margin: 0;
+        padding: 0;
+      }
+
+      &.show {
+        display: block;
+      }
+
+      .active a {
+        background-color: $primary-color;
+      }
+
+      .join-us {
+        a {
+          background: url('images/icons/icon-join-us.png') no-repeat right 10px center;
+          height: $navigation-height;
+          padding-right: 45px;
+
+          @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+          only screen and (min--moz-device-pixel-ratio: 1.3),
+          only screen and (-o-min-device-pixel-ratio: 1.3 / 1),
+          only screen and (min-resolution: 125dpi),
+          only screen and (min-resolution: 1.3dppx) {
+            background-image: url('images/icon-join-us_2x.png');
+            background-size: 26px 26px;
+          }
+
+          &:hover {
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .social-container {
+    display: none;
+    float: right;
+    margin-top: rem(18);
+
+    @include media($brk-gt-m) {
+      display: block;
+    }
+
+    .social li {
+      padding: 0 rem(4);
+
+      a {
+        background-size: auto 20px;
+        height: rem(24);
+        width: rem(24);
+      }
+
+      &.twitter,
+      &.medium {
+         a {
+          background-size: 20px auto;
+        }
+      }
+    }
+  }
+}

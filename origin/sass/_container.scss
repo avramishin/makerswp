@@ -1,0 +1,500 @@
+$bottom-container-bg: #f6f6f6 !default;
+
+.about,
+.about-culture {
+  .bottom-container {
+    padding: rem(50) 0;
+  }
+}
+
+.about-culture {
+  .bottom-container {
+    background: $primary-color;
+
+    .container .content {
+      h2,
+      h3,
+      h4,
+      p {
+        color: $white-color;
+      }
+    }
+  }
+}
+
+.bottom-container {
+  background: $bottom-container-bg;
+}
+
+.container {
+  @include outer-container();
+  padding: rem(50) rem(15);
+
+  header {
+    max-width: 940px;
+    padding: rem(30) 0 rem(10);
+
+    h2 {
+      color: $text-color;
+      font-size: 24px;
+
+      @include media($brk-gt-s) {
+        font-size: 28px;
+      }
+
+      @include media($brk-gt-m) {
+        font-size: 32px;
+      }
+
+      @include media($brk-gt-l) {
+        font-size: 38px;
+      }
+    }
+
+    h4 {
+      color: $primary-color;
+      font-family: $font-family-serif;
+      font-size: 14px;
+      font-style: italic;
+
+      @include media($brk-gt-s) {
+        font-size: 16px;
+      }
+
+      @include media($brk-gt-m) {
+        font-size: 18px;
+      }
+
+      @include media($brk-gt-l) {
+        font-size: 20px;
+      }
+    }
+
+    .search {
+      margin: 0 auto;
+      max-width: rem(630);
+      padding: rem(30) 0;
+      text-align: center;
+    }
+
+    &.center {
+      margin: 0 auto;
+      max-width: 740px;
+      text-align: center;
+    }
+  }
+
+  article {
+    // img {
+    //   height: auto;
+    //   max-width: 526px;
+    //   width: 100%;
+    // }
+
+    p {
+      margin: rem(10) 0;
+    }
+  }
+
+  .content {
+    p {
+      margin-top: rem(20);
+    }
+
+    h2 {
+      font-size: 30px;
+
+      @include media($brk-gt-s) {
+        font-size: 35px;
+      }
+
+      @include media($brk-gt-m) {
+        font-size: 40px;
+      }
+
+      &.serif-header {
+        color: $excerpt-color;
+        font-family: $font-family-serif;
+        font-style: italic;
+        font-size: 25px;
+        line-height: 1.6;
+        padding: rem(20);
+        text-align: center;
+
+        @include media($brk-gt-m) {
+          font-size: 30px;
+        }
+      }
+    }
+
+    h4 {
+      color: $primary-color;
+      font-size: 15px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    &.center {
+      text-align: center;
+    }
+  }
+
+  .list {
+    @include clearfix;
+    margin: 0;
+    padding: 0;
+
+    li {
+      @include span-columns(6);
+      @include omega(2n);
+      margin: rem(20) 0 0;
+      padding: rem(10);
+
+      @include media($brk-gt-m) {
+        @include omega-reset(2n);
+        @include span-columns(4);
+        @include omega(3n);
+      }
+
+      h3,
+      p {
+        font-size: 24px;
+        line-height: 1.1;
+        margin: 0;
+        margin-top: 0;
+
+        @include media($brk-gt-s) {
+          font-size: 26px;
+        }
+
+        @include media($brk-gt-m) {
+          font-size: 28px;
+        }
+
+        @include media($brk-gt-l) {
+          font-size: 30px;
+        }
+      }
+
+      p {
+        color: $excerpt-color;
+      }
+    }
+  }
+
+  .list-3 {
+    @include clearfix;
+    margin: 0;
+    padding: 0;
+
+    li {
+      @include span-columns(6);
+      @include omega(2n);
+      margin: rem(20) 0 0;
+      padding: rem(10);
+
+      @include media($brk-gt-m) {
+        @include omega-reset(2n);
+        @include span-columns(4);
+        @include omega(3n);
+      }
+
+      p {
+        color: $text-color;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: rem(20);
+      }
+    }
+  }
+
+  .list-4 {
+    @include clearfix;
+    margin: 0;
+    padding: 0;
+
+    li {
+      @include span-columns(6);
+      @include omega(2n);
+      margin: rem(20) 0 0;
+      padding: rem(10);
+
+      @include media($brk-gt-m) {
+        @include omega-reset(2n);
+        @include span-columns(3);
+        @include omega(4n);
+      }
+
+      p {
+        color: $text-color;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: rem(20);
+      }
+    }
+  }
+
+  .categories {
+    @include span-columns(12);
+    margin: 0;
+    padding: 0;
+
+    @include media($brk-gt-s) {
+      @include span-columns(4);
+    }
+
+    @include media($brk-gt-m) {
+      @include span-columns(3);
+    }
+
+    li {
+      list-style: none;
+      margin: rem(5) 0;
+
+      a {
+        color: $excerpt-color;
+        display: inline-block;
+        padding: rem(20) rem(10);
+        transition: all .4s ease-in-out;
+        width: 100%;
+
+        &:hover {
+          background: $text-color;
+          color: $white-color;
+        }
+      }
+
+      &.active,
+      &.current-cat {
+        a {
+          background: $text-color;
+          color: $white-color;
+        }
+      }
+    }
+  }
+
+  .posts {
+    @include span-columns(12);
+    margin: 0;
+    padding: 0;
+
+    @include media($brk-gt-s) {
+      @include span-columns(8);
+    }
+
+    @include media($brk-gt-m) {
+      @include span-columns(9);
+    }
+
+    > li {
+      @include span-columns(12 of 12);
+      margin-bottom: 3.16844%;
+      position: relative;
+      text-align: center;
+
+      @include media($brk-gt-s) {
+        @include span-columns(4 of 8);
+        @include omega(2n);
+      }
+
+      @include media($brk-gt-m) {
+        @include omega-reset(2n);
+        @include span-columns(4 of 9);
+        @include omega(4n);
+      }
+
+      h3 {
+        margin: rem(5) 0 rem(20) 0;
+        text-transform: uppercase;
+
+        a {
+          color: $text-color;
+          transition: color .4s ease-in-out;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+
+      p {
+        color: $excerpt-color;
+      }
+
+      .post-category,
+      .post-meta {
+        color: $primary-color;
+        font-family: $font-family-serif;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 300;
+        margin: rem(10) 0 0;
+      }
+
+      .team-hover {
+        @include position(absolute, 0 0 0 0);
+        background: rgba(241, 90, 87, .5);
+        display: none;
+
+        h4 {
+          color: $white-color;
+          font-size: 15px;
+          margin: rem(5) 0;
+        }
+
+        p {
+          color: $white-color;
+          font-size: 12px;
+          margin: 0;
+        }
+
+        .table-cell {
+          padding: rem(10);
+          text-align: left;
+          vertical-align: bottom;
+        }
+
+        .social li {
+          margin-top: rem(10);
+          padding: 0 rem(6);
+
+          a {
+            background-size: rem(20) rem(20);
+            height: rem(24);
+            width: rem(24);
+          }
+        }
+      }
+
+      &:hover {
+        .team-hover {
+          display: block;
+        }
+      }
+    }
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  .jobs-preview {
+    @include clearfix;
+    margin: 0;
+    padding: rem(50) 0;
+
+    > li {
+      @include span-columns(12);
+      border: 1px solid $border-color-posts;
+      padding: rem(10);
+      text-align: center;
+      margin-bottom: 2.35765%;
+
+      @include media($brk-gt-s) {
+        @include span-columns(3);
+      }
+    }
+  }
+
+  .jobs {
+    > li {
+      border: 1px solid $border-color-posts;
+      height: rem(184);
+      padding: rem(10);
+      text-align: center;
+
+      a {
+        color: $text-color;
+      }
+
+      .post-job-category {
+        font-size: 13px;
+        text-transform: uppercase;
+
+        a {
+          color: $excerpt-color;
+        }
+      }
+    }
+  }
+
+  .about-grid {
+    @include clearfix;
+    margin: 0;
+    padding: rem(50) 0;
+
+    li {
+      @include span-columns(12);
+      border: 1px solid $border-color-posts;
+      height: rem(300);
+      margin: rem(20) 0 0;
+      padding: rem(10);
+      text-align: center;
+
+      @include media($brk-gt-s) {
+        @include span-columns(4);
+      }
+
+      @include media($brk-gt-m) {
+        height: rem(380);
+      }
+
+      img {
+        height: rem(60);
+        width: auto;
+      }
+
+      h4 {
+        color: $text-color;
+        font-size: 18px;
+        margin-top: rem(30);
+        text-transform: uppercase;
+
+        @include media($brk-gt-m) {
+          font-size: 18px;
+          margin-top: rem(35);
+        }
+
+        @include media($brk-gt-l) {
+          font-size: 22px;
+          margin-top: rem(40);
+        }
+      }
+    }
+  }
+
+  .companies-grid {
+    @include clearfix;
+    margin: 0;
+    padding: 0 0 rem(50);
+
+    li {
+      @include span-columns(12);
+      border: 1px solid $border-color-posts;
+      height: rem(200);
+      margin: rem(20) 0 0;
+      padding: rem(10);
+      text-align: center;
+
+      @include media($brk-gt-s) {
+        @include span-columns(4);
+      }
+
+      img {
+        height: rem(60);
+        width: auto;
+      }
+
+      p {
+        color: $excerpt-color;
+        font-size: 14px;
+        font-family: $font-family-serif;
+        font-style: italic;
+      }
+    }
+  }
+}

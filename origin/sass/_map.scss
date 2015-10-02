@@ -1,0 +1,41 @@
+.map {
+  h3 {
+    background: $plate-color;
+    color: $white-color;
+    padding: rem(30) rem(15);
+    text-align: center;
+
+    @include media($brk-gt-l) {
+      padding: rem(40) rem(15);
+    }
+  }
+}
+
+#map_canvas {
+  height: rem(400);
+  width: 100%;
+
+  @include media($brk-gt-m) {
+    height: rem(500);
+  }
+
+  img {
+    max-width: none; // to prevent UI control bug
+  }
+
+  .content {
+    padding: 0 .5em 1em .5em;
+  }
+
+  .firstHeading {
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  #bodyContent p {
+    font-size: 1em;
+    margin: 0;
+  }
+}

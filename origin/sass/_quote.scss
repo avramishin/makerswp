@@ -1,0 +1,214 @@
+.quote {
+  @include clearfix;
+  background-color: $plate-color;
+
+  .quote-picture {
+    @include span-columns(12);
+    background-color: $primary-color;
+    text-align: center;
+
+    @include media($brk-gt-s) {
+      @include span-columns(4);
+    }
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+
+    > div {
+      padding: rem(30) rem(20);
+    }
+
+    p,
+    h4,
+    h5 {
+      color: $white-color;
+      font-size: 20px;
+
+      @include media($brk-gt-s) {
+        font-size: 13px;
+      }
+
+      @include media($brk-gt-m) {
+        font-size: 15px;
+      }
+
+      @include media($brk-gt-l) {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      font-family: $font-family-serif;
+      font-style: italic;
+    }
+
+    h4 {
+      font-size: 25px;
+      font-weight: 700;
+      margin-top: rem(10);
+
+      @include media($brk-gt-s) {
+        font-size: 15px;
+      }
+
+      @include media($brk-gt-m) {
+        font-size: 20px;
+      }
+
+      @include media($brk-gt-l) {
+        font-size: 25px;
+      }
+    }
+  }
+
+  .quote-text {
+    @include span-columns(12);
+    color: $white-color;
+    padding: rem(40) rem(30);
+
+    @include media($brk-gt-s) {
+      @include span-columns(8);
+    }
+
+    @include media($brk-gt-l) {
+      padding: rem(80) rem(50);
+    }
+  }
+}
+
+.bottom-quote {
+  position: relative;
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+
+  h3 {
+    background: $primary-color;
+    color: $white-color;
+    font-size: 16px;
+    padding: rem(20) rem(15);
+    text-align: center;
+
+    @include media($brk-gt-l) {
+      padding: rem(40) rem(15);
+    }
+  }
+
+  .bottom-quote-text {
+    @include media($brk-gt-s) {
+      @include position(absolute, 0 0 0 0);
+    }
+
+    .container {
+      padding-top: rem(20);
+
+      @include media($brk-gt-s) {
+        padding-top: rem(40);
+      }
+
+      @include media($brk-gt-m) {
+        padding-top: rem(50);
+      }
+
+      @include media($brk-gt-l) {
+        padding-top: rem(80);
+      }
+
+      &.right {
+        text-align: center;
+
+        @include media($brk-gt-s) {
+          text-align: right;
+      }
+      }
+    }
+
+    h2,
+    p {
+      @include media($brk-gt-s) {
+        color: $white-color;
+      }
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: rem(20);
+
+      @include media($brk-gt-m) {
+        font-size: 30px;
+      }
+
+      @include media($brk-gt-l) {
+        font-size: 35px;
+        margin-bottom: rem(40);
+      }
+
+      span {
+        font-size: 50px;
+
+        @include media($brk-gt-m) {
+          font-size: 60px;
+        }
+
+        @include media($brk-gt-l) {
+          font-size: 70px;
+        }
+      }
+    }
+  }
+}
+
+.quote-text,
+.bottom-quote-text {
+  h2 {
+    font-family: $font-family-serif;
+    font-style: italic;
+    font-size: 30px;
+    margin-bottom: rem(40);
+    line-height: 1.4;
+
+    @include media($brk-gt-s) {
+      font-size: 20px;
+      margin-bottom: rem(20);
+    }
+
+    @include media($brk-gt-l) {
+      font-size: 35px;
+      margin-bottom: rem(40);
+    }
+
+    span {
+      color: $primary-color;
+      font-size: 70px;
+      font-style: normal;
+      font-weight: bold;
+
+      @include media($brk-gt-s) {
+        font-size: 50px;
+      }
+
+      @include media($brk-gt-l) {
+        font-size: 70px;
+      }
+    }
+  }
+
+  p {
+    color: $excerpt-color;
+    font-size: 15px;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    @include media($brk-gt-s) {
+      font-size: 13px;
+    }
+
+    @include media($brk-gt-m) {
+      font-size: 15px;
+    }
+  }
+}

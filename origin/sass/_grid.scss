@@ -1,0 +1,297 @@
+$grid-white-color: #f5f5f5 !default;
+$grid-border-color: #e7e7e7 !default;
+
+.grid {
+  @include clearfix;
+
+  h3,
+  h4 {
+    text-align: center;
+    width: 100%;
+  }
+
+  h4 {
+    margin-top: rem(20);
+  }
+
+  > div {
+    @include clearfix;
+    float: left;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    @include media($brk-gt-m) {
+      width: 50%;
+    }
+
+    @include media($brk-gt-l) {
+      width: 25%;
+    }
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  .icon {
+    float: left;
+    height: 100%;
+    width: 40%;
+
+    @include media($brk-gt-s) {
+      width: 30%;
+    }
+
+    @include media($brk-gt-l) {
+      width: 100%;
+    }
+  }
+
+  .text {
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    float: left;
+    padding: rem(10);
+    height: 100%;
+    text-align: left;
+    width: 60%;
+
+    @include media($brk-gt-s) {
+      padding: rem(15);
+      width: 70%
+    }
+
+    @include media($brk-gt-l) {
+      display: none;
+    }
+  }
+
+  .grid-item-wide {
+    width: 100%;
+
+    @include media($brk-gt-m) {
+      width: 50%;
+    }
+  }
+
+  .grid-text,
+  .grid-link {
+    @include position(absolute, 0 0 0 0);
+    padding: rem(10);
+
+    @include media($brk-gt-s) {
+      padding: rem(10) rem(30);
+    }
+
+    @include media($brk-gt-m) {
+      padding: rem(10) rem(20);
+    }
+
+    @include media($brk-gt-l) {
+      padding: rem(10) rem(30);
+    }
+  }
+
+  .grid-text {
+    h3,
+    p {
+      font-size: 16px;
+      line-height: 1.1;
+      text-align: left;
+
+      @include media($brk-gt-s) {
+        font-size: 30px;
+      }
+
+      @include media($brk-gt-m) {
+        font-size: 20px;
+      }
+
+      @include media($brk-gt-l) {
+        font-size: 28px;
+      }
+    }
+
+    h3 {
+      margin-bottom: rem(10);
+    }
+
+    p {
+      color: $excerpt-color;
+    }
+  }
+
+  .grid-link {
+    background-color: $primary-color;
+    color: $white-color;
+    font-family: $font-family-serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.6;
+
+    @include media($brk-gt-s) {
+      font-size: 19px;
+    }
+
+    @include media($brk-gt-m) {
+      font-size: 16px;
+    }
+
+    @include media($brk-gt-l) {
+      font-size: 19px;
+    }
+
+    &:hover {
+      background-color: $plate-color;
+    }
+
+    p {
+      color: $white-color;
+      margin-bottom: rem(10);
+    }
+  }
+
+  .labs,
+  .makers,
+  .identify,
+  .test,
+  .build,
+  .scale {
+    a {
+      @include position(absolute, 0 0 0 0);
+      color: $text-color;
+      display: inline-block;
+      transition: all .4s ease-in-out;
+
+      &:hover {
+        background-color: $plate-color;
+        color: $white-color;
+      }
+    }
+  }
+
+  .labs,
+  .makers {
+    height: auto;
+    width: 100%;
+
+    @include media($brk-gt-s) {
+      width: 50%;
+    }
+
+    a {
+      color: $white-color;
+    }
+
+    h3 {
+      font-size: 24px;
+
+      @include media($brk-gt-l) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &.hover {
+    .identify,
+    .test,
+    .build,
+    .scale {
+      @include media($brk-gt-l) {
+        width: 15%;
+      }
+    }
+  }
+
+  .identify,
+  .test,
+  .build,
+  .scale {
+    background-color: $grid-white-color;
+    border-top: 1px solid $grid-border-color;
+    height: rem(350);
+
+    @include media($brk-gt-s) {
+      height: rem(200);
+    }
+
+    @include media($brk-gt-m) {
+      border: 0;
+      border-left: 1px solid $grid-border-color;
+      height: rem(250);
+    }
+
+    a {
+      padding: rem(15) 0;
+    }
+
+    .more {
+      font-size: 15px;
+      margin-top: rem(10);
+
+      span {
+        color: $primary-color;
+        font-family: $font-family-serif;
+        font-style: italic;
+      }
+
+      .arrow {
+        margin-left: rem(5);
+      }
+    }
+
+    &:hover {
+      @include media($brk-gt-l) {
+        width: 55%;
+
+        .icon {
+          width: 30%;
+        }
+
+        .text {
+          display: inline-block;
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  .identify {
+    border: 0;
+
+    img {
+      height: rem(60);
+      width: rem(60);
+    }
+  }
+
+  .test {
+    img {
+      height: rem(60);
+      width: rem(43);
+    }
+  }
+
+  .build {
+    @include media($brk-gt-m) {
+      border: 0;
+    }
+
+    @include media($brk-gt-l) {
+      border-left: 1px solid $grid-border-color;
+    }
+
+    img {
+      height: rem(45);
+      width: rem(51);
+    }
+  }
+
+  .scale {
+    img {
+      height: rem(51);
+      width: rem(68);
+    }
+  }
+}

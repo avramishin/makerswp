@@ -1,0 +1,57 @@
+// Settings
+$em-base:	14px !default;
+$grid-columns: 12;
+$max-width: 1140px;
+
+// Base
+$base-border-radius:	3px !default;
+$base-font-color:			#3e3e3e !default;
+$base-font-size:			$em-base;
+$base-line-height:		1.5em !default;
+$navigation-height:		60px !default;
+
+// Colors
+$white-color:					#fff !default;
+$primary-color:				#e64d49 !default;
+$background-color:		$white-color;
+$text-color: 					$base-font-color;
+$action-color:				$primary-color;
+$placeholder-color:		#d9d9d9 !default;
+$excerpt-color:				#acacac !default;
+$border-color:				#979797 !default;
+$border-color-posts:	#dcdddc !default;
+$plate-color:					#262626 !default;
+$process-color:				#3bc999 !default;
+$navigation-bg-color: $plate-color;
+$footer-bg-color:			#212121 !default;
+
+// Typography
+$font-family-sans-serif:	"Montserrat", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       "Merriweather", Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+// $font-size-large:         ceil(($font-size-base * 1.25)) !default;
+// $font-size-medium:        ceil(($font-size-base * 1.07)) !default;
+// $font-size-small:         ceil(($font-size-base * 0.85)) !default;
+
+// Widths
+$width-xl:  rem(1400) !default;
+$width-l:   rem(1160) !default;
+$width-m:   rem(860) !default;
+$width-s:   rem(640) !default;
+
+// Breakpoints
+$brk-xl: new-breakpoint(min-width $width-l) !default;
+$brk-l: new-breakpoint(max-width $width-l min-width $width-m) !default;
+$brk-m: new-breakpoint(max-width $width-m min-width $width-s) !default;
+$brk-s: new-breakpoint(max-width $width-s) !default;
+
+$brk-lt-xl: new-breakpoint(max-width $width-l) !default;
+$brk-lt-l: new-breakpoint(max-width $width-m) !default;
+$brk-lt-m: $brk-s !default;
+
+$brk-gt-xl: new-breakpoint(min-width $width-xl) !default;
+$brk-gt-l: new-breakpoint(min-width $width-l) !default;
+$brk-gt-m: new-breakpoint(min-width $width-m) !default;
+$brk-gt-s: new-breakpoint(min-width $width-s) !default;

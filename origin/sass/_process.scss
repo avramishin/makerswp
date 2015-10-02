@@ -1,0 +1,177 @@
+.process {
+  > div {
+    text-align: left;
+  }
+
+  h3,
+  h4 {
+    font-size: 18px;
+    text-align: left;
+
+    @include media($brk-gt-s) {
+      font-size: 22px;
+    }
+
+    @include media($brk-gt-m) {
+      font-size: 26px;
+    }
+
+    @include media($brk-gt-l) {
+      font-size: 30px;
+    }
+  }
+
+  h3 {
+    background-color: $primary-color;
+    color: $white-color;
+    padding: rem(30) rem(15);
+
+    @include media($brk-gt-s) {
+      padding: rem(35) rem(20);
+    }
+
+    @include media($brk-gt-m) {
+      padding: rem(40) rem(30);
+    }
+
+    @include media($brk-gt-l) {
+      padding: rem(50) rem(70);
+    }
+  }
+
+  h4 {
+    margin-bottom: rem(20);
+  }
+
+  p {
+    font-size: 16px;
+    margin: rem(10) 0;
+
+    @include media($brk-gt-m) {
+      font-size: 18px;
+    }
+
+    @include media($brk-gt-l) {
+      font-size: 20px;
+    }
+  }
+
+  .process-content {
+    padding: rem(15);
+
+    @include media($brk-gt-s) {
+      padding: rem(20);
+    }
+
+    @include media($brk-gt-m) {
+      padding: rem(30);
+    }
+
+    @include media($brk-gt-l) {
+      padding: rem(50) rem(70);
+    }
+  }
+
+  .process-identify,
+  .process-test {
+    h3 {
+      background-color: $process-color;
+    }
+  }
+
+  .process-identify,
+  .process-test,
+  .process-build,
+  .process-scale {
+    h3 {
+      background-image: url('images/action-identify-white.svg');
+      background-position: rem(15) center;
+      background-repeat: no-repeat;
+      background-size: 50px auto;
+      padding-left: rem(80);
+
+      @include media($brk-gt-s) {
+        background-position: rem(20) center;
+        background-size: 70px auto;
+        padding-left: rem(120);
+      }
+
+      @include media($brk-gt-m) {
+        background-position: rem(30) center;
+      }
+
+      @include media($brk-gt-l) {
+        background-position: rem(70) center;
+        background-size: 90px auto;
+        padding-left: rem(180);
+      }
+    }
+  }
+
+  .process-identify {
+    h3 {
+      background-image: url('images/action-identify-white.svg');
+    }
+
+    .process-content {
+      background: url('images/process-bg-1.png') no-repeat center center;
+    }
+  }
+
+  .process-test {
+    h3 {
+      background-image: url('images/action-test-white.svg');
+      background-size: 40px auto;
+
+      @include media($brk-gt-s) {
+        background-size: 50px auto;
+      }
+
+      @include media($brk-gt-l) {
+        background-size: 60px auto;
+      }
+    }
+
+    .process-content {
+      background: url('images/process-bg-2.png') no-repeat center center;
+    }
+  }
+
+  .process-build {
+    h3 {
+      background-image: url('images/action-build-white.svg');
+    }
+
+    .process-content {
+      background: url('images/process-bg-3.png') no-repeat center center;
+    }
+  }
+
+  .process-scale {
+    h3 {
+      background-image: url('images/action-scale-white.svg');
+    }
+
+    .process-content {
+      background: url('images/process-bg-4.png') no-repeat center center;
+    }
+  }
+}
+
+.process-labs {
+  .process-build,
+  .process-scale {
+    h3 {
+      background-color: $process-color;
+    }
+  }
+}
+
+.process-makers {
+  .process-identify,
+  .process-test {
+    h3 {
+      background-color: $primary-color;
+    }
+  }
+}
