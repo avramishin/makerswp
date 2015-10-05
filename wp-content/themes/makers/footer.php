@@ -50,7 +50,8 @@
                     }
                     var n = noty({
                         text: response.message,
-                        timeout: 10000,
+                        timeout: 6000,
+                        layout: 'center',
                         type: response.success ? "success" : "error"
                     });
                 }
