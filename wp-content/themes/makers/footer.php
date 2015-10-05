@@ -8,9 +8,9 @@
         <li class="medium"><a href="http://www.medium.com">Medium</a></li>
         <li class="pinterest"><a href="http://www.pinterest.com">Pinterest</a></li>
     </ul>
-    <div class="newsletter">
-        <input type="email" placeholder="Sign up for our newsletter">
-        <input type="submit" value="Sign up">
+    <div class="newsletter signup">
+        <input type="email" class="email" placeholder="Sign up for our newsletter">
+        <input type="submit" class="submit" value="Sign up">
     </div>
     <nav>
         <ul>
@@ -33,6 +33,31 @@
 </footer>
 
 <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/main.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.signup .submit').click(function () {
+            var email = $(this).parent('.signup').find('.email');
+            $.ajax({
+                dataType: "json",
+                url: "<?php bloginfo('url') ?>/mailchimp/subscribe.php",
+                data: {
+                    "email": $(email).val(),
+                    "list_id": "6dc40f9c5d"
+                },
+                success: function (response) {
+                    if(response.success){
+                        $(email).val('');
+                    }
+                    var n = noty({
+                        text: response.message,
+                        timeout: 10000,
+                        type: response.success ? "success" : "error"
+                    });
+                }
+            });
+        });
+    });
+</script>
 <script>
     (function (b, o, i, l, e, r) {
         b.GoogleAnalyticsObject = l;

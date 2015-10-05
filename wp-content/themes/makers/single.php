@@ -13,7 +13,6 @@ get_header(); ?>
             <div class="texture"></div>
             <div class="hero-inner">
                 <h2>Our community is our strength.</h2>
-
                 <p>Makers innovates through collaboration and hard work.</p>
             </div>
         </div>

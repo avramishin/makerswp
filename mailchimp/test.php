@@ -4,8 +4,21 @@ require_once __DIR__ . "/config.php";
 require_once __DIR__ . "/Drewm/MailChimp.php";
 
 $MailChimp = new \Drewm\MailChimp($MAILCHIMP_API_KEY);
-print_r($MailChimp->call('lists/list'));
 
+$listId = "6dc40f9c5d";
+$email = "vavramishin@brightgrove.com";
+
+$result = $MailChimp->call('lists/subscribe', array(
+    'id' => $listId,
+    'email' => array('email' => $email),
+    'double_optin' => false,
+    'update_existing' => true,
+    'replace_interests' => false,
+    'send_welcome' => false
+));
+
+print_r($result);
+print_r($MailChimp->call('lists/list'));
 
 
 exit();
