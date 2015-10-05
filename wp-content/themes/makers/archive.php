@@ -57,7 +57,7 @@ get_header(); ?>
                             'feed'               => '',
                             'feed_type'          => '',
                             'feed_image'         => '',
-                            'exclude'            => '',
+                            'exclude'            => 3,
                             'exclude_tree'       => '',
                             'include'            => '',
                             'hierarchical'       => 1,
@@ -73,13 +73,11 @@ get_header(); ?>
                         );
                         wp_list_categories( $args );
                         ?>
-                        <!--                        <li class="current-cat"><a href="#" title="">Search</a></li>-->
-                        <!--                        <li><a href="#" title="">People</a></li>-->
                     </ul>
                     <ul class="posts">
                         <?php
                         global $query_string;
-                        query_posts($query_string);
+                        query_posts($query_string . '&cat=-3');
                         ?>
 
                         <?php if (have_posts()): ?>

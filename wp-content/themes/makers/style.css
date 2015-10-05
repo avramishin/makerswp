@@ -1880,4 +1880,8 @@ footer .address a {
 footer .address a:hover {
     color: #fff; }
 
+.hidden {
+    display: none !important;
+}
+
 /*# sourceMappingURL=style.css.map */

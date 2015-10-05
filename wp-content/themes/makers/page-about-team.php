@@ -30,9 +30,14 @@ foreach ($posts as $post) {
     }
 }
 
-# print_r($members);
-# exit();
+$categories = array(
+    'founder' => 'Founder',
+    'member' => 'Member',
+);
 
+//print_r($members);
+//exit();
+//
 get_header(); ?>
     <main>
 
@@ -72,16 +77,15 @@ get_header(); ?>
                 </header>
                 <section class="content">
                     <ul class="categories">
-                        <li class="active">
-                            <a href="#" title="All">All</a>
+                        <?php foreach ($categories as $filter=>$title): ?>
+                        <li class="<?php if ($filter == 'founder') echo 'active'?>" data-filter="<?php echo htmlspecialchars($filter)?>">
+                            <a href="javascript: void(0)" title="<?php echo htmlspecialchars($title)?>"><?php echo htmlspecialchars($title)?></a>
                         </li>
-                        <li>
-                            <a href="#" title="Founder">Founder</a>
-                        </li>
+                        <?php endforeach; ?>
                     </ul>
-                    <ul class="posts">
+                    <ul class="posts members">
                         <?php foreach ($members as $m): ?>
-                            <li class="all <?php echo $m['filterCategory'] ?>">
+                            <li class="all <?php echo $m['filterCategory']; if ($m['filterCategory'] != 'founder') echo ' hidden' ?>">
                                 <img src="<?php echo $m['image'] ?>" width="524" height="524" alt="">
 
                                 <div class="team-hover">
@@ -113,4 +117,18 @@ get_header(); ?>
         </div>
 
     </main>
+<script>
+    $(function() {
+        $('ul.categories li').click(function() {
+            var el = this;
+            $('ul.categories li').removeClass('active');
+            $(el).addClass('active');
+            $('ul.members li').addClass('hidden');
+            var filter = $(el).attr('data-filter');
+            console.log(filter);
+            console.log('ul.members li.' + filter);
+            $('ul.members li.' + filter).removeClass('hidden');
+        });
+    });
+</script>
 <?php get_footer(); ?>
