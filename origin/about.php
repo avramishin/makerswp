@@ -73,7 +73,7 @@
       <section class="content">
         <h4>Mission</h4>
         <h2>Makers is your partner in crime</h2>
-        <p>Ideas and people are our most valuable assets. At Makers collaboration happens through mutual respect and support, so that ideas can develop and people flourish. Being a part of Makers you will benefit from decades of experiences and expertise. Bring your ideas to life, work with like-minded people, forge strategic partnerships and write your own success story.
+        <p>Ideas and people are our most valuable assets. At Makers collaboration happens through mutual respect and support, so that ideas can develop and people flourish. Being a part of Makers will benefit you in decades of experiences and expertise. Bring your ideas to life, work with like-minded people, forge strategic partnerships and write your own success story.
 At the end of the day, we share the same mission: develop products that people love.</p>
         <ul class="about-grid">
           <li>

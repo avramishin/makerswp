@@ -88,8 +88,7 @@
           <div class="text">
             <div class="table">
               <div class="table-cell">
-                <strong>Looking for the one good idea</strong><br />
-                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet...
+                We scrutinize the process of identifying a product/market fit. We execute fearlessly with an iterative, product-oriented approach and stride towards shipping minimum viable products.
                 <p class="more">
                   <span>Read more</span>
                   <i class="arrow arrow-icon-red"></i>
@@ -112,8 +111,7 @@
           <div class="text">
             <div class="table">
               <div class="table-cell">
-                <strong>Looking for the one good idea</strong><br />
-                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet...
+                An idea that sounds innovative and convincing in theory may not necessarily work in practice. That is why we believe they should always be complemented by analytics and numbers, although we are advocates of entrepreneurs’ instincts.
                 <p class="more">
                   <span>Read more</span>
                   <i class="arrow arrow-icon-red"></i>
@@ -136,8 +134,7 @@
           <div class="text">
             <div class="table">
               <div class="table-cell">
-                <strong>Looking for the one good idea</strong><br />
-                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet...
+                Our experience with building highly profitable companies such as Run a Shop and IconPeak convinced us of the power of bootstrapping. Making things work at low cost can test the commitment of the founders and the potential of the idea.
                 <p class="more">
                   <span>Read more</span>
                   <i class="arrow arrow-icon-red"></i>
@@ -160,8 +157,7 @@
           <div class="text">
             <div class="table">
               <div class="table-cell">
-                <strong>Looking for the one good idea</strong><br />
-                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet...
+                Acting as partners in crime, we support founders of our portfolio companies to scale their business in various ways: They benefit from strategic guidance in fundraising, legal issues or human resources processes, as well as our expertise and insights.
                 <p class="more">
                   <span>Read more</span>
                   <i class="arrow arrow-icon-red"></i>

@@ -48,7 +48,7 @@
         So we built Labs, a lean startup labaratory where ideas materialise through iteration, testing and experimentation. We seek to minimize the financial risks, while maximizing efficiency by cutting down on the feedback cycles. Labs plays a crucial part of Makers by constantly providing new ideas and insights into different markets, as well as connecting entrepreneurs to the company.
         <br>
         <br>
-        One of the key questions we ask ourselves is “how can startups minimize the risks of failure?”. So we scrutinize the process of identifying a product/market fit. Once given a go-ahead, however, we execute fearlessly with an iterative, product-oriented approach and stride towards shipping minimum viable products. Brands that are currently in this phase:</p>
+        One of the key questions we ask ourselves is “how can startups minimize the risks of failure?”. So we scrutinize the process of identifying a product/market fit. Once given a go-ahead, however, we execute fearlessly with an iterative, product-oriented approach and stride towards shipping minimum viable products.</p>
       </div>
     </div>
     <div class="grid-item-wide">
