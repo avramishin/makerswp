@@ -13,18 +13,13 @@ get_header(); ?>
             <div class="texture"></div>
             <div class="hero-inner">
                 <h2>Our community is our strength.</h2>
-
                 <p>Makers innovates through collaboration and hard work.</p>
             </div>
         </div>
 
         <div class="sub-navigation">
             <div class="sub-navigation-inner">
-                <div class="sub-nav-newsletter">
-                    <label for="email">Don't miss our news</label>
-                    <input type="email" id="email" placeholder="E-mail address in here">
-                    <input type="submit" value="Sign up">
-                </div>
+                <?php include __DIR__ . "/common/sub-nav-newsletter.php";?>
             </div>
         </div>
 
