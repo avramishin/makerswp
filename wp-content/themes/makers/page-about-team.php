@@ -8,10 +8,13 @@
 global $post;
 
 $members = array();
-$customList = array('role', 'email', 'facebook', 'linkedin', 'twitter', 'filterCategory');
+$customList = array('role', 'email', 'facebook', 'linkedin', 'twitter', 'type');
 
 $args = array('numberposts' => 10, 'category_name' => 'teammembers');
 $posts = get_posts($args);
+
+$categoriesAll = array();
+$firstCategory = null;
 
 foreach ($posts as $post) {
     $custom = get_post_custom($post->ID);
@@ -25,15 +28,23 @@ foreach ($posts as $post) {
         'image' => isset($image[0]) ? $image[0] : ''
     );
 
+    echo $post->post_title, "\n";
     foreach ($customList as $cfield) {
         $members[$post->ID][$cfield] = isset($custom[$cfield][0]) ? $custom[$cfield][0] : "";
     }
-}
 
-$categories = array(
-    'founder' => 'Founder',
-    'member' => 'Member',
-);
+    if (!empty($members[$post->ID]['type'])) {
+        $categories = explode(' ', $members[$post->ID]['type']);
+        foreach ($categories as $c) {
+            $c = trim($c);
+            if (!$c) continue;
+            if (empty($categoriesAll)) {
+                $firstCategory = $c;
+            }
+            $categoriesAll[$c] = $c;
+        }
+    }
+}
 
 //print_r($members);
 //exit();
@@ -77,15 +88,15 @@ get_header(); ?>
                 </header>
                 <section class="content">
                     <ul class="categories">
-                        <?php foreach ($categories as $filter=>$title): ?>
-                        <li class="<?php if ($filter == 'founder') echo 'active'?>" data-filter="<?php echo htmlspecialchars($filter)?>">
+                        <?php foreach ($categoriesAll as $filter=>$title): ?>
+                        <li class="<?php if ($filter == $firstCategory) echo 'active'?>" data-filter="<?php echo htmlspecialchars($filter)?>">
                             <a href="javascript: void(0)" title="<?php echo htmlspecialchars($title)?>"><?php echo htmlspecialchars($title)?></a>
                         </li>
                         <?php endforeach; ?>
                     </ul>
                     <ul class="posts members">
                         <?php foreach ($members as $m): ?>
-                            <li class="all <?php echo $m['filterCategory']; if ($m['filterCategory'] != 'founder') echo ' hidden' ?>">
+                            <li class="all <?php echo $m['type']; if (!substr_count($m['type'], $firstCategory)) echo ' hidden' ?>">
                                 <img src="<?php echo $m['image'] ?>" width="524" height="524" alt="">
 
                                 <div class="team-hover">
@@ -95,16 +106,22 @@ get_header(); ?>
 
                                             <p><?php echo $m['role'] ?></p>
 
-                                            <p>
-                                                <a href="mailto:<?php echo $m['email'] ?>"><?php echo $m['email'] ?></a>
-                                            </p>
+                                            <?php if (!empty($m['email'])): ?>
+                                            <p><a href="mailto:<?php echo $m['email'] ?>"><?php echo $m['email'] ?></a></p>
+                                            <?php endif;?>
                                             <ul class="social">
+                                                <?php if (!empty($m['facebook'])): ?>
                                                 <li class="facebook"><a href="<?php echo $m['facebook'] ?>"
                                                                         title="facebook">facebook</a></li>
+                                                <?php endif;?>
+                                                <?php if (!empty($m['linkedin'])): ?>
                                                 <li class="linkedin"><a href="<?php echo $m['linkedin'] ?>"
                                                                         title="linkedin">linkedin</a></li>
+                                                <?php endif;?>
+                                                <?php if (!empty($m['twitter'])): ?>
                                                 <li class="twitter"><a href="<?php echo $m['twitter'] ?>"
                                                                        title="twitter">twitter</a></li>
+                                                <?php endif; ?>
                                             </ul>
                                         </div>
                                     </div>
