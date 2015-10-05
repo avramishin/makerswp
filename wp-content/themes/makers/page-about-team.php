@@ -28,7 +28,7 @@ foreach ($posts as $post) {
         'image' => isset($image[0]) ? $image[0] : ''
     );
 
-    echo $post->post_title, "\n";
+    # echo $post->post_title, "\n";
     foreach ($customList as $cfield) {
         $members[$post->ID][$cfield] = isset($custom[$cfield][0]) ? $custom[$cfield][0] : "";
     }
