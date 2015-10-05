@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Blog Search
+ * Template Name: Blog Posts
  * @package WordPress
  */
 
