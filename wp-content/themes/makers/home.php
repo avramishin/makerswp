@@ -23,11 +23,7 @@ get_header(); ?>
 
         <div class="sub-navigation">
             <div class="sub-navigation-inner">
-                <div class="sub-nav-newsletter">
-                    <label for="email">Don't miss our news</label>
-                    <input type="email" id="email" placeholder="E-mail address in here">
-                    <input type="submit" value="Sign up">
-                </div>
+                <?php include __DIR__ . "/common/sub-nav-newsletter.php";?>
             </div>
         </div>
 
