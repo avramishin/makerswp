@@ -203,6 +203,8 @@ video {
     background-image: url("images/icons/social-lorem.svg"); }
 .social .pinterest a {
     background-image: url("images/icons/social-pinterest.svg"); }
+.social .angellist a {
+    background-image: url("images/icons/social-angel.svg");
 
 .desktop-only {
     display: none; }
@@ -370,7 +372,7 @@ video {
     padding-right: 45px; }
 @media screen and (min-width: 40rem) {
     .header .navigation .main-navigation .join-us a {
-        background-image: url("images/icon-join-us_2x.png");
+        background: transparent url("images/icons/icon-join-us_2x.png") no-repeat scroll right 10px center;
         background-size: 26px 26px; } }
 .header .navigation .main-navigation .join-us a:hover {
     background-color: #e64d49; }
@@ -413,7 +415,7 @@ video {
 .hero h2 {
     color: #fff;
     font-family: "Montserrat", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     line-height: 1.4; }
 @media screen and (min-width: 40rem) {
