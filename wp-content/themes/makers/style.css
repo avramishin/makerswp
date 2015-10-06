@@ -222,7 +222,7 @@ video {
     left: 0;
     min-height: 60px;
     padding: 0;
-    position: absolute;
+    position: absolute !important;
     right: 0;
     top: 0;
     transition: background-color .4s ease-in-out;
@@ -411,8 +411,8 @@ video {
     width: auto; }
 @media screen and (min-width: 40rem) {
     .hero img {
-        height: auto;
-        width: 100%; } }
+        width: auto;
+        min-height: 600px; } }
 .hero h2 {
     color: #fff;
     font-family: "Montserrat", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;

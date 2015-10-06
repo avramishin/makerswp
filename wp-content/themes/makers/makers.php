@@ -25,8 +25,7 @@ get_header(); ?>
   <div class="container">
     <article>
       <header class="center">
-        <h2>A digital studio crafting beautiful &amp; engaging online experiences</h2>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
+        <h2>Two Steps to Grow</h2>
       </header>
     </article>
   </div>
