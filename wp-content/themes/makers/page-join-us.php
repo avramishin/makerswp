@@ -46,7 +46,7 @@ get_header(); ?>
     <div class="grid-item-wide">
       <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/grid/about-grid-2.jpg" alt="">
     </div>
-    <div>
+    <div class="desktop-only">
       <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/grid/about-grid-3.jpg" alt="">
     </div>
     <div class="desktop-only">
@@ -63,7 +63,7 @@ get_header(); ?>
         </div>
       </div>
     </div>
-    <div class="grid-item-wide desktop-only">
+    <div class="grid-item-wide">
       <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/grid/about-grid-5.jpg" alt="">
     </div>
   </div>
@@ -74,23 +74,23 @@ get_header(); ?>
         <h2 style="text-align: center;">Whom we are looking for</h2>
         <ul class="list-3">
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-lightbulb.png" alt="icon-lightbulb" height="60px" /></p>
+            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-lightbulb.png" alt="icon-lightbulb" height="45px" /></p>
             <p style="text-align: center;">Entrepreneurial people</p>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-lightbulb.png" alt="icon-lightbulb" height="60px" /></p>
+            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-lightbulb.png" alt="icon-lightbulb" height="45px" /></p>
             <p style="text-align: center;">Out-of-the-box thinkers</p>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-lightbulb.png" alt="icon-lightbulb" height="60px" /></p>
+            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-lightbulb.png" alt="icon-lightbulb" height="45px" /></p>
             <p style="text-align: center;">Hands-on doers</p>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-lightbulb.png" alt="icon-lightbulb" height="60px" /></p>
+            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-lightbulb.png" alt="icon-lightbulb" height="45px" /></p>
             <p style="text-align: center;">Inspiring leaders</p>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-lightbulb.png" alt="icon-lightbulb" height="60px" /></p>
+            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-lightbulb.png" alt="icon-lightbulb" height="45px" /></p>
             <p style="text-align: center;">And people who never liked making coffee</p>
           </li>
         </ul>

@@ -35,27 +35,27 @@ get_header(); ?>
         <h2 style="text-align: center;">6 principles that makes you a Maker</h2>
         <ul class="list-3">
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-message.png" alt="icon-message" height="60px" /></p>
+            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-message.png" alt="icon-message" height="45px" width="45px" /></p>
             <p style="text-align: center;">Be a team player. Share, help and communicate</p>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-chemistry.png" alt="icon-chemistry" height="60px" /></p>
+            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-chemistry.png" alt="icon-chemistry" height="45px" width="45px" /></p>
             <p style="text-align: center;">Innovate through experimentation</p>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-thumbsup.png" alt="icon-thumbsup" height="60px" /></p>
+            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-thumbsup.png" alt="icon-thumbsup" height="45px" width="45px" /></p>
             <p style="text-align: center;">Do the right thing right</p>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-lightbulb.png" alt="icon-lightbulb" height="60px" /></p>
+            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-lightbulb.png" alt="icon-lightbulb" height="45px" /></p>
             <p style="text-align: center;">Challenge the status quo</p>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-heart.png" alt="icon-heart" height="60px" /></p>
+            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-heart.png" alt="icon-heart" height="45px" width="45px" /></p>
             <p style="text-align: center;">Build products that people love</p>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-star.png" alt="icon-star" height="60px" /></p>
+            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-star.png" alt="icon-star" height="45px" width="45px" /></p>
             <p style="text-align: center;">We get things done</p>
           </li>
         </ul>
@@ -70,7 +70,7 @@ get_header(); ?>
     <div class="grid-item-wide">
       <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/grid/about-grid-2.jpg" alt="">
     </div>
-    <div>
+    <div class="desktop-only">
       <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/grid/about-grid-3.jpg" alt="">
     </div>
     <div class="desktop-only">
@@ -87,7 +87,7 @@ get_header(); ?>
         </div>
       </div>
     </div>
-    <div class="grid-item-wide desktop-only">
+    <div class="grid-item-wide">
       <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/grid/about-grid-5.jpg" alt="">
     </div>
   </div>

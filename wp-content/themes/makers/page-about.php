@@ -46,7 +46,7 @@ get_header(); ?>
     <div class="grid-item-wide">
       <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/grid/about-grid-2.jpg" alt="">
     </div>
-    <div>
+    <div class="desktop-only">
       <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/grid/about-grid-3.jpg" alt="">
     </div>
     <div class="desktop-only">
@@ -63,7 +63,7 @@ get_header(); ?>
         </div>
       </div>
     </div>
-    <div class="grid-item-wide desktop-only">
+    <div class="grid-item-wide">
       <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/grid/about-grid-5.jpg" alt="">
     </div>
   </div>

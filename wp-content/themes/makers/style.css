@@ -1110,7 +1110,7 @@ video {
         display: none; } }
 .grid .grid-item-wide {
     width: 100%; }
-@media screen and (min-width: 53.75rem) {
+@media screen and (min-width: 72.5rem) {
     .grid .grid-item-wide {
         width: 50%; } }
 .grid .grid-text,
@@ -1813,20 +1813,20 @@ video {
 
 
 /********* JOBS LIST *********/
-#jobs-list a {
+#jobs-table-body a {
     color: #3e3e3e;
     font-size: 16px;
     line-height: 1.5em;
 }
 
 @media screen and (min-width: 40rem) {
-    #jobs-list a {
+    #jobs-table-body a {
         font-size: 18px;
     }
 }
 
 @media screen and (min-width: 53.75rem) {
-    #jobs-list a {
+    #jobs-table-body a {
         font-size: 20px;
     }
 }
