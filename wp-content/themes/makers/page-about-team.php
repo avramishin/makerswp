@@ -132,11 +132,11 @@ get_header(); ?>
     </main>
 <script>
     $(function() {
-        $('ul.categories li').click(function() {
+        $('ul.categories > li').click(function() {
             var el = this;
-            $('ul.categories li').removeClass('active');
+            $('ul.categories > li').removeClass('active');
             $(el).addClass('active');
-            $('ul.members li').addClass('hidden');
+            $('ul.members > li').addClass('hidden');
             var filter = $(el).attr('data-filter');
             console.log(filter);
             console.log('ul.members li.' + filter);
