@@ -74,8 +74,8 @@ get_header(); ?>
         <ul class="company-type">
           <li class="active" data-filter="All" ><a href="javascript: void(0)" title="All">All</a></li>
           <?php foreach ($categoriesAll as $filter=>$title): ?>
-          <li class="" data-filter="<?php echo htmlspecialchars($filter)?>">
-          <a href="javascript: void(0)" title="<?php echo htmlspecialchars($title)?>"><?php echo htmlspecialchars($title)?></a>
+          <li class="" data-filter="<?php echo htmlspecialchars($filter)?>;">
+          <a href="javascript: void(0)" title="<?php echo htmlspecialchars(str_replace('_', ' ', $filter));?>"><?php echo htmlspecialchars(str_replace('_', ' ', $filter));?></a>
           </li>
           <?php endforeach; ?>
         </ul>
