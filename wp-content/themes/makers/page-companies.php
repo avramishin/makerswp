@@ -74,7 +74,7 @@ get_header(); ?>
         <ul class="company-type">
           <li class="active" data-filter="All" ><a href="javascript: void(0)" title="All">All</a></li>
           <?php foreach ($categoriesAll as $filter=>$title): ?>
-          <li class="" data-filter="<?php echo htmlspecialchars($filter)?>;">
+          <li class="" data-filter="<?php echo htmlspecialchars($filter);?>">
           <a href="javascript: void(0)" title="<?php echo htmlspecialchars(str_replace('-', ' ', $filter));?>"><?php echo htmlspecialchars(str_replace('-', ' ', $filter));?></a>
           </li>
           <?php endforeach; ?>
