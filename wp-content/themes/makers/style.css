@@ -867,17 +867,12 @@ video {
         display: block;
         margin-right: 3.57866%;
         width: 48.21067%; }
-    .container .posts > li:last-child {
-        margin-right: 0; }
-    .container .posts > li:nth-child(2n) {
-        margin-right: 0; }
     .container .posts > li:nth-child(2n+1) {
         clear: left; } }
 @media screen and (min-width: 53.75rem) {
     .container .posts > li {
         float: left;
-        display: block;
-        width: 48%; }
+        display: block; }
     .container .posts > li:nth-child(2n+1) {
         clear: none; }
     .container .posts > li:last-child {
