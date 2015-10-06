@@ -10,7 +10,7 @@ global $post;
 $members = array();
 $customList = array('role', 'email', 'facebook', 'linkedin', 'twitter', 'type');
 
-$args = array('numberposts' => 10, 'category_name' => 'teammembers');
+$args = array('numberposts' => 100, 'category_name' => 'teammembers');
 $posts = get_posts($args);
 
 $categoriesAll = array();
@@ -28,7 +28,6 @@ foreach ($posts as $post) {
         'image' => isset($image[0]) ? $image[0] : ''
     );
 
-    # echo $post->post_title, "\n";
     foreach ($customList as $cfield) {
         $members[$post->ID][$cfield] = isset($custom[$cfield][0]) ? $custom[$cfield][0] : "";
     }
@@ -46,9 +45,6 @@ foreach ($posts as $post) {
     }
 }
 
-//print_r($members);
-//exit();
-//
 get_header(); ?>
     <main>
 
