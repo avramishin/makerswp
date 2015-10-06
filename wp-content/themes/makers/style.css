@@ -222,7 +222,7 @@ video {
     left: 0;
     min-height: 60px;
     padding: 0;
-    position: absolute !important;
+    position: absolute;
     right: 0;
     top: 0;
     transition: background-color .4s ease-in-out;
@@ -397,7 +397,9 @@ video {
 @media screen and (min-width: 40rem) {
     .home .hero img {
         width: auto;
-        min-height: 600px; } }
+        height: auto;
+        min-height: 600px;
+        min-width: 100%; } }
 
 .hero {
     overflow: hidden;
@@ -571,7 +573,7 @@ video {
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
-    padding: 5rem 0.9375rem; }
+    padding: 5rem 1.25rem; }
 .container::after {
     clear: both;
     content: "";
@@ -579,7 +581,6 @@ video {
 .container header {
     max-width: 940px; }
 .container header h2 {
-    color: #3e3e3e;
     font-size: 24px; }
 @media screen and (min-width: 40rem) {
     .container header h2 {
@@ -876,10 +877,7 @@ video {
     .container .posts > li {
         float: left;
         display: block;
-        margin-right: 3.16844%;
-        width: 42.6842%; }
-    .container .posts > li:nth-child(2n) {
-        margin-right: 2.35765%; }
+        width: 48%; }
     .container .posts > li:nth-child(2n+1) {
         clear: none; }
     .container .posts > li:last-child {
@@ -1079,7 +1077,7 @@ video {
     display: table; }
 @media screen and (min-width: 53.75rem) {
     .grid > div {
-        width: 50%; } }
+        width: 100%; } }
 @media screen and (min-width: 72.5rem) {
     .grid > div {
         width: 25%; } }
@@ -1940,7 +1938,6 @@ footer .address a:hover {
     .container .posts.members > li:nth-child(2n),
     .container .posts.members > li:nth-child(2n+1) {
         clear: none !important;
-        margin-right: 3.57866% !important;
     }
 }
 
@@ -1950,7 +1947,6 @@ footer .address a:hover {
     .container .posts.members > li:nth-child(2n+1),
     .container .posts.members > li:nth-child(4n),
     .container .posts.members > li:nth-child(4n+1) {
-        margin-right: 3.16844% !important;
         clear: none !important;
     }
 }

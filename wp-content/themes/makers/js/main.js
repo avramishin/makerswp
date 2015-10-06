@@ -24,7 +24,7 @@ $(document).ready(function() {
   });
 
   // Sticky headers
-  var header = $('.header');
+  /*var header = $('.header');
   var headerPosTop = header.position().top;
   var subNav = $('.sub-navigation');
   var subNavPosTop;
@@ -63,6 +63,6 @@ $(document).ready(function() {
   $('.scroll-to-top').on('click', function(e) {
     e.preventDefault();
     $("html, body").animate({ scrollTop: 0 }, "slow");
-  });
+  });*/
 
 });
