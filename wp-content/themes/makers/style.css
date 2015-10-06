@@ -1888,7 +1888,8 @@ footer .address a:hover {
 
 @media screen and (min-width: 40rem) {
     .container .posts.members > li,
-    .container .posts.members > li:nth-child(2n+1){
+    .container .posts.members > li:nth-child(2n),
+    .container .posts.members > li:nth-child(2n+1) {
         clear: none !important;
         margin-right: 3.57866% !important;
     }
@@ -1896,6 +1897,8 @@ footer .address a:hover {
 
 @media screen and (min-width: 53.75rem) {
     .container .posts.members > li,
+    .container .posts.members > li:nth-child(2n),
+    .container .posts.members > li:nth-child(2n+1),
     .container .posts.members > li:nth-child(4n),
     .container .posts.members > li:nth-child(4n+1) {
         margin-right: 3.16844% !important;
