@@ -40,7 +40,7 @@ h1,
 h2 {
     font-weight: 700; }
 
-p, #jobs-list {
+p {
     color: #3e3e3e;
     font-size: 16px;
     line-height: 1.5em; }
@@ -208,7 +208,7 @@ video {
 
 .desktop-only {
     display: none; }
-@media screen and (min-width: 53.75rem) {
+@media screen and (min-width: 72.5rem) {
     .desktop-only {
         display: block; } }
 
@@ -415,12 +415,12 @@ video {
 .hero h2 {
     color: #fff;
     font-family: "Montserrat", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
     line-height: 1.4; }
 @media screen and (min-width: 40rem) {
     .hero h2 {
-        font-size: 37px; } }
+        font-size: 39px; } }
 @media screen and (min-width: 53.75rem) {
     .hero h2 {
         font-size: 50px; } }
@@ -570,14 +570,13 @@ video {
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
-    padding: 3.125rem 0.9375rem; }
+    padding: 5rem 0.9375rem; }
 .container::after {
     clear: both;
     content: "";
     display: table; }
 .container header {
-    max-width: 940px;
-    padding: 1.875rem 0 0.625rem; }
+    max-width: 940px; }
 .container header h2 {
     color: #3e3e3e;
     font-size: 24px; }
@@ -618,10 +617,10 @@ video {
 .container .content p {
     margin-top: 1.25rem; }
 .container .content h2 {
-    font-size: 30px; }
+    font-size: 28px; }
 @media screen and (min-width: 40rem) {
     .container .content h2 {
-        font-size: 35px; } }
+        font-size: 33px; } }
 @media screen and (min-width: 53.75rem) {
     .container .content h2 {
         font-size: 40px; } }
@@ -709,8 +708,7 @@ video {
 .container .list-3 li {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
+    width: 100%;
     margin: 1.25rem 0 0;
     padding: 0.625rem; }
 .container .list-3 li:last-child {
@@ -737,9 +735,14 @@ video {
         clear: left; } }
 .container .list-3 li p {
     color: #3e3e3e;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     margin-top: 1.25rem; }
+
+    @media screen and (min-width: 40rem) {
+    .container .list-3 li p {
+        font-size: 20px; } }
+
 .container .list-4 {
     margin: 0;
     padding: 0; }
@@ -1723,7 +1726,7 @@ video {
     .bottom-quote .bottom-quote-text p {
         color: #fff; } }
 .bottom-quote .bottom-quote-text h2 {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 1.25rem; }
 @media screen and (min-width: 53.75rem) {
     .bottom-quote .bottom-quote-text h2 {
@@ -1815,34 +1818,65 @@ video {
     font-size: 1em;
     margin: 0; }
 
+
+/********* JOBS LIST *********/
+#jobs-list a {
+    color: #3e3e3e;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+@media screen and (min-width: 40rem) {
+    #jobs-list a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 53.75rem) {
+    #jobs-list a {
+        font-size: 20px;
+    }
+}
+
+
+/********* FOOTER *********/
 footer {
     background: #212121;
     color: #909090;
     padding: 6.25rem 0.625rem 3.125rem;
     position: relative;
-    text-align: center; }
+    text-align: center;
+}
 footer h4 {
     font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
     font-style: italic;
-    padding: 0.9375rem 0; }
+    padding: 0.9375rem 0;
+}
 footer h5 {
     font-size: 0.875rem;
     font-weight: bold;
-    margin: 0.625rem 0; }
+    margin: 0.625rem 0;
+}
 footer ul {
     list-style: none;
     margin: 0.9375rem 0;
-    padding: 0; }
+    padding: 0;
+}
 footer ul li {
-    display: inline-block; }
+    display: inline-block;
+}
 footer nav ul li {
     font-size: 12px;
-    padding: 0.5rem; }
+    padding: 0.5rem;
+}
 @media screen and (min-width: 53.75rem) {
     footer nav ul li {
-        font-size: 15px; } }
+        font-size: 15px;
+    }
+}
 footer nav ul li a:hover {
-    color: #fff; }
+    color: #fff;
+}
 footer .scroll-to-top {
     position: absolute;
     top: 0;
@@ -1855,38 +1889,52 @@ footer .scroll-to-top {
     display: block;
     width: 5rem;
     height: 5rem;
-    transition: background-color .4s ease-in-out; }
+    transition: background-color .4s ease-in-out;
+}
 @media screen and (min-width: 72.5rem) {
     footer .scroll-to-top {
         width: 6.25rem;
-        height: 6.25rem; } }
+        height: 6.25rem;
+    }
+}
 footer .scroll-to-top:hover {
-    background-color: #e33733; }
+    background-color: #e33733;
+}
 footer .newsletter {
     margin: 0 auto;
     max-width: 39.375rem;
-    padding: 3.125rem 0 1.875rem; }
+    padding: 3.125rem 0 1.875rem;
+}
 @media screen and (min-width: 53.75rem) {
     footer .newsletter {
-        padding: 4.375rem 0 3.125rem; } }
+        padding: 4.375rem 0 3.125rem;
+    }
+}
 footer .newsletter input[type="email"] {
     background-image: url("images/icons/icon-email.svg");
-    border: 0; }
+    border: 0;
+}
 footer .address {
     font-size: 12px;
-    margin: 1.25rem 0.625rem; }
+    margin: 1.25rem 0.625rem;
+}
 @media screen and (min-width: 53.75rem) {
     footer .address {
-        font-size: 15px; } }
+        font-size: 15px;
+    }
+}
 footer .address p {
     color: #909090;
-    font-size: 14px; }
+    font-size: 14px;
+}
 footer .address a {
-    color: #909090; }
+    color: #909090;
+}
 footer .address a:hover {
-    color: #fff; }
+    color: #fff;
+}
 
-/* My changes */
+/********* EXTRA *********/
 
 .hidden {
     display: none !important;
