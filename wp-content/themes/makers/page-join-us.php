@@ -97,27 +97,6 @@ get_header(); ?>
       </section>
     </article>
   </div>
-
-  <!--<div class="quote">
-    <div class="quote-picture">
-      <img src="/images/quote-freidrich-neumann.jpg" alt="">
-      <div>
-        <p>Management</p>
-        <h4>Freidrich Neumann,</h4>
-        <h5>CEO/Founder</h5>
-      </div>
-    </div>
-    <div class="quote-text">
-      <h2>
-        <span>„“</span><br />
-        Always be yourself, express yourself, have faith in yourself, do not go out and look for a successful personality and duplicate it.
-      </h2>
-      <p>
-        Freidrich Neumann<br />
-        Founder Makers
-      </p>
-    </div>
-  </div>-->
   
   <div class="bottom-quote">
     <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/bottom-quote-founder-group.jpg" alt="">

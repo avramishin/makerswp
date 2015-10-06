@@ -396,7 +396,8 @@ video {
     height: 25rem; }
 @media screen and (min-width: 40rem) {
     .home .hero img {
-        height: auto; } }
+        width: auto;
+        min-height: 600px; } }
 
 .hero {
     overflow: hidden;
@@ -426,7 +427,7 @@ video {
         font-size: 50px; } }
 @media screen and (min-width: 72.5rem) {
     .hero h2 {
-        font-size: 69px; } }
+        font-size: 60px; } }
 .hero p {
     color: #fff;
     font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
@@ -1706,13 +1707,7 @@ video {
         bottom: 0;
         left: 0; } }
 .bottom-quote .bottom-quote-text .container {
-    padding-top: 1.25rem; }
-@media screen and (min-width: 40rem) {
-    .bottom-quote .bottom-quote-text .container {
-        padding-top: 2.5rem; } }
-@media screen and (min-width: 53.75rem) {
-    .bottom-quote .bottom-quote-text .container {
-        padding-top: 3.125rem; } }
+    padding-top: 3.125rem; }
 @media screen and (min-width: 72.5rem) {
     .bottom-quote .bottom-quote-text .container {
         padding-top: 5rem; } }
