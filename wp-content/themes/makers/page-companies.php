@@ -4,6 +4,47 @@
  * @package WordPress
  */
 
+global $post;
+
+$members = array();
+$customList = array('website', 'type');
+
+$args = array('numberposts' => 100, 'category_name' => 'companies');
+$posts = get_posts($args);
+
+$categoriesAll = array();
+$firstCategory = null;
+
+foreach ($posts as $post) {
+  $custom = get_post_custom($post->ID);
+  $featuredImageId = get_post_thumbnail_id($post->ID);
+  $image = wp_get_attachment_image_src($featuredImageId, array(261, 191));
+
+  $members[$post->ID] = array(
+      'id' => $post->ID,
+      'name' => $post->post_title,
+      'desc' => $post->post_content,
+      'image' => isset($image[0]) ? $image[0] : ''
+  );
+
+  foreach ($customList as $cfield) {
+    $members[$post->ID][$cfield] = isset($custom[$cfield][0]) ? $custom[$cfield][0] : "";
+  }
+
+  if (!empty($members[$post->ID]['type'])) {
+    $categories = explode(' ', $members[$post->ID]['type']);
+    foreach ($categories as $c) {
+      $c = trim($c);
+      if (!$c) continue;
+      if (empty($categoriesAll)) {
+        $firstCategory = $c;
+      }
+      $categoriesAll[$c] = $c;
+    }
+  }
+}
+
+
 get_header(); ?>
 <main>
 
@@ -31,71 +72,42 @@ get_header(); ?>
       </header>
       <section class="content">
         <ul class="company-type">
-          <li class="active">
-            <a href="#" title="All">All</a>
+          <li class="active" data-filter="All" ><a href="javascript: void(0)" title="All">All</a></li>
+          <?php foreach ($categoriesAll as $filter=>$title): ?>
+          <li class="" data-filter="<?php echo htmlspecialchars($filter)?>">
+          <a href="javascript: void(0)" title="<?php echo htmlspecialchars($title)?>"><?php echo htmlspecialchars($title)?></a>
           </li>
+          <?php endforeach; ?>
         </ul>
         <ul class="companies-grid list-3">
-          <li>
+          <?php foreach ($members as $m): ?>
+          <li class="All <?php echo $m['type'];?>">
             <div class="table">
               <div class="table-cell">
-                <img width="210" height="74" src="http://negoto.tvatteriet.se/wp-content/uploads/2015/09/cashboard-210x74.png" class="attachment-company-logo wp-post-image" alt="cashboard" /><p>Lorem ipsum</p>
+                <img width="261" height="191" src="<?php echo $m['image']; ?>" class="attachment-company-logo wp-post-image" alt="<?php echo $m['name'];?>" />
+<!--                <p>--><?php //echo $m['name'];?><!--</p>-->
               </div>
             </div>
           </li>
-          <li>
-            <div class="table">
-              <div class="table-cell">
-                <img width="210" height="74" src="http://negoto.tvatteriet.se/wp-content/uploads/2015/09/cashboard-210x74.png" class="attachment-company-logo wp-post-image" alt="cashboard" /><p>Lorem ipsum</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="table">
-              <div class="table-cell">
-                <img width="210" height="74" src="http://negoto.tvatteriet.se/wp-content/uploads/2015/09/cashboard-210x74.png" class="attachment-company-logo wp-post-image" alt="cashboard" /><p>Lorem ipsum</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="table">
-              <div class="table-cell">
-                <img width="210" height="74" src="http://negoto.tvatteriet.se/wp-content/uploads/2015/09/cashboard-210x74.png" class="attachment-company-logo wp-post-image" alt="cashboard" /><p>Lorem ipsum</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="table">
-              <div class="table-cell">
-                <img width="210" height="74" src="http://negoto.tvatteriet.se/wp-content/uploads/2015/09/cashboard-210x74.png" class="attachment-company-logo wp-post-image" alt="cashboard" /><p>Lorem ipsum</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="table">
-              <div class="table-cell">
-                <img width="210" height="74" src="http://negoto.tvatteriet.se/wp-content/uploads/2015/09/cashboard-210x74.png" class="attachment-company-logo wp-post-image" alt="cashboard" /><p>Lorem ipsum</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="table">
-              <div class="table-cell">
-                <img width="210" height="74" src="http://negoto.tvatteriet.se/wp-content/uploads/2015/09/cashboard-210x74.png" class="attachment-company-logo wp-post-image" alt="cashboard" /><p>Lorem ipsum</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="table">
-              <div class="table-cell">
-                <img width="210" height="74" src="http://negoto.tvatteriet.se/wp-content/uploads/2015/09/cashboard-210x74.png" class="attachment-company-logo wp-post-image" alt="cashboard" /><p>Lorem ipsum</p>
-              </div>
-            </div>
-          </li>
+          <?php endforeach; ?>
         </ul>
       </section>
     </article>
   </div>
 
 </main>
+  <script>
+    $(function() {
+      $('ul.company-type > li').click(function() {
+        var el = this;
+        $('ul.company-type > li').removeClass('active');
+        $(el).addClass('active');
+        $('ul.companies-grid > li').addClass('hidden');
+        var filter = $(el).attr('data-filter');
+        console.log(filter);
+        console.log('ul.companies-grid li.' + filter);
+        $('ul.companies-grid li.' + filter).removeClass('hidden');
+      });
+    });
+  </script>
 <?php get_footer(); ?>
