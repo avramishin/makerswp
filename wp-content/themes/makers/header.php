@@ -46,11 +46,11 @@
       </nav>
       <div class="social-container">
         <ul class="social">
-          <li class="facebook"><a href="http://www.facebook.com">Facebook</a></li>
-          <li class="linkedin"><a href="http://www.linkedin.com">LinkedIn</a></li>
-          <li class="twitter"><a href="http://www.twitter.com">Twitter</a></li>
-          <li class="medium"><a href="http://www.medium.com">Medium</a></li>
-          <li class="pinterest"><a href="http://www.pinterest.com">Pinterest</a></li>
+          <li class="facebook"><a href="http://www.facebook.com/makers.do" target="_blank">Facebook</a></li>
+          <li class="linkedin"><a href="http://www.linkedin.com" target="_blank">LinkedIn</a></li>
+          <li class="twitter"><a href="http://twitter.com/MakersDo" target="_blank">Twitter</a></li>
+          <li class="medium"><a href="http://www.medium.com" target="_blank">Medium</a></li>
+          <li class="pinterest"><a href="http://www.pinterest.com" target="_blank">Pinterest</a></li>
         </ul>
       </div>
     </header>

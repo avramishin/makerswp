@@ -54,11 +54,14 @@ get_header(); ?>
                 <div class="container right">
                     <h2>
                         <span>„“</span><br/>
-                        Let's join our forces to build<br/>products that people love. </h2>
+                        Become part of a talented 
+                        <br>
+                        group of Makers.
+                    </h2>
 
                     <p>
-                        Benjamin Libor<br/>
-                        Founder Labs </p>
+                        Marius Schulze<br/>
+                        Founder Run a Shop</p>
                 </div>
             </div>
         </div>
