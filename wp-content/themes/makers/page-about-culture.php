@@ -59,7 +59,7 @@ get_header(); ?>
             <p style="text-align: center;">We get things done</p>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-cloud.png" alt="icon-cloud" height="45px" width="45px" /></p>
+            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-cloud.png" alt="icon-cloud" width="45px" /></p>
             <p style="text-align: center;">Be respectful, honest and humble</p>
           </li>
         </ul>
