@@ -57,7 +57,7 @@ $(document).ready(function() {
     } else {
       subNav.removeClass('fixed');
     }
-  });*/
+  });
 
   // Scroll to top
   $('.scroll-to-top').on('click', function(e) {
