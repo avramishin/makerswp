@@ -1698,7 +1698,7 @@ video {
     .bottom-quote .bottom-quote-text .container {
         padding-top: 5rem; } }
 .bottom-quote .bottom-quote-text .container.right {
-    text-align: center; }
+    text-align: left; }
 @media screen and (min-width: 40rem) {
     .bottom-quote .bottom-quote-text .container.right {
         text-align: right; } }
