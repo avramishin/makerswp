@@ -32,7 +32,7 @@ get_header(); ?>
   <div class="container">
     <article>
       <section class="content">
-        <h2 style="text-align: center;">6 principles that makes you a Maker</h2>
+        <h2 style="text-align: center;">7 principles that makes you a Maker</h2>
         <ul class="list-3">
           <li>
             <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-message.png" alt="icon-message" height="45px" width="45px" /></p>
@@ -57,6 +57,10 @@ get_header(); ?>
           <li>
             <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-star.png" alt="icon-star" height="45px" width="45px" /></p>
             <p style="text-align: center;">We get things done</p>
+          </li>
+          <li>
+            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-cloud.png" alt="icon-cloud" height="45px" width="45px" /></p>
+            <p style="text-align: center;">Be respectful, honest and humble</p>
           </li>
         </ul>
       </section>

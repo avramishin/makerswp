@@ -51,6 +51,7 @@
           <li class="twitter"><a href="http://twitter.com/MakersDo" target="_blank">Twitter</a></li>
           <li class="medium"><a href="http://www.medium.com" target="_blank">Medium</a></li>
           <li class="pinterest"><a href="http://www.pinterest.com" target="_blank">Pinterest</a></li>
+          <li class="angellist"><a href="https://angel.co/" target="_blank">AngelList</a></li>
         </ul>
       </div>
     </header>

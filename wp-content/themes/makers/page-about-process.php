@@ -53,10 +53,12 @@ get_header(); ?>
     </div>
     <div class="grid-item-wide">
       <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/square-1.jpg" alt="" />
+      <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/square-1.jpg" alt="" />
     </div>
   </div>
   <div id="test" class="grid process">
     <div class="grid-item-wide">
+      <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/square-2.jpg" alt="" />
       <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/square-2.jpg" alt="" />
     </div>
     <div class="process-test grid-item-wide">
@@ -90,10 +92,12 @@ get_header(); ?>
     </div>
     <div class="grid-item-wide">
       <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/square-3.jpg" alt="" />
+      <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/square-3.jpg" alt="" />
     </div>
   </div>
   <div id="scale" class="grid process">
     <div class="grid-item-wide">
+      <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/square-4.jpg" alt="" />
       <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/square-4.jpg" alt="" />
     </div>
     <div class="process-scale grid-item-wide">

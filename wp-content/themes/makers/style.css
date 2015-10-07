@@ -372,7 +372,6 @@ video {
     padding-right: 45px; }
 @media screen and (min-width: 40rem) {
     .header .navigation .main-navigation .join-us a {
-        background-image: url("images/icon-join-us_2x.png");
         background-size: 26px 26px; } }
 .header .navigation .main-navigation .join-us a:hover {
     background-color: #e64d49; }
@@ -554,10 +553,6 @@ video {
     font-size: 14px;
     width: 6.25rem; }
 
-.about .bottom-container,
-.about-culture .bottom-container {
-    padding: 3.125rem 0; }
-
 .about-culture .bottom-container {
     background: #e64d49; }
 .about-culture .bottom-container .container .content h2,
@@ -573,7 +568,10 @@ video {
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
-    padding: 5rem 1.25rem; }
+    padding: 3.5rem 1.25rem; }
+@media screen and (min-width: 40rem) {
+.container {
+    padding: 5rem 1.25rem; } }
 .container::after {
     clear: both;
     content: "";
@@ -1095,7 +1093,8 @@ video {
 @media screen and (min-width: 72.5rem) {
     .grid .grid-item-wide {
         width: 50%;
-        overflow: hidden; } }
+        overflow: hidden;
+        max-height: 1230px; } }
 .grid .grid-text,
 .grid .grid-link {
     position: absolute;
@@ -1802,21 +1801,21 @@ video {
 
 
 /********* JOBS LIST *********/
-#jobs-table-body a {
-    color: #3e3e3e;
-    font-size: 16px;
-    line-height: 1.5em;
+#jobs-table-body {
+    color: #3e3e3e !important;
+    font-size: 16px !important;
+    line-height: 1.5em !important;
 }
 
 @media screen and (min-width: 40rem) {
-    #jobs-table-body a {
-        font-size: 18px;
+    #jobs-table-body {
+        font-size: 18px !important;
     }
 }
 
 @media screen and (min-width: 53.75rem) {
-    #jobs-table-body a {
-        font-size: 20px;
+    #jobs-table-body {
+        font-size: 20px !important;
     }
 }
 

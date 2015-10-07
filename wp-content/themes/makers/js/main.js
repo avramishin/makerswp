@@ -23,8 +23,8 @@ $(document).ready(function() {
     $('.grid').removeClass('hover');
   });
 
-  // Sticky headers
-  /*var header = $('.header');
+  /*// Sticky headers
+  var header = $('.header');
   var headerPosTop = header.position().top;
   var subNav = $('.sub-navigation');
   var subNavPosTop;
@@ -36,7 +36,7 @@ $(document).ready(function() {
     if (subNav.length) {
       subNavPosTop = subNav.position().top;
     }
-  });
+  });*/
   $(window).scroll(function() {
     var scrollTop = $(window).scrollTop();
     if (scrollTop > headerPosTop) {
