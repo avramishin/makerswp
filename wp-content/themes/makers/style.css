@@ -854,9 +854,7 @@ video {
 .container .posts > li {
     float: left;
     display: block;
-    margin-right: 2.35765%;
     width: 100%;
-    margin-bottom: 3.16844%;
     position: relative;
     text-align: center; }
 .container .posts > li:last-child {
@@ -875,11 +873,7 @@ video {
         display: block; }
     .container .posts > li:nth-child(2n+1) {
         clear: none; }
-    .container .posts > li:nth-child(2n) {
-        margin-right: 0; }
     .container .posts > li:last-child {
-        margin-right: 0; }
-    .container .posts > li:nth-child(4n) {
         margin-right: 0; }
     .container .posts > li:nth-child(4n+1) {
         clear: left; } }
