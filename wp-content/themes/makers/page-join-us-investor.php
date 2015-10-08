@@ -72,19 +72,155 @@ get_header(); ?>
             </div>
         </div>
 
-        <div class="container">
-            <article>
-                <section class="content">
-                    <h4>Be smart</h4>
-
-                    <h2>Invest in the future of technology</h2>
-
-                    <p>The digitalization is revolutionizing every corner of the world, uprooting old business models,
-                        unbundling incumbents and generating vast amounts of valuable data. MAKERS is at the forefront
-                        of these changes and optimally positioned to fulfil the market potential.</p>
-                </section>
+        <section class="content">
+            <article class="article">
+                <header>
+                    <h1>Invest in the future of technology</h1>
+                    <span class="subline">We build highly profitable companies at lowest costs.</span>
+                </header>
+                <p class="intro">A startup's success is not only based on a great. market-ready product. but also on a complimentary and experienced team. Therefore we are always looking for entrepreneurial talents to join the MAKERS' team. These are our requirements a potential co-founder should meet:</p>
             </article>
-        </div>
+        </section><!-- /section.content -->
+
+        <section class="quote">
+            <div class="quote-media" style="background-image: url(<?php echo esc_url(get_template_directory_uri()); ?>/images/founder-2.jpg);">
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/founder-2.jpg" alt="Founder 2">
+            </div>
+            <div class="quote-content">
+                <blockquote>
+                    <p>MAKERS paved our way to success by actively supporting us to become Germany's robo-advisor No. 1 within less than one year.</p>
+                    <cite>Robert Henker, <span>CEO/Founder</span></cite>
+                </blockquote>
+            </div>
+        </section><!-- /section.quote -->
+
+        <section class="content">
+            <article class="article">
+                <header>
+                    <h1>Invest in the future of technology</h1>
+                    <span class="subline">We build highly profitable companies at lowest costs.</span>
+                </header>
+                <p class="intro">A startup's success is not only based on a great. market-ready product. but also on a complimentary and experienced team. Therefore we are always looking for entrepreneurial talents to join the MAKERS' team. These are our requirements a potential co-founder should meet:</p>
+            </article>
+        </section><!-- /section.content -->
+
+        <section class="ratings">
+            <div class="rating">
+                <div class="rating-logo">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/logo-1.png" alt="Logo 1">
+                </div>
+                <div class="rating-facts">
+                    <span class="rating-rank">1st</span>
+                    <span class="rating-name">Rising Star 2014</span>
+                    <span class="rating-meta">Run@Shop</span>
+                </div>
+            </div>
+            <div class="rating">
+                <div class="rating-logo">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/logo-2.png" alt="Logo 2">
+                </div>
+                <div class="rating-facts">
+                    <span class="rating-rank">1st</span>
+                    <span class="rating-name">Rising Star 2014</span>
+                    <span class="rating-meta">Run@Shop</span>
+                </div>
+            </div>
+            <div class="rating">
+                <div class="rating-logo">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/logo-3.png" alt="Logo 3">
+                </div>
+                <div class="rating-facts">
+                    <span class="rating-rank">1st</span>
+                    <span class="rating-name">Rising Star 2014</span>
+                    <span class="rating-meta">Run@Shop</span>
+                </div>
+            </div>
+        </section><!-- /section.ratings -->
+
+        <section class="content">
+            <article class="article">
+                <header>
+                    <h1>Our track record</h1>
+                    <span class="subline">Some facts and figures that prove our success.</span>
+                </header>
+                <p class="intro">Did you know startup's success is not only based on a great. market-ready product. but also on a complimentary and experienced team. Therefore we are always looking for entrepreneurial talents to join the MAKERS' team. These are our requirements a potential co-founder should meet:</p>
+            </article>
+        </section><!-- /section.content -->
+
+        <section class="facts">
+            <div class="facts-inner">
+                <div class="facts-box">
+                    <div class="facts-content">
+                        <h2 class="facts-title">Current cumulated revenue of all portfolio companies:</h2>
+                        <span class="facts-num">$50<span class="facts-unit">M</span></span>
+                        <span class="facts-desc">Wordwide</span>
+                    </div>
+                </div>
+                <div class="facts-box">
+                    <div class="facts-content">
+                        <h2 class="facts-title">Geographical activities of our portfolio companies:</h2>
+                        <ul class="facts-items">
+                            <li class="facts-item">
+                                <span class="facts-num">75<span class="facts-unit">%</span></span>
+                                <span class="facts-desc">Wordwide</span>
+                            </li>
+                            <li class="facts-item">
+                                <span class="facts-num">12,5<span class="facts-unit">%</span></span>
+                                <span class="facts-desc">Europe</span>
+                            </li>
+                            <li class="facts-item">
+                                <span class="facts-num">12,5<span class="facts-unit">%</span></span>
+                                <span class="facts-desc">Germany</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /section.facts -->
+
+        <section class="portfolio">
+            <div class="content">
+                <h2 class="portfolio-headline">Facts and figures for each of our portfolio companies:</h2>
+                <ul class="portfolio-items">
+                    <li class="portfolio-item">
+                        <div class="portfolio-inner">
+                            <a href="#"><img src="index-Dateien/logo.jpg" alt="Logo"></a>
+                            <span>Influencers from 60+ in their network</span>
+                        </div>
+                    </li>
+                    <li class="portfolio-item">
+                        <div class="portfolio-inner">
+                            <a href="#"><img src="index-Dateien/logo2.jpg" alt="Logo 2"></a>
+                            <span>Investment products available via Cashboard: More than 7,000</span>
+                        </div>
+                    </li>
+                    <li class="portfolio-item">
+                        <div class="portfolio-inner">
+                            <a href="#"><img src="index-Dateien/logo3.jpg" alt="Logo 3"></a>
+                            <span>340 advertisers and more than 10 million installs</span>
+                        </div>
+                    </li>
+                    <li class="portfolio-item">
+                        <div class="portfolio-inner">
+                            <a href="#"><img src="index-Dateien/logo4.jpg" alt="Logo 4"></a>
+                            <span>Investment products available via Cashboard: More than 7,000</span>
+                        </div>
+                    </li>
+                    <li class="portfolio-item">
+                        <div class="portfolio-inner">
+                            <a href="#"><img src="index-Dateien/logo5.jpg" alt="Logo 5"></a>
+                            <span>340 advertisers and more than 10 million installs</span>
+                        </div>
+                    </li>
+                    <li class="portfolio-item">
+                        <div class="portfolio-inner">
+                            <a href="#"><img src="index-Dateien/logo6.jpg" alt="Logo 6"></a>
+                            <span>Influencers from 60+ in their network</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section><!-- /section.portfolio -->
 
         <div class="bottom-quote">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/bottom-quote-freidrich-neumann.jpg" alt="">
@@ -92,53 +228,18 @@ get_header(); ?>
             <div class="bottom-quote-text">
                 <div class="container">
                     <h2>
-                        <span>„“</span><br/>
-                        We offer you the opportunity to<br/>invest not only in a single startup,<br/>but in whole
+                        <span>„“</span><br>
+                        We offer you the opportunity to<br>invest not only in a single startup,<br>but in whole
                         ecosystem.
                     </h2>
 
                     <p>
-                        Freidrich Neumann<br/>
+                        Freidrich Neumann<br>
                         Founder Makers
                     </p>
                 </div>
             </div>
             <h3>Interested in the MAKERS Group? Freidrich Neumann is your contact person.</h3>
-        </div>
-
-        <div class="container">
-            <article>
-                <header>
-                    <h2>What we have built so far</h2>
-
-                    <p>We at Makers most often invest in web/mobile applications with clear monetization models. These
-                        are some of the companies we have built so far.</p>
-                </header>
-                <section class="content">
-                    <ul class="company-type">
-                        <li class="active" data-filter="All" ><a href="javascript: void(0)" title="All">All</a></li>
-                        <?php foreach ($categoriesAll as $filter=>$title): ?>
-                            <li class="" data-filter="<?php echo htmlspecialchars($filter);?>">
-                                <a href="javascript: void(0)" title="<?php echo htmlspecialchars(str_replace('-', ' ', $filter));?>"><?php echo htmlspecialchars(str_replace('-', ' ', $filter));?></a>
-                            </li>
-                        <?php endforeach; ?>
-                    </ul>
-                    <ul class="companies-grid list-3">
-                        <?php foreach ($members as $m): ?>
-                            <li class="All <?php echo $m['type'];?>">
-                                <div class="table">
-                                    <div class="table-cell">
-                                        <a href="<?php echo $m['website'];?>" title="<?php echo $m['name'];?>">
-                                            <img width="261" height="191" src="<?php echo $m['image']; ?>" class="attachment-company-logo wp-post-image" alt="<?php echo $m['name'];?>" />
-                                            <!--                <p>--><?php //echo $m['name'];?><!--</p>-->
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                        <?php endforeach; ?>
-                    </ul>
-                </section>
-            </article>
         </div>
 
     </main>
