@@ -18,7 +18,7 @@ $firstCategory = null;
 foreach ($posts as $post) {
     $custom = get_post_custom($post->ID);
     $featuredImageId = get_post_thumbnail_id($post->ID);
-    $image = wp_get_attachment_image_src($featuredImageId, array(261, 191));
+    $image = wp_get_attachment_image_src($featuredImageId, array(130, 95));
 
     $members[$post->ID] = array(
         'id' => $post->ID,
