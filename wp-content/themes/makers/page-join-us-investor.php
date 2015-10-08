@@ -7,7 +7,7 @@
 global $post;
 
 $members = array();
-$customList = array('website', 'type');
+$customList = array('website', 'type', 'description');
 
 $args = array('numberposts' => 100, 'category_name' => 'companies');
 $posts = get_posts($args);
@@ -181,43 +181,25 @@ get_header(); ?>
         <section class="portfolio">
             <div class="content">
                 <h2 class="portfolio-headline">Facts and figures for each of our portfolio companies:</h2>
+                <ul class="company-type">
+                    <li class="active" data-filter="All" ><a href="javascript: void(0)" title="All">All</a></li>
+                    <?php foreach ($categoriesAll as $filter=>$title): ?>
+                        <li class="" data-filter="<?php echo htmlspecialchars($filter);?>">
+                            <a href="javascript: void(0)" title="<?php echo htmlspecialchars(str_replace('-', ' ', $filter));?>"><?php echo htmlspecialchars(str_replace('-', ' ', $filter));?></a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
                 <ul class="portfolio-items">
-                    <li class="portfolio-item">
+                    <?php foreach ($members as $m): ?>
+                    <li class="portfolio-item All <?php echo $m['type'];?>">
                         <div class="portfolio-inner">
-                            <a href="#"><img src="index-Dateien/logo.jpg" alt="Logo"></a>
-                            <span>Influencers from 60+ in their network</span>
+                        <a href="<?php echo $m['website'];?>" title="<?php echo $m['name'];?>" target="_blank">
+                            <img src="<?php echo $m['image']; ?>" class="attachment-company-logo wp-post-image" alt="<?php echo $m['name'];?>" />
+                        </a>
+                        <span><?php echo $m['description']; ?></span>
                         </div>
                     </li>
-                    <li class="portfolio-item">
-                        <div class="portfolio-inner">
-                            <a href="#"><img src="index-Dateien/logo2.jpg" alt="Logo 2"></a>
-                            <span>Investment products available via Cashboard: More than 7,000</span>
-                        </div>
-                    </li>
-                    <li class="portfolio-item">
-                        <div class="portfolio-inner">
-                            <a href="#"><img src="index-Dateien/logo3.jpg" alt="Logo 3"></a>
-                            <span>340 advertisers and more than 10 million installs</span>
-                        </div>
-                    </li>
-                    <li class="portfolio-item">
-                        <div class="portfolio-inner">
-                            <a href="#"><img src="index-Dateien/logo4.jpg" alt="Logo 4"></a>
-                            <span>Investment products available via Cashboard: More than 7,000</span>
-                        </div>
-                    </li>
-                    <li class="portfolio-item">
-                        <div class="portfolio-inner">
-                            <a href="#"><img src="index-Dateien/logo5.jpg" alt="Logo 5"></a>
-                            <span>340 advertisers and more than 10 million installs</span>
-                        </div>
-                    </li>
-                    <li class="portfolio-item">
-                        <div class="portfolio-inner">
-                            <a href="#"><img src="index-Dateien/logo6.jpg" alt="Logo 6"></a>
-                            <span>Influencers from 60+ in their network</span>
-                        </div>
-                    </li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
         </section><!-- /section.portfolio -->
@@ -249,11 +231,9 @@ get_header(); ?>
                 var el = this;
                 $('ul.company-type > li').removeClass('active');
                 $(el).addClass('active');
-                $('ul.companies-grid > li').addClass('hidden');
+                $('ul.portfolio-items > li').addClass('hidden');
                 var filter = $(el).attr('data-filter');
-                console.log(filter);
-                console.log('ul.companies-grid li.' + filter);
-                $('ul.companies-grid li.' + filter).removeClass('hidden');
+                $('ul.portfolio-items li.' + filter).removeClass('hidden');
             });
         });
     </script>

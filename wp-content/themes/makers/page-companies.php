@@ -44,7 +44,6 @@ foreach ($posts as $post) {
   }
 }
 
-
 get_header(); ?>
 <main>
 
@@ -106,8 +105,6 @@ get_header(); ?>
         $(el).addClass('active');
         $('ul.companies-grid > li').addClass('hidden');
         var filter = $(el).attr('data-filter');
-        console.log(filter);
-        console.log('ul.companies-grid li.' + filter);
         $('ul.companies-grid li.' + filter).removeClass('hidden');
       });
     });

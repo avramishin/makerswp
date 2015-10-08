@@ -138,8 +138,6 @@ get_header(); ?>
             $(el).addClass('active');
             $('ul.members > li').addClass('hidden');
             var filter = $(el).attr('data-filter');
-            console.log(filter);
-            console.log('ul.members li.' + filter);
             $('ul.members li.' + filter).removeClass('hidden');
         });
     });
