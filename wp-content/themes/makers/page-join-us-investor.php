@@ -18,7 +18,7 @@ $firstCategory = null;
 foreach ($posts as $post) {
     $custom = get_post_custom($post->ID);
     $featuredImageId = get_post_thumbnail_id($post->ID);
-    $image = wp_get_attachment_image_src($featuredImageId, array(130, 95));
+    $image = wp_get_attachment_image_src($featuredImageId, array(261, 191));
 
     $members[$post->ID] = array(
         'id' => $post->ID,
@@ -194,7 +194,7 @@ get_header(); ?>
                     <li class="portfolio-item All <?php echo $m['type'];?>">
                         <div class="portfolio-inner">
                         <a href="<?php echo $m['website'];?>" title="<?php echo $m['name'];?>" target="_blank">
-                            <img width="130" height="95" src="<?php echo $m['image']; ?>" class="attachment-company-logo wp-post-image" alt="<?php echo $m['name'];?>" />
+                            <img src="<?php echo $m['image']; ?>" class="attachment-company-logo wp-post-image" alt="<?php echo $m['name'];?>" />
                         </a>
                         <span><?php echo $m['description']; ?></span>
                         </div>
