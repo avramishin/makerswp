@@ -189,14 +189,16 @@ get_header(); ?>
                         </li>
                     <?php endforeach; ?>
                 </ul>
-                <ul class="portfolio-items">
+                <ul class="companies-grid list-3">
                     <?php foreach ($members as $m): ?>
-                    <li class="portfolio-item All <?php echo $m['type'];?>">
-                        <div class="portfolio-inner">
-                        <a href="<?php echo $m['website'];?>" title="<?php echo $m['name'];?>" target="_blank">
-                            <img src="<?php echo $m['image']; ?>" class="attachment-company-logo wp-post-image" alt="<?php echo $m['name'];?>" />
-                        </a>
-                        <span><?php echo $m['description']; ?></span>
+                    <li class="All <?php echo $m['type'];?>">
+                        <div class="table">
+                            <div class="table-cell">
+                                <a href="<?php echo $m['website'];?>" title="<?php echo $m['name'];?>" target="_blank">
+                                    <img src="<?php echo $m['image']; ?>" class="attachment-company-logo wp-post-image" alt="<?php echo $m['name'];?>" />
+                                </a>
+                                <p><?php echo $m['description']; ?></p>
+                            </div>
                         </div>
                     </li>
                     <?php endforeach; ?>

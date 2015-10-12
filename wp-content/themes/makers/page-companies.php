@@ -69,7 +69,7 @@ get_header(); ?>
         <h2>What we have built so far</h2>
         <p>We at Makers most often invest in web/mobile applications with clear monetization models. These are some of the companies we have built so far.</p>
       </header>
-      <section class="content">
+      <section class="page-companies">
         <ul class="company-type">
           <li class="active" data-filter="All" ><a href="javascript: void(0)" title="All">All</a></li>
           <?php foreach ($categoriesAll as $filter=>$title): ?>

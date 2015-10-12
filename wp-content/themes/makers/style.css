@@ -1542,6 +1542,9 @@ video {
     background-color: #e64d49;
     color: #fff; }
 
+.page-companies {
+    padding-top: 2.5rem;
+}
 .companies {
     margin: 0;
     padding: 3.125rem 0; }
