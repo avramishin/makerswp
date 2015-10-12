@@ -195,9 +195,9 @@ get_header(); ?>
                         <div class="table">
                             <div class="table-cell">
                                 <a href="<?php echo $m['website'];?>" title="<?php echo $m['name'];?>" target="_blank">
-                                    <img src="<?php echo $m['image']; ?>" class="attachment-company-logo wp-post-image" alt="<?php echo $m['name'];?>" />
+                                    <img width="261" height="191" src="<?php echo $m['image']; ?>" class="attachment-company-logo wp-post-image" alt="<?php echo $m['name'];?>" />
+                                    <p><?php echo $m['description']; ?></p>
                                 </a>
-                                <p><?php echo $m['description']; ?></p>
                             </div>
                         </div>
                     </li>

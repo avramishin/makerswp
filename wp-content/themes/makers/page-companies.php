@@ -73,9 +73,9 @@ get_header(); ?>
         <ul class="company-type">
           <li class="active" data-filter="All" ><a href="javascript: void(0)" title="All">All</a></li>
           <?php foreach ($categoriesAll as $filter=>$title): ?>
-          <li class="" data-filter="<?php echo htmlspecialchars($filter);?>">
-          <a href="javascript: void(0)" title="<?php echo htmlspecialchars(str_replace('-', ' ', $filter));?>"><?php echo htmlspecialchars(str_replace('-', ' ', $filter));?></a>
-          </li>
+            <li class="" data-filter="<?php echo htmlspecialchars($filter);?>">
+              <a href="javascript: void(0)" title="<?php echo htmlspecialchars(str_replace('-', ' ', $filter));?>"><?php echo htmlspecialchars(str_replace('-', ' ', $filter));?></a>
+            </li>
           <?php endforeach; ?>
         </ul>
         <ul class="companies-grid list-3">
@@ -84,8 +84,8 @@ get_header(); ?>
             <div class="table">
               <div class="table-cell">
                 <a href="<?php echo $m['website'];?>" title="<?php echo $m['name'];?>" target="_blank">
-                <img width="261" height="191" src="<?php echo $m['image']; ?>" class="attachment-company-logo wp-post-image" alt="<?php echo $m['name'];?>" />
-<!--                <p>--><?php //echo $m['name'];?><!--</p>-->
+                  <img width="261" height="191" src="<?php echo $m['image']; ?>" class="attachment-company-logo wp-post-image" alt="<?php echo $m['name'];?>" />
+                  <p><?php echo $m['description']; ?></p>
                 </a>
               </div>
             </div>
