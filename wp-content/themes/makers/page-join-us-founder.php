@@ -44,14 +44,14 @@ get_header(); ?>
             <div class="container">
                 <ul class="">
                     <div class="boxes-row">
-                        <li><div class="boxes-content"><div class="boxes-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-cloud.png" alt="icon-cloud"></div> Entrepreneurial minded people</div></li>
-                        <li><div class="boxes-content"><div class="boxes-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-chemistry.png" alt="icon-chemistry"></div> Out-of-the-box thinkers</div></li>
-                        <li><div class="boxes-content"><div class="boxes-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-thumbsup.png" alt="icon-thumbsup"></div> Hands-on doers</div></li>
+                        <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-cloud.png" alt="icon-cloud"> Entrepreneurial minded people</li>
+                        <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-chemistry.png" alt="icon-chemistry"> Out-of-the-box thinkers</li>
+                        <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-thumbsup.png" alt="icon-thumbsup"> Hands-on doers</li>
                     </div>
                     <div class="boxes-row">
-                        <li><div class="boxes-content"><div class="boxes-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-lightbulb.png" alt="icon-lightbulb"></div> lnspiring leaders</div></li>
-                        <li><div class="boxes-content"><div class="boxes-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-star.png" alt="icon-star"></div> People who never liked making coffee</div></li>
-                        <li><div class="boxes-content"><div class="boxes-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-star.png" alt="icon-star"></div> Pioneers who think big</div></li>
+                        <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-lightbulb.png" alt="icon-lightbulb"> lnspiring leaders</li>
+                        <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-star.png" alt="icon-star"> People who never liked making coffee </li>
+                        <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-star.png" alt="icon-star"> Pioneers who think big </li>
                     </div>
                 </ul>
             </div>
@@ -83,14 +83,14 @@ get_header(); ?>
             <div class="container">
                 <ul class="">
                     <div class="boxes-row">
-                        <li><div class="boxes-content"><div class="boxes-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-cloud.png" alt="icon-cloud"></div> Entrepreneurial minded people</div></li>
-                        <li><div class="boxes-content"><div class="boxes-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-chemistry.png" alt="icon-chemistry"></div> Out-of-the-box thinkers</div></li>
-                        <li><div class="boxes-content"><div class="boxes-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-thumbsup.png" alt="icon-thumbsup"></div> Hands-on doers</div></li>
+                        <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-cloud.png" alt="icon-cloud"> Entrepreneurial minded people</li>
+                        <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-chemistry.png" alt="icon-chemistry"> Out-of-the-box thinkers</li>
+                        <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-thumbsup.png" alt="icon-thumbsup"> Hands-on doers</li>
                     </div>
                     <div class="boxes-row">
-                        <li><div class="boxes-content"><div class="boxes-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-lightbulb.png" alt="icon-lightbulb"></div> lnspiring leaders</div></li>
-                        <li><div class="boxes-content"><div class="boxes-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-star.png" alt="icon-star"></div> People who never liked making coffee</div></li>
-                        <li><div class="boxes-content"><div class="boxes-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-star.png" alt="icon-star"></div> Pioneers who think big</div></li>
+                        <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-lightbulb.png" alt="icon-lightbulb"> lnspiring leaders</li>
+                        <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-star.png" alt="icon-star"> People who never liked making coffee </li>
+                        <li><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-star.png" alt="icon-star"> Pioneers who think big </li>
                     </div>
                 </ul>
             </div>
