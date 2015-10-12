@@ -6,8 +6,7 @@
 get_header(); ?>
 <main>
 
-  <div class="hero">
-    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/hero.jpg" alt="">
+  <div class="hero" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/hero.jpg);">
     <div class="overlay"></div>
     <div class="texture"></div>
     <div class="hero-inner">
@@ -97,7 +96,7 @@ get_header(); ?>
       </section>
     </article>
   </div>
-  
+
   <div class="bottom-quote">
     <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/bottom-quote-founder-group.jpg" alt="">
     <div class="bottom-quote-text">

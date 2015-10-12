@@ -6,8 +6,7 @@
 get_header(); ?>
     <main>
 
-        <div class="hero">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/hero.jpg" alt="">
+        <div class="hero" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/hero.jpg);">
 
             <div class="overlay"></div>
             <div class="texture"></div>
@@ -54,7 +53,7 @@ get_header(); ?>
                 <div class="container right">
                     <h2>
                         <span>„“</span><br/>
-                        Become part of a talented 
+                        Become part of a talented
                         <br>
                         group of Makers.
                     </h2>
