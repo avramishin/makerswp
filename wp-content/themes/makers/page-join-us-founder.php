@@ -31,7 +31,7 @@ get_header(); ?>
         </div>
     </div>
 
-        <section class="content">
+        <section class="container">
             <article class="article">
                 <header>
                     <h1>We are looking for outstanding entrepreneurial talents</h1>
@@ -70,7 +70,7 @@ get_header(); ?>
             </div>
         </section>
 
-        <section class="content">
+        <section class="container">
             <article class="article">
                 <header>
                     <h1>We are looking for outstanding entrepreneurial talents</h1>
