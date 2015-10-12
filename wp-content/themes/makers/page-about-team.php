@@ -82,7 +82,7 @@ get_header(); ?>
                         we're in for the same mission: We challenge the status quo and build products that people want
                         and need.</p>
                 </header>
-                <section class="content">
+                <section class="about-team">
                     <ul class="categories">
                         <?php foreach ($categoriesAll as $filter=>$title): ?>
                         <li class="<?php if ($filter == $firstCategory) echo 'active'?>" data-filter="<?php echo htmlspecialchars($filter)?>">
