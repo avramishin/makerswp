@@ -7,7 +7,7 @@
 global $post;
 
 $members = array();
-$customList = array('website', 'type');
+$customList = array('website', 'type', 'description');
 
 $args = array('numberposts' => 100, 'category_name' => 'companies');
 $posts = get_posts($args);
