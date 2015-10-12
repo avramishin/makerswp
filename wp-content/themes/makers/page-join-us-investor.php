@@ -233,9 +233,9 @@ get_header(); ?>
                 var el = this;
                 $('ul.company-type > li').removeClass('active');
                 $(el).addClass('active');
-                $('ul.portfolio-items > li').addClass('hidden');
+                $('ul.companies-grid > li').addClass('hidden');
                 var filter = $(el).attr('data-filter');
-                $('ul.portfolio-items li.' + filter).removeClass('hidden');
+                $('ul.companies-grid li.' + filter).removeClass('hidden');
             });
         });
     </script>
