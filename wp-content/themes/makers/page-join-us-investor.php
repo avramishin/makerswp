@@ -72,7 +72,7 @@ get_header(); ?>
             </div>
         </div>
 
-        <section class="content">
+        <section class="container">
             <article class="article">
                 <header>
                     <h1>Invest in the future of technology</h1>
@@ -94,7 +94,7 @@ get_header(); ?>
             </div>
         </section><!-- /section.quote -->
 
-        <section class="content">
+        <section class="container">
             <article class="article">
                 <header>
                     <h1>Invest in the future of technology</h1>
@@ -137,7 +137,7 @@ get_header(); ?>
             </div>
         </section><!-- /section.ratings -->
 
-        <section class="content">
+        <section class="container">
             <article class="article">
                 <header>
                     <h1>Our track record</h1>
@@ -179,7 +179,7 @@ get_header(); ?>
         </section><!-- /section.facts -->
 
         <section class="portfolio">
-            <div class="content">
+            <div class="container">
                 <h2 class="portfolio-headline">Facts and figures for each of our portfolio companies:</h2>
                 <ul class="company-type">
                     <li class="active" data-filter="All" ><a href="javascript: void(0)" title="All">All</a></li>
