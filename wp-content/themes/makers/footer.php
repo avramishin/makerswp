@@ -29,16 +29,6 @@
             <li><a href="<?php bloginfo('url') ?>/makers/">Makers</a></li>
         </ul>
     </nav>
-    <div class="address">
-        <h5>MAKERS - Vida Ventures GmbH</h5>
-
-        <p>Invalidenstraße 11, 10115 Berlin, Germany</p>
-
-        <p>
-            <a href="mailto:contact@makers.do" title="Contact us">contact@makers.do</a>,
-            +49 30 577 039 44
-        </p>
-    </div>
 </footer>
 
 <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/main.js"></script>

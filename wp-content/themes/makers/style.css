@@ -364,7 +364,7 @@ video {
         padding: 0; } }
 .header .navigation .main-navigation.show {
     display: block; }
-.header .navigation .main-navigation .active a {
+.header .navigation .main-navigation a.active {
     background-color: #e64d49; }
 .header .navigation .main-navigation .join-us a {
     background: url("images/icons/icon-join-us.png") no-repeat right 10px center;
@@ -374,7 +374,7 @@ video {
     .header .navigation .main-navigation .join-us a {
         background-size: 26px 26px; } }
 .header .navigation .main-navigation .join-us a:hover {
-    background-color: #e64d49; }
+    border-bottom: 1px solid #e64d49; }
 .header .social-container {
     display: none;
     float: right;
