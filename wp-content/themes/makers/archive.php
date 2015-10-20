@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Blog Archive
+ * Template Name: Blog Archive Old
  * @package WordPress
  */
 

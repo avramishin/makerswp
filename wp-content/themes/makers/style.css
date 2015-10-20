@@ -1954,3 +1954,81 @@ footer .address a:hover {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* Categories */
+
+.blog-categories {
+    margin: 0;
+    padding: 0; }
+.blog-categories::after {
+    clear: both;
+    content: "";
+    display: table; }
+.blog-categories li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin: 0.3125rem 0;
+    padding: 0;
+    text-align: center; }
+.blog-categories li:last-child {
+    margin-right: 0; }
+.blog-categories li:nth-child(2n) {
+    margin-right: 0; }
+.blog-categories li:nth-child(2n+1) {
+    clear: left; }
+@media screen and (min-width: 40rem) {
+    .blog-categories li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%; }
+    .blog-categories li:nth-child(2n) {
+        margin-right: 2.35765%; }
+    .blog-categories li:nth-child(2n+1) {
+        clear: none; }
+    .blog-categories li:last-child {
+        margin-right: 0; }
+    .blog-categories li:nth-child(4n) {
+        margin-right: 0; }
+    .blog-categories li:nth-child(4n+1) {
+        clear: left; } }
+@media screen and (min-width: 53.75rem) {
+    .blog-categories li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 14.70196%; }
+    .blog-categories li:nth-child(4n) {
+        margin-right: 2.35765%; }
+    .blog-categories li:nth-child(4n+1) {
+        clear: none; }
+    .blog-categories li:last-child {
+        margin-right: 0; }
+    .blog-categories li:nth-child(6n) {
+        margin-right: 0; }
+    .blog-categories li:nth-child(6n+1) {
+        clear: left; } }
+.blog-categories li.active a {
+    background: #e64d49;
+    color: #fff; }
+.blog-categories li a {
+    display: inline-block;
+    padding: 1.25rem 0;
+    transition: all .4s ease-in-out;
+    width: 100%; }
+.blog-categories li a:hover {
+    background-color: #e64d49;
+    color: #fff; }
+
+.section-categories {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.section-categories .blog-categories li.active a, .section-categories .blog-categories li.current-cat a {
+    background: #e64d49;
+    color: #fff;
+}

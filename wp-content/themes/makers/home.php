@@ -31,82 +31,68 @@ get_header(); ?>
                 <header class="center">
                     <h2>Blog</h2>
 
-                    <div class="search">
-                        <form action="<?php bloginfo('url') ?>/blog/"" method="get">
-                        <label for="search">Search</label>
-                        <input type="text" id="search" name="s" placeholder="Enter what you are loooking for..."
-                               value="<?php echo htmlspecialchars(get_query_var('s'))?>"/>
-                        <input type="submit" value="Search">
-                        <input type="hidden" value="post" name="post_type" id="post_type"/>
-                        </form>
-                    </div>
                 </header>
-                <section class="content">
-                    <ul class="categories">
+                <section class="section-categories">
+                    <ul class="blog-categories">
+                        <li class="cat-item current-cat" data-category="all">
+                            <a class="name" href="javascript: void(0)">All</a>
+                        </li>
                         <?php
-                        $args = array(
-                            'show_option_all'    => __( 'All' ),
-                            'orderby'            => 'name',
-                            'order'              => 'ASC',
-                            'style'              => 'list',
-                            'show_count'         => 0,
-                            'hide_empty'         => 1,
-                            'use_desc_for_title' => 1,
-                            'child_of'           => 0,
-                            'feed'               => '',
-                            'feed_type'          => '',
-                            'feed_image'         => '',
-                            'exclude'            => '3,4',
-                            'exclude_tree'       => '',
-                            'include'            => '',
-                            'hierarchical'       => 1,
-                            'title_li'           => null,
-                            'show_option_none'   => __( '' ),
-                            'number'             => null,
-                            'echo'               => 1,
-                            'depth'              => 0,
-                            'current_category'   => 0,
-                            'pad_counts'         => 0,
-                            'taxonomy'           => 'category',
-                            'walker'             => null
-                        );
-                        wp_list_categories( $args );
+                        $cat = get_query_var('cat');
+
+                        foreach(get_categories('parent=0&exclude=3,4') as $category) {
+                            echo '<li class="cat-item" data-category="' . $category->slug . '"><a class="name" href="javascript: void(0)">' . htmlspecialchars($category->name).'</a></li>';
+                        }
                         ?>
-                        <!--                        <li class="current-cat"><a href="#" title="">Search</a></li>-->
-                        <!--                        <li><a href="#" title="">People</a></li>-->
-                    </ul>
-                    <ul class="posts">
-                        <?php
-                            global $query_string;
-                            query_posts($query_string . '&cat=-3,-4');
-                        ?>
-
-                        <?php if (have_posts()): ?>
-
-                            <?php while (have_posts()): the_post(); ?>
-
-                                <li id="post-<?php get_the_ID(); ?>" <?php post_class(); ?>>
-
-                                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array(200,220) ); ?></a>
-
-                                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-
-                                    <?php the_excerpt(__('...','example')); ?>
-
-                                </li><!-- /#post-<?php get_the_ID(); ?> -->
-                            <?php endwhile; ?>
-                        <?php endif; ?>
                     </ul>
                 </section>
-                <div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
-                <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
+                <div class="ajax">
+                    <section class="content">
+                        <ul class="posts">
+                            <?php
+                                global $query_string;
+                                query_posts($query_string . '&cat=-3,-4');
+                            ?>
+
+                            <?php if (have_posts()): ?>
+
+                                <?php while (have_posts()): the_post(); ?>
+
+                                    <li id="post-<?php get_the_ID(); ?>" <?php post_class(); ?>>
+
+                                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array(200,220) ); ?></a>
+
+                                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+
+                                        <?php the_excerpt(__('...','example')); ?>
+
+                                    </li><!-- /#post-<?php get_the_ID(); ?> -->
+                                <?php endwhile; ?>
+                            <?php endif; ?>
+                        </ul>
+                    </section>
+                </div>
+<!--                <div class="nav-previous alignleft">--><?php //next_posts_link( 'Older posts' ); ?><!--</div>-->
+<!--                <div class="nav-next alignright">--><?php //previous_posts_link( 'Newer posts' ); ?><!--</div>-->
             </article>
         </div>
 
     </main>
 <script>
     $(function() {
-        $('li.cat-item-all').addClass('current-cat');
+        $('ul.blog-categories > li').click(function() {
+            var el = this;
+            $('ul.blog-categories > li').removeClass('current-cat');
+            $(el).addClass('current-cat');
+            var slug = $(el).attr('data-category');
+            if (slug == 'all') {
+                $('ul.posts > li').removeClass('hidden');
+                return;
+            }
+            var cls = 'category-' + slug;
+            $('ul.posts > li').addClass('hidden');
+            $('ul.posts > li.' + cls).removeClass('hidden');
+        });
     });
 </script>
 <?php get_footer(); ?>
