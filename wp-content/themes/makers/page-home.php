@@ -6,8 +6,7 @@
 
 get_header(); ?>
 <main>
-    <div class="hero">
-        <img width="1440" height="750" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/hero-home.jpg" alt="Makers">
+    <div class="hero" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/hero-home.jpg);">
         <div class="overlay"></div>
         <div class="texture"></div>
         <div class="hero-inner">

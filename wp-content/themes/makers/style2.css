@@ -115,7 +115,17 @@
     margin: 0 auto;
     max-width: 45px;
     max-height: 45px;
-    margin: 1.25rem auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.boxes-icon {
+    height: 45px;
+    line-height: 45px;
+    margin: 0 auto 1.25rem auto;
 }
 
 @media screen and (min-width: 40rem) {
@@ -130,6 +140,7 @@
         width: 33.333333%;
         float: left;
         height: 240px;
+        padding-top: 4rem;
     }
 
     .boxes li::before,
