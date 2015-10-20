@@ -14,15 +14,18 @@ if (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|
 get_header(); ?>
 <main>
 
-    <div class="hero"
-         style="background-image: url(<?php echo esc_url(get_template_directory_uri()); ?>/images/hero.jpg);">
-        <div class="overlay"></div>
-        <div class="texture"></div>
-        <div class="hero-inner">
-            <h2>Our community is our strength.</h2>
+    <div class="container intro">
+        <article>
+            <section class="content">
+                <h4>Join us</h4>
 
-            <p>Makers innovates through collaboration and hard work.</p>
-        </div>
+                <h2>What we are offering</h2>
+
+                <p>We create heterogeneous founding teams, connect you to a network of angel &amp; seed investors, build
+                    a complete prototype with market traction, enable coaching &amp; guidance by experienced experts and
+                    offer a salary plus a major equity stake.</p>
+            </section>
+        </article>
     </div>
 
     <div class="sub-navigation">
@@ -36,20 +39,6 @@ get_header(); ?>
             </nav>
             <?php include __DIR__ . "/common/sub-nav-newsletter.php"; ?>
         </div>
-    </div>
-
-    <div class="container">
-        <article>
-            <section class="content">
-                <h4>Join us</h4>
-
-                <h2>What we are offering</h2>
-
-                <p>We create heterogeneous founding teams, connect you to a network of angel &amp; seed investors, build
-                    a complete prototype with market traction, enable coaching &amp; guidance by experienced experts and
-                    offer a salary plus a major equity stake.</p>
-            </section>
-        </article>
     </div>
 
     <div class="grid">

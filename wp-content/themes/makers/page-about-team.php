@@ -48,16 +48,15 @@ foreach ($posts as $post) {
 get_header(); ?>
     <main>
 
-        <div class="hero" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/hero.jpg);">
-
-            <div class="overlay"></div>
-            <div class="texture"></div>
-            <div class="hero-inner">
-                <h2>Our community is our strength.</h2>
-
-                <p>Makers innovates through collaboration and hard work.</p>
-            </div>
-        </div>
+    <div class="container intro">
+        <article>
+          <section class="content">
+            <h4>Mission</h4>
+            <h2>Building next generation tech companies</h2>
+            <p>Makers strives to be different. We at Makers strongly believe that innovation doesn’t happen by chance. Disruptive products and services are always designed by outstanding teams and founders don’t hesitate to challenge the status quo. Our vision is to provide a platform for entrepreneurs to think ahead and develop products that create true value.</p>
+          </section>
+        </article>
+      </div>
 
         <div class="sub-navigation">
             <div class="sub-navigation-inner">

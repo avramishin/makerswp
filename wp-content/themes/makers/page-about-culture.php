@@ -6,29 +6,7 @@
 get_header(); ?>
   <main class="about-culture">
 
-  <div class="hero" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/hero.jpg);">
-    <div class="overlay"></div>
-    <div class="texture"></div>
-    <div class="hero-inner">
-      <h2>Our community is our strength.</h2>
-      <p>Makers innovates through collaboration and hard work.</p>
-    </div>
-  </div>
-
-  <div class="sub-navigation">
-    <div class="sub-navigation-inner">
-      <nav>
-        <ul class="sub-navigation-menu">
-          <li class="active"><a href="<?php bloginfo('url') ?>/about-culture/">Culture</a></li>
-          <li><a href="<?php bloginfo('url') ?>/about-team/">Team</a></li>
-          <li><a href="<?php bloginfo('url') ?>/about-process/">Process</a></li>
-        </ul>
-      </nav>
-        <?php include __DIR__ . "/common/sub-nav-newsletter.php";?>
-    </div>
-  </div>
-
-  <div class="container">
+  <div class="container intro">
     <article>
       <section class="content">
         <h2 style="text-align: center;">7 principles that makes you a Maker</h2>
@@ -64,6 +42,19 @@ get_header(); ?>
         </ul>
       </section>
     </article>
+  </div>
+
+  <div class="sub-navigation">
+    <div class="sub-navigation-inner">
+      <nav>
+        <ul class="sub-navigation-menu">
+          <li class="active"><a href="<?php bloginfo('url') ?>/about-culture/">Culture</a></li>
+          <li><a href="<?php bloginfo('url') ?>/about-team/">Team</a></li>
+          <li><a href="<?php bloginfo('url') ?>/about-process/">Process</a></li>
+        </ul>
+      </nav>
+        <?php include __DIR__ . "/common/sub-nav-newsletter.php";?>
+    </div>
   </div>
 
   <div class="grid">
