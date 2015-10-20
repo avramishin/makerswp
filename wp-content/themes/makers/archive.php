@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Blog Archive Old
+ * Template Name: Blog Archive
  * @package WordPress
  */
 
@@ -31,7 +31,7 @@ get_header(); ?>
                 <header class="center">
                     <h2>Blog</h2>
 
-                    <div class="search">
+                    <!--<div class="search">
                         <form action="<?php bloginfo('url') ?>/blog/"" method="get">
                         <label for="search">Search</label>
                         <input type="text" id="search" name="s" placeholder="Enter what you are loooking for..."
@@ -39,7 +39,7 @@ get_header(); ?>
                         <input type="submit" value="Search">
                         <input type="hidden" value="post" name="post_type" id="post_type"/>
                         </form>
-                    </div>
+                    </div>-->
                 </header>
                 <section class="content">
                     <ul class="categories">

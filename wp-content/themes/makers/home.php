@@ -30,7 +30,6 @@ get_header(); ?>
             <article>
                 <header class="center">
                     <h2>Blog</h2>
-
                 </header>
                 <section class="section-categories">
                     <ul class="blog-categories">

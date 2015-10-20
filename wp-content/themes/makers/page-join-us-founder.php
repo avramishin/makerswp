@@ -6,15 +6,14 @@
 get_header(); ?>
     <main>
 
-    <div class="hero" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/hero.jpg);">
-
-        <div class="overlay"></div>
-        <div class="texture"></div>
-        <div class="hero-inner">
-            <h2>Our community is our strength.</h2>
-
-            <p>Makers innovates through collaboration and hard work.</p>
-        </div>
+    <div class="container intro">
+        <article>
+          <section class="content">
+            <h4>Mission</h4>
+            <h2>We are looking for outstanding entrepreneurial talents</h2>
+            <p>A startup's success is not only based on a great. market-ready product. but also on a complimentary and experienced team. Therefore we are always looking for entrepreneurial talents to join the MAKERS' team. These are our requirements a potential co-founder should meet:</p>
+          </section>
+        </article>
     </div>
 
     <div class="sub-navigation">
@@ -29,16 +28,6 @@ get_header(); ?>
             <?php include __DIR__ . "/common/sub-nav-newsletter.php";?>
         </div>
     </div>
-
-        <section class="container">
-            <article class="article">
-                <header>
-                    <h1>We are looking for outstanding entrepreneurial talents</h1>
-                    <p class="subline">That share our vision to build next generation tech companies.</p>
-                </header>
-                <p class="intro">A startup's success is not only based on a great. market-ready product. but also on a complimentary and experienced team. Therefore we are always looking for entrepreneurial talents to join the MAKERS' team. These are our requirements a potential co-founder should meet:</p>
-            </article>
-        </section>
 
         <section class="boxes">
             <div class="container">

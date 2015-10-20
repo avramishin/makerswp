@@ -227,11 +227,11 @@ video {
     top: 0;
     transition: background-color .4s ease-in-out;
     width: 100%;
-    z-index: 9999; }
+    z-index: 9999;
+    background-color: #3E3E3E; }
 @media screen and (min-width: 40rem) {
     .header {
-        padding: 0 0.625rem;
-        top: 0.9375rem; } }
+        padding: 0 0.625rem; } }
 .header.fixed {
     background-color: #262626;
     box-shadow: 0 3px 8px -4px rgba(0, 0, 0, 0.8);
@@ -364,7 +364,7 @@ video {
         padding: 0; } }
 .header .navigation .main-navigation.show {
     display: block; }
-.header .navigation .main-navigation .active a {
+.header .navigation .main-navigation a.active {
     background-color: #e64d49; }
 .header .navigation .main-navigation .join-us a {
     background: url("images/icons/icon-join-us.png") no-repeat right 10px center;
@@ -374,7 +374,7 @@ video {
     .header .navigation .main-navigation .join-us a {
         background-size: 26px 26px; } }
 .header .navigation .main-navigation .join-us a:hover {
-    background-color: #e64d49; }
+    border-bottom: 1px solid #e64d49; }
 .header .social-container {
     display: none;
     float: right;
@@ -1928,6 +1928,12 @@ footer .address a {
 footer .address a:hover {
     color: #fff;
 }
+
+/********* About -> Intro *********/
+.intro {
+    margin-top: 60px;
+}
+
 
 /********* EXTRA *********/
 
