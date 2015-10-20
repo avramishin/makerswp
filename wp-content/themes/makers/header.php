@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>
       Makers - We like to build startups    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="apple-touch-icon" href="http://www.makers.do/apple-touch-icon.png">
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/vendor/jquery-2.1.4.min.js"></script>
