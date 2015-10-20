@@ -127,7 +127,7 @@ get_header(); ?>
             center: mapCenter,
             zoom: 13,
             scrollwheel: false,
-            draggable: true,
+            draggable: false,
             disableDefaultUI: true,
             mapTypeId: google.maps.MapTypeId.ROADMAP
           },
