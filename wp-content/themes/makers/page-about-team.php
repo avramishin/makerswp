@@ -73,13 +73,13 @@ get_header(); ?>
 
         <div class="container">
             <article>
-                <header>
+                <!--<header>
                     <h2>Meet the Makers</h2>
 
                     <p>Our team consists of professionals with a wide range of expertise and entrepreneurial minds. And
                         we're in for the same mission: We challenge the status quo and build products that people want
                         and need.</p>
-                </header>
+                </header>-->
                 <section class="about-team">
 <!--                    <ul class="categories">-->
 <!--                        --><?php //foreach ($categoriesAll as $filter=>$title): ?>

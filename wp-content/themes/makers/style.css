@@ -960,7 +960,7 @@ video {
     color: #acacac; }
 .container .about-grid {
     margin: 0;
-    padding: 3.125rem 0; }
+    padding-top: 1.25rem; }
 .container .about-grid::after {
     clear: both;
     content: "";
@@ -1549,7 +1549,7 @@ video {
     color: #fff; }
 
 .page-companies {
-    padding-top: 2.5rem;
+    padding-top: 1.25rem;
 }
 .companies {
     margin: 0;
@@ -1807,10 +1807,6 @@ video {
     margin: 0; }
 
 /********* TEAM *********/
-.about-team {
-    padding-top: 2.5rem;
-}
-
 .about-team .list-3 {
     width: 100% !important;
 }
@@ -1937,7 +1933,7 @@ footer .address a:hover {
 
 /********* Principles *********/
 .container .principles .companies-grid li img {
-    max-width: 50px;
+    max-width: 60px;
     max-height: 45px;
 }
 
