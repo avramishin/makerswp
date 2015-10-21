@@ -90,7 +90,8 @@ get_header(); ?>
 <!--                    </ul>-->
                     <ul class="posts members">
                         <?php foreach ($members as $m): ?>
-                            <li class="all <?php echo $m['type']; if (!substr_count($m['type'], $firstCategory)) echo ' hidden' ?>">
+<!--                            <li class="all --><?php //echo $m['type']; if (!substr_count($m['type'], $firstCategory)) echo ' hidden' ?><!--">-->
+                            <li class="all <?php echo $m['type']?>">
                                 <img src="<?php echo $m['image'] ?>" width="524" height="524" alt="">
 
                                 <div class="team-hover">
