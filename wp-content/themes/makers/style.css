@@ -715,8 +715,7 @@ video {
 .container .list-3 li {
     float: left;
     display: block;
-    width: 100%;
-    margin: 1.25rem 0 0; }
+    width: 100%; }
 .container .list-3 li:last-child {
     margin-right: 0; }
 .container .list-3 li:nth-child(2n) {
@@ -858,7 +857,7 @@ video {
     float: left;
     display: block;
     width: 100%;
-    margin-bottom: 1.78933%;
+    margin-bottom: 2.35765%;
     position: relative;
     text-align: center; }
 @media screen and (min-width: 40rem) {
