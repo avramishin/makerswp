@@ -29,23 +29,6 @@ get_header(); ?>
         </div>
     </div>
 
-        <section class="boxes">
-            <div class="container">
-                <ul class="">
-                    <div class="boxes-row">
-                        <li><div class="boxes-content"><div class="boxes-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-cloud.png" alt="icon-cloud"></div> Entrepreneurial minded people</div></li>
-                        <li><div class="boxes-content"><div class="boxes-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-chemistry.png" alt="icon-chemistry"></div> Out-of-the-box thinkers</div></li>
-                        <li><div class="boxes-content"><div class="boxes-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-thumbsup.png" alt="icon-thumbsup"></div> Hands-on doers</div></li>
-                    </div>
-                    <div class="boxes-row">
-                        <li><div class="boxes-content"><div class="boxes-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-lightbulb.png" alt="icon-lightbulb"></div> lnspiring leaders</div></li>
-                        <li><div class="boxes-content"><div class="boxes-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-star.png" alt="icon-star"></div> People who never liked making coffee</div></li>
-                        <li><div class="boxes-content"><div class="boxes-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-star.png" alt="icon-star"></div> Pioneers who think big</div></li>
-                    </div>
-                </ul>
-            </div>
-        </section>
-
         <section class="quote">
             <div class="quote-media" style="background-image: url(<?php echo esc_url(get_template_directory_uri()); ?>/images/founder-1.jpg);">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/founder-1.jpg" alt="Founder 1">
