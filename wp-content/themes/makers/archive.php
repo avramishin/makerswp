@@ -56,7 +56,7 @@ get_header(); ?>
 //                        wp_list_categories( $args );
 //                        ?>
 <!--                    </ul>-->
-                    <ul class="posts">
+                    <ul class="posts list-3">
                         <?php
                         global $query_string;
                         query_posts($query_string . '&cat=-3,-4');
