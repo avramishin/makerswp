@@ -12,7 +12,7 @@ get_header(); ?>
         <div class="container">
             <article>
                 <header class="center">
-                    <h2>Blog</h2>
+<!--                    <h2>Blog</h2>-->
 
                     <!--<div class="search">
                         <form action="<?php bloginfo('url') ?>/blog/"" method="get">
