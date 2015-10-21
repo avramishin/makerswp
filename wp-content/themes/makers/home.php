@@ -11,9 +11,9 @@ get_header(); ?>
 
         <div class="container">
             <article>
-<!--                <header class="center">-->
-<!--                    <h2>Blog</h2>-->
-<!--                </header>-->
+                    <header class="center">
+                        <h2>Blog</h2>
+                    </header>
 <!--                <section class="section-categories">-->
 <!--                    <ul class="blog-categories">-->
 <!--                        <li class="cat-item current-cat" data-category="all">-->

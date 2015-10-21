@@ -62,34 +62,62 @@ get_header(); ?>
     <article>
       <section class="content">
         <h2 style="text-align: center;">7 principles that makes you a Maker</h2>
-        <ul class="list-3">
+        <ul class="companies-grid list-3">
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-message.png" alt="icon-message" height="45px" width="45px" /></p>
-            <p style="text-align: center;">Be a team player. Share, help and communicate</p>
+            <div class="table">
+              <div class="table-cell">
+                <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-message.png" alt="icon-message" height="45px" width="45px" /></p>
+                <p style="text-align: center;">Be a team player. Share, help and communicate</p>
+              </div>
+            </div>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-chemistry.png" alt="icon-chemistry" height="45px" width="45px" /></p>
-            <p style="text-align: center;">Innovate through experimentation</p>
+            <div class="table">
+              <div class="table-cell">
+                <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-chemistry.png" alt="icon-chemistry" height="45px" width="45px" /></p>
+                <p style="text-align: center;">Innovate through experimentation</p>
+              </div>
+            </div>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-thumbsup.png" alt="icon-thumbsup" height="45px" width="45px" /></p>
-            <p style="text-align: center;">Do the right thing right</p>
+            <div class="table">
+              <div class="table-cell">
+                <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-thumbsup.png" alt="icon-thumbsup" height="45px" width="45px" /></p>
+                <p style="text-align: center;">Do the right thing right</p>
+              </div>
+            </div>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-lightbulb.png" alt="icon-lightbulb" height="45px" /></p>
-            <p style="text-align: center;">Challenge the status quo</p>
+            <div class="table">
+              <div class="table-cell">
+                <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-lightbulb.png" alt="icon-lightbulb" height="45px" /></p>
+                <p style="text-align: center;">Challenge the status quo</p>
+              </div>
+            </div>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-heart.png" alt="icon-heart" height="45px" width="45px" /></p>
-            <p style="text-align: center;">Build products that people love</p>
+            <div class="table">
+              <div class="table-cell">
+                <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-heart.png" alt="icon-heart" height="45px" width="45px" /></p>
+                <p style="text-align: center;">Build products that people love</p>
+              </div>
+            </div>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-star.png" alt="icon-star" height="45px" width="45px" /></p>
-            <p style="text-align: center;">We get things done</p>
+            <div class="table">
+              <div class="table-cell">
+                <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-star.png" alt="icon-star" height="45px" width="45px" /></p>
+                <p style="text-align: center;">We get things done</p>
+              </div>
+            </div>
           </li>
           <li>
-            <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-cloud.png" alt="icon-cloud" width="45px" /></p>
-            <p style="text-align: center;">Be respectful, honest and humble</p>
+            <div class="table">
+              <div class="table-cell">
+                <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icons/icon-cloud.png" alt="icon-cloud" width="45px" /></p>
+                <p style="text-align: center;">Be respectful, honest and humble</p>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
