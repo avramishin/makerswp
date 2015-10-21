@@ -9,9 +9,9 @@ $search = @$_GET['s'];
 get_header(); ?>
     <main>
 
-        <section class="container">
+        <section class="container intro">
             <article class="article">
-                    <header class="center">
+                    <header class="center blog">
                         <h1>Blog</h1>
                     </header>
 <!--                <section class="section-categories">-->

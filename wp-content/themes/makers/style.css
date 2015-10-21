@@ -1930,6 +1930,11 @@ footer .address a:hover {
     color: #fff;
 }
 
+/********* Blog *********/
+.container .article .blog {
+    margin-bottom: 3.75rem;
+}
+
 /********* Principles *********/
 .container .principles .companies-grid li img {
     max-width: 50px;
