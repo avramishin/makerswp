@@ -12,7 +12,7 @@ get_header(); ?>
         <div class="container">
             <article>
                 <header class="center">
-<!--                    <h2>Blog</h2>-->
+                   <h2>Blog</h2>
 
                     <!--<div class="search">
                         <form action="<?php bloginfo('url') ?>/blog/"" method="get">
@@ -56,7 +56,7 @@ get_header(); ?>
 //                        wp_list_categories( $args );
 //                        ?>
 <!--                    </ul>-->
-                    <ul class="posts list-3">
+                    <ul class="posts">
                         <?php
                         global $query_string;
                         query_posts($query_string . '&cat=-3,-4');
