@@ -966,7 +966,7 @@ video {
     color: #acacac; }
 .container .about-grid {
     margin: 0;
-    padding-top: 1.25rem 0 0 0; }
+    padding: 1.25rem 0 0 0; }
 .container .about-grid::after {
     clear: both;
     content: "";
@@ -1235,9 +1235,10 @@ video {
     .grid .test,
     .grid .build,
     .grid .scale {
-        border: 0;
         border-left: 1px solid #e7e7e7;
-        height: 15.625rem; } }
+        border-bottom: 1px solid #e7e7e7;
+        height: 15.625rem;
+        width: 50%; } }
 /*.grid .identify a,
 .grid .test a,
 .grid .build a,
