@@ -54,14 +54,14 @@ get_header(); ?>
         <p>We at Makers most often invest in web/mobile applications with clear monetization models. These are some of the companies we have built so far.</p>
       </header>
       <section class="page-companies">
-        <ul class="company-type">
-          <li class="active" data-filter="All" ><a href="javascript: void(0)" title="All">All</a></li>
-          <?php foreach ($categoriesAll as $filter=>$title): ?>
-            <li class="" data-filter="<?php echo htmlspecialchars($filter);?>">
-              <a href="javascript: void(0)" title="<?php echo htmlspecialchars(str_replace('-', ' ', $filter));?>"><?php echo htmlspecialchars(str_replace('-', ' ', $filter));?></a>
-            </li>
-          <?php endforeach; ?>
-        </ul>
+<!--        <ul class="company-type">-->
+<!--          <li class="active" data-filter="All" ><a href="javascript: void(0)" title="All">All</a></li>-->
+<!--          --><?php //foreach ($categoriesAll as $filter=>$title): ?>
+<!--            <li class="" data-filter="--><?php //echo htmlspecialchars($filter);?><!--">-->
+<!--              <a href="javascript: void(0)" title="--><?php //echo htmlspecialchars(str_replace('-', ' ', $filter));?><!--">--><?php //echo htmlspecialchars(str_replace('-', ' ', $filter));?><!--</a>-->
+<!--            </li>-->
+<!--          --><?php //endforeach; ?>
+<!--        </ul>-->
         <ul class="companies-grid list-3">
           <?php foreach ($members as $m): ?>
           <li class="All <?php echo $m['type'];?>">
@@ -81,16 +81,16 @@ get_header(); ?>
   </div>
 
 </main>
-  <script>
-    $(function() {
-      $('ul.company-type > li').click(function() {
-        var el = this;
-        $('ul.company-type > li').removeClass('active');
-        $(el).addClass('active');
-        $('ul.companies-grid > li').addClass('hidden');
-        var filter = $(el).attr('data-filter');
-        $('ul.companies-grid li.' + filter).removeClass('hidden');
-      });
-    });
-  </script>
+<!--  <script>-->
+<!--    $(function() {-->
+<!--      $('ul.company-type > li').click(function() {-->
+<!--        var el = this;-->
+<!--        $('ul.company-type > li').removeClass('active');-->
+<!--        $(el).addClass('active');-->
+<!--        $('ul.companies-grid > li').addClass('hidden');-->
+<!--        var filter = $(el).attr('data-filter');-->
+<!--        $('ul.companies-grid li.' + filter).removeClass('hidden');-->
+<!--      });-->
+<!--    });-->
+<!--  </script>-->
 <?php get_footer(); ?>
