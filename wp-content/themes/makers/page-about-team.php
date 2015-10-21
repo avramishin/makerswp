@@ -88,7 +88,7 @@ get_header(); ?>
 <!--                        </li>-->
 <!--                        --><?php //endforeach; ?>
 <!--                    </ul>-->
-                    <ul class="posts members">
+                    <ul class="posts members list-3">
                         <?php foreach ($members as $m): ?>
 <!--                            <li class="all --><?php //echo $m['type']; if (!substr_count($m['type'], $firstCategory)) echo ' hidden' ?><!--">-->
                             <li class="all <?php echo $m['type']?>">

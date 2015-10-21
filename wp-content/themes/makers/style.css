@@ -852,8 +852,7 @@ video {
     .container .posts {
         float: left;
         display: block;
-        margin-right: 2.35765%;
-        width: 74.41059%; }
+        width: 100%; }
     .container .posts:last-child {
         margin-right: 0; } }
 .container .posts > li {
@@ -867,8 +866,8 @@ video {
     .container .posts > li {
         float: left;
         display: block;
-        margin-right: 1.78933%;
-        width: 48.21067%; } }
+        margin-right: 2.35765%;
+        width: 31.76157%; } }
 @media screen and (min-width: 53.75rem) {
     .container .posts > li {
         float: left;
@@ -1812,6 +1811,10 @@ video {
 /********* TEAM *********/
 .about-team {
     padding-top: 2.5rem;
+}
+
+.about-team .list-3 {
+    width: 100% !important;
 }
 
 /********* JOBS LIST *********/
