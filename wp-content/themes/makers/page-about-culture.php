@@ -60,7 +60,7 @@ get_header(); ?>
 
   <div class="container">
     <article>
-      <section class="content">
+      <section class="content principles">
         <h2 style="text-align: center;">7 principles that makes you a Maker</h2>
         <ul class="companies-grid list-3">
           <li>

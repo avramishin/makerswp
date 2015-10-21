@@ -9,10 +9,10 @@ $search = @$_GET['s'];
 get_header(); ?>
     <main>
 
-        <div class="container">
-            <article>
+        <section class="container">
+            <article class="article">
                     <header class="center">
-                        <h2>Blog</h2>
+                        <h1>Blog</h1>
                     </header>
 <!--                <section class="section-categories">-->
 <!--                    <ul class="blog-categories">-->
@@ -55,7 +55,7 @@ get_header(); ?>
                 <div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
                 <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
             </article>
-        </div>
+        </section>
 
     </main>
 <!--<script>-->

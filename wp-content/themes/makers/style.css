@@ -1006,7 +1006,7 @@ video {
         margin-top: 2.5rem; } }
 .container .companies-grid {
     margin: 0;
-    padding: 0 0 3.125rem; }
+    padding: 0 0 0; }
 .container .companies-grid::after {
     clear: both;
     content: "";
@@ -1928,6 +1928,16 @@ footer .address a {
 }
 footer .address a:hover {
     color: #fff;
+}
+
+/********* Principles *********/
+.container .principles .companies-grid li img {
+    max-width: 50px;
+    max-height: 45px;
+}
+
+.container .content.principles h2 {
+    margin: 1.25rem;
 }
 
 /********* About -> Intro *********/

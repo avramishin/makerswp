@@ -74,43 +74,63 @@ get_header(); ?>
 
     <div class="container">
         <article>
-            <section class="content">
+            <section class="content principles">
                 <h2 style="text-align: center;">Whom we are looking for</h2>
-                <ul class="list-3">
+                <ul class="companies-grid list-3">
                     <li>
-                        <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full"
+                        <div class="table">
+                            <div class="table-cell">
+                                <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full"
                                                             src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-lightbulb.png"
                                                             alt="icon-lightbulb" height="45px"/></p>
 
-                        <p style="text-align: center;">Entrepreneurial people</p>
+                                <p style="text-align: center;">Entrepreneurial people</p>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full"
-                                                            src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-lightbulb.png"
-                                                            alt="icon-lightbulb" height="45px"/></p>
+                        <div class="table">
+                            <div class="table-cell">
+                                <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full"
+                                                                    src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-lightbulb.png"
+                                                                    alt="icon-lightbulb" height="45px"/></p>
 
-                        <p style="text-align: center;">Out-of-the-box thinkers</p>
+                                <p style="text-align: center;">Out-of-the-box thinkers</p>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full"
+                        <div class="table">
+                            <div class="table-cell">
+                                <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full"
                                                             src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-lightbulb.png"
                                                             alt="icon-lightbulb" height="45px"/></p>
 
-                        <p style="text-align: center;">Hands-on doers</p>
+                                <p style="text-align: center;">Hands-on doers</p>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full"
+                        <div class="table">
+                            <div class="table-cell">
+                                <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full"
                                                             src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-lightbulb.png"
                                                             alt="icon-lightbulb" height="45px"/></p>
 
-                        <p style="text-align: center;">Inspiring leaders</p>
+                                <p style="text-align: center;">Inspiring leaders</p>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full"
+                        <div class="table">
+                            <div class="table-cell">
+                                <p style="text-align: center;"><img class="aligncenter wp-image-115 size-full"
                                                             src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icons/icon-lightbulb.png"
                                                             alt="icon-lightbulb" height="45px"/></p>
 
-                        <p style="text-align: center;">And people who never liked making coffee</p>
+                                <p style="text-align: center;">And people who never liked making coffee</p>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </section>
