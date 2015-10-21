@@ -9,6 +9,29 @@ get_header(); ?>
   <div class="container intro">
     <article>
       <section class="content">
+        <h4>Mission</h4>
+        <h2>Building next generation tech companies</h2>
+        <p>Makers strives to be different. We at Makers strongly believe that innovation doesn’t happen by chance. Disruptive products and services are always designed by outstanding teams and founders don’t hesitate to challenge the status quo. Our vision is to provide a platform for entrepreneurs to think ahead and develop products that create true value.</p>
+      </section>
+    </article>
+  </div>
+
+  <div class="sub-navigation">
+    <div class="sub-navigation-inner">
+      <nav>
+        <ul class="sub-navigation-menu">
+          <li class="active"><a href="<?php bloginfo('url') ?>/about-culture/">Culture</a></li>
+          <li><a href="<?php bloginfo('url') ?>/about-team/">Team</a></li>
+          <li><a href="<?php bloginfo('url') ?>/about-process/">Process</a></li>
+        </ul>
+      </nav>
+        <?php include __DIR__ . "/common/sub-nav-newsletter.php";?>
+    </div>
+  </div>
+
+  <div class="container intro">
+    <article>
+      <section class="content">
         <h2 style="text-align: center;">7 principles that makes you a Maker</h2>
         <ul class="list-3">
           <li>
@@ -42,19 +65,6 @@ get_header(); ?>
         </ul>
       </section>
     </article>
-  </div>
-
-  <div class="sub-navigation">
-    <div class="sub-navigation-inner">
-      <nav>
-        <ul class="sub-navigation-menu">
-          <li class="active"><a href="<?php bloginfo('url') ?>/about-culture/">Culture</a></li>
-          <li><a href="<?php bloginfo('url') ?>/about-team/">Team</a></li>
-          <li><a href="<?php bloginfo('url') ?>/about-process/">Process</a></li>
-        </ul>
-      </nav>
-        <?php include __DIR__ . "/common/sub-nav-newsletter.php";?>
-    </div>
   </div>
 
   <div class="grid">

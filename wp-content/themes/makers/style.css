@@ -285,7 +285,8 @@ video {
     .header .navigation ul li a {
         width: auto; } }
 .header .navigation ul li a:focus, .header .navigation ul li a:hover {
-    background-color: #e64d49; }
+    background-color: transparent;
+    border-bottom: 1px solid #e64d49; }
 .header .navigation .main-navigation-button {
     overflow: hidden;
     text-indent: 101%;
@@ -409,7 +410,8 @@ video {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; }
+    background-size: cover;
+    margin-top: 60px; }
 .hero img {
     height: 25.3125rem;
     left: 0;

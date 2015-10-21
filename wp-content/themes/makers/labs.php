@@ -6,15 +6,6 @@
 get_header(); ?>
 <main class="process-labs">
 
-  <div class="hero" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/hero.jpg);">
-    <div class="overlay"></div>
-    <div class="texture"></div>
-    <div class="hero-inner">
-      <h2>Our community is our strength.</h2>
-      <p>Makers innovates through collaboration and hard work.</p>
-    </div>
-  </div>
-
   <div class="sub-navigation">
     <div class="sub-navigation-inner">
         <?php include __DIR__ . "/common/sub-nav-newsletter.php";?>
