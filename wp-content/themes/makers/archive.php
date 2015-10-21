@@ -12,7 +12,7 @@ get_header(); ?>
         <div class="container">
             <article>
                 <header class="center">
-                    <h2>Blog</h2>
+<!--                    <h2>Blog</h2>-->
 
                     <!--<div class="search">
                         <form action="<?php bloginfo('url') ?>/blog/"" method="get">
@@ -25,37 +25,37 @@ get_header(); ?>
                     </div>-->
                 </header>
                 <section class="content">
-                    <ul class="categories">
-                        <?php
-                        $args = array(
-                            'show_option_all'    => __( 'All' ),
-                            'orderby'            => 'name',
-                            'order'              => 'ASC',
-                            'style'              => 'list',
-                            'show_count'         => 0,
-                            'hide_empty'         => 1,
-                            'use_desc_for_title' => 1,
-                            'child_of'           => 0,
-                            'feed'               => '',
-                            'feed_type'          => '',
-                            'feed_image'         => '',
-                            'exclude'            => '3,4',
-                            'exclude_tree'       => '',
-                            'include'            => '',
-                            'hierarchical'       => 1,
-                            'title_li'           => null,
-                            'show_option_none'   => __( '' ),
-                            'number'             => null,
-                            'echo'               => 1,
-                            'depth'              => 0,
-                            'current_category'   => 0,
-                            'pad_counts'         => 0,
-                            'taxonomy'           => 'category',
-                            'walker'             => null
-                        );
-                        wp_list_categories( $args );
-                        ?>
-                    </ul>
+<!--                    <ul class="categories">-->
+<!--                        --><?php
+//                        $args = array(
+//                            'show_option_all'    => __( 'All' ),
+//                            'orderby'            => 'name',
+//                            'order'              => 'ASC',
+//                            'style'              => 'list',
+//                            'show_count'         => 0,
+//                            'hide_empty'         => 1,
+//                            'use_desc_for_title' => 1,
+//                            'child_of'           => 0,
+//                            'feed'               => '',
+//                            'feed_type'          => '',
+//                            'feed_image'         => '',
+//                            'exclude'            => '3,4',
+//                            'exclude_tree'       => '',
+//                            'include'            => '',
+//                            'hierarchical'       => 1,
+//                            'title_li'           => null,
+//                            'show_option_none'   => __( '' ),
+//                            'number'             => null,
+//                            'echo'               => 1,
+//                            'depth'              => 0,
+//                            'current_category'   => 0,
+//                            'pad_counts'         => 0,
+//                            'taxonomy'           => 'category',
+//                            'walker'             => null
+//                        );
+//                        wp_list_categories( $args );
+//                        ?>
+<!--                    </ul>-->
                     <ul class="posts">
                         <?php
                         global $query_string;

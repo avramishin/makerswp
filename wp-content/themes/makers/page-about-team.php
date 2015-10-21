@@ -81,16 +81,17 @@ get_header(); ?>
                         and need.</p>
                 </header>
                 <section class="about-team">
-                    <ul class="categories">
-                        <?php foreach ($categoriesAll as $filter=>$title): ?>
-                        <li class="<?php if ($filter == $firstCategory) echo 'active'?>" data-filter="<?php echo htmlspecialchars($filter)?>">
-                            <a href="javascript: void(0)" title="<?php echo htmlspecialchars($title)?>"><?php echo htmlspecialchars($title)?></a>
-                        </li>
-                        <?php endforeach; ?>
-                    </ul>
+<!--                    <ul class="categories">-->
+<!--                        --><?php //foreach ($categoriesAll as $filter=>$title): ?>
+<!--                        <li class="--><?php //if ($filter == $firstCategory) echo 'active'?><!--" data-filter="--><?php //echo htmlspecialchars($filter)?><!--">-->
+<!--                            <a href="javascript: void(0)" title="--><?php //echo htmlspecialchars($title)?><!--">--><?php //echo htmlspecialchars($title)?><!--</a>-->
+<!--                        </li>-->
+<!--                        --><?php //endforeach; ?>
+<!--                    </ul>-->
                     <ul class="posts members">
                         <?php foreach ($members as $m): ?>
-                            <li class="all <?php echo $m['type']; if (!substr_count($m['type'], $firstCategory)) echo ' hidden' ?>">
+<!--                            <li class="all --><?php //echo $m['type']; if (!substr_count($m['type'], $firstCategory)) echo ' hidden' ?><!--">-->
+                            <li class="all <?php echo $m['type']?>">
                                 <img src="<?php echo $m['image'] ?>" width="524" height="524" alt="">
 
                                 <div class="team-hover">
@@ -128,16 +129,16 @@ get_header(); ?>
         </div>
 
     </main>
-<script>
-    $(function() {
-        $('ul.categories > li').click(function() {
-            var el = this;
-            $('ul.categories > li').removeClass('active');
-            $(el).addClass('active');
-            $('ul.members > li').addClass('hidden');
-            var filter = $(el).attr('data-filter');
-            $('ul.members li.' + filter).removeClass('hidden');
-        });
-    });
-</script>
+<!--<script>-->
+<!--    $(function() {-->
+<!--        $('ul.categories > li').click(function() {-->
+<!--            var el = this;-->
+<!--            $('ul.categories > li').removeClass('active');-->
+<!--            $(el).addClass('active');-->
+<!--            $('ul.members > li').addClass('hidden');-->
+<!--            var filter = $(el).attr('data-filter');-->
+<!--            $('ul.members li.' + filter).removeClass('hidden');-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
 <?php get_footer(); ?>
