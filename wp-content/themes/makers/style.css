@@ -722,8 +722,6 @@ video {
     width: 100%; }
 .container .list-3 li:last-child {
     margin-right: 0; }
-.container .list-3 li:nth-child(2n) {
-    margin-right: 0; }
 .container .list-3 li:nth-child(2n+1) {
     clear: left; }
 @media screen and (min-width: 53.75rem) {
@@ -732,8 +730,6 @@ video {
         display: block;
         margin-right: 2.35765%;
         width: 31.76157%; }
-    .container .list-3 li:nth-child(2n) {
-        margin-right: 0; }
     .container .list-3 li:nth-child(2n+1) {
         clear: none; }
     .container .list-3 li:last-child {
