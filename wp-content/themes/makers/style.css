@@ -830,29 +830,14 @@ video {
     padding: 0; }
 .container .posts:last-child {
     margin-right: 0; }
-@media screen and (min-width: 40rem) {
-    .container .posts {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 65.88078%; }
-    .container .posts:last-child {
-        margin-right: 0; } }
-@media screen and (min-width: 53.75rem) {
-    .container .posts {
-        float: left;
-        display: block;
-        width: 100%; }
-    .container .posts:last-child {
-        margin-right: 0; } }
-.container .posts > li {
+    .container .posts > li {
     float: left;
     display: block;
     width: 100%;
     margin-bottom: 2.35765%;
     position: relative;
     text-align: center; }
-@media screen and (min-width: 53.75rem) {
+@media screen and (min-width: 40rem) {
     .container .posts > li {
         float: left;
         display: block;
@@ -861,18 +846,27 @@ video {
     .container .posts > li {
         float: left;
         display: block; }
-    .container .companies-grid li:nth-child(2n) {
+    .container .posts > li:nth-child(2n) {
         margin-right: 0;
-    } }
-@media screen and (min-width: 72.5rem) {
+    }
+    .container .posts > li:last-child {
+        margin-right: 0; } }
+@media screen and (min-width: 53.75rem) {
+    .container .posts > li {
+        float: left;
+        display: block;
+        width: 100%; }
+    .container .posts > li:last-child {
+        margin-right: 0; } }
+@media screen and (min-width: 53.75rem) {
     .container .posts > li {
         width: 31.76157%;
         margin-right: 2.35765%;
     }
-    .container .companies-grid li:nth-child(2n) {
+    .container .posts > li:nth-child(2n) {
         margin-right: 2.35765%;
     }
-    .container .companies-grid li:nth-child(3n) {
+    .container .posts > li:nth-child(3n) {
         margin-right: 0 !important;
     }
 }
