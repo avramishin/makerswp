@@ -834,7 +834,7 @@ video {
     float: left;
     display: block;
     width: 100%;
-    margin-bottom: 2.35765%;
+    margin-bottom: 1.25rem;
     position: relative;
     text-align: center; }
 @media screen and (min-width: 40rem) {
@@ -842,7 +842,7 @@ video {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 47.64235%; }
+        width: 48.821175%; }
     .container .posts > li {
         float: left;
         display: block; }
@@ -1018,7 +1018,7 @@ video {
     width: 100%;
     border: 1px solid #dcdddc;
     height: 12.5rem;
-    margin: 1.25rem 0 0;
+    margin: 0 0 1.25rem;
     padding: 0.625rem;
     text-align: center; }
 .container .companies-grid li:last-child {
