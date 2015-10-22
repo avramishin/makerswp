@@ -34,7 +34,7 @@ get_header(); ?>
           <br>
           One of the key questions we ask ourselves is “how can startups minimize the risks of failure?”. So we scrutinize the process of identifying a product/market fit. Once given a go-ahead, however, we execute fearlessly with an iterative, product-oriented approach and stride towards shipping minimum viable products.
         </p>
-        <a href="<?php bloginfo('url') ?>/about/" class="button">Learn more about it</a>
+        <a href="<?php bloginfo('url') ?>/join-us/" class="button">See open positions</a>
       </div>
     </div>
     <div class="grid-item-wide">
@@ -60,6 +60,7 @@ get_header(); ?>
           <br>
           With Labs, we are not only able to reduce the risks of investments, but also gain tons of valuable insights through research during the process of development. The early iteration and lean company-building practices definitely set Makers apart others, and enables us to scientifically measure what others can only guess at.
         </p>
+        <a href="<?php bloginfo('url') ?>/join-us/" class="button">See open positions</a>
       </div>
     </div>
   </div>

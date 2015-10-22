@@ -49,6 +49,7 @@ get_header(); ?>
         <br>
         <br>
         One of the key questions we ask ourselves is “how can startups minimize the risks of failure?”. So we scrutinize the process of identifying a product/market fit. Once given a go-ahead, however, we execute fearlessly with an iterative, product-oriented approach and stride towards shipping minimum viable products.</p>
+        <a href="<?php bloginfo('url') ?>/join-us/" class="button">See open positions</a>
       </div>
     </div>
     <div class="grid-item-wide">
@@ -88,6 +89,7 @@ get_header(); ?>
           <br>
           Our experience with building highly profitable companies such as Run a Shop and IconPeak convinced us of the power of bootstrapping. Making things work at low cost can test the commitment of the founders and the potential of the idea. For that reason, we encourage and enable our portfolio companies to gain user traction and first revenues before they approach potential investors.
         </p>
+        <a href="<?php bloginfo('url') ?>/join-us/" class="button">See open positions</a>
       </div>
     </div>
     <div class="grid-item-wide">

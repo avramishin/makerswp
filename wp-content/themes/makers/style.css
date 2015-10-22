@@ -1110,7 +1110,7 @@ video {
     .grid .grid-item-wide {
         width: 50%;
         overflow: hidden;
-        max-height: 1230px; } }
+        max-height: 1280px; } }
 .grid .grid-text,
 .grid .grid-link {
     position: absolute;
@@ -1410,6 +1410,9 @@ video {
 .process p {
     font-size: 16px;
     margin: 0.625rem 0; }
+.process .button {
+    margin-top: 1.25rem;
+}
 @media screen and (min-width: 53.75rem) {
     .process p {
         font-size: 18px; } }

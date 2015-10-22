@@ -31,6 +31,7 @@ get_header(); ?>
           <br>
           Our experience with building highly profitable companies such as Run a Shop and IconPeak convinced us of the power of bootstrapping. Making things work at low cost can test the commitment of the founders and the potential of the idea. For that reason, we encourage and enable our portfolio companies to gain user traction and first revenues before they approach potential investors.
         </p>
+        <a href="<?php bloginfo('url') ?>/join-us/" class="button">See open positions</a>
       </div>
     </div>
     <div class="grid-item-wide">
@@ -56,6 +57,7 @@ get_header(); ?>
           <br>
           Having built companies such as BidderPlace, Run a Shop or IconPeak which are active in more 20 countries on four continents, we have outstanding knowledge in internationalizing and adapting existing business models too.
         </p>
+        <a href="<?php bloginfo('url') ?>/join-us/" class="button">See open positions</a>
       </div>
     </div>
   </div>
