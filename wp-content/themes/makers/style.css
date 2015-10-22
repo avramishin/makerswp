@@ -852,16 +852,31 @@ video {
     margin-bottom: 2.35765%;
     position: relative;
     text-align: center; }
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 53.75rem) {
     .container .posts > li {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 31.76157%; } }
-@media screen and (min-width: 53.75rem) {
+        width: 47.64235%; }
     .container .posts > li {
         float: left;
-        display: block; } }
+        display: block; }
+    .container .companies-grid li:nth-child(2n) {
+        margin-right: 0;
+    } }
+@media screen and (min-width: 72.5rem) {
+    .container .posts > li {
+        width: 31.76157%;
+        margin-right: 2.35765%;
+    }
+    .container .companies-grid li:nth-child(2n) {
+        margin-right: 2.35765%;
+    }
+    .container .companies-grid li:nth-child(3n) {
+        margin-right: 0 !important;
+    }
+}
+
 .container .posts > li h3 {
     margin: 0.3125rem 0 1.25rem 0;
     text-transform: uppercase; }
