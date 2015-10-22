@@ -34,6 +34,7 @@ get_header(); ?>
           <br>
           One of the key questions we ask ourselves is “how can startups minimize the risks of failure?”. So we scrutinize the process of identifying a product/market fit. Once given a go-ahead, however, we execute fearlessly with an iterative, product-oriented approach and stride towards shipping minimum viable products.
         </p>
+        <a href="<?php bloginfo('url') ?>/about/" class="button">Learn more about it</a>
       </div>
     </div>
     <div class="grid-item-wide">

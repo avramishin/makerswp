@@ -47,7 +47,7 @@ get_header(); ?>
       <div class="grid-text">
         <div class="table">
           <div class="table-cell">
-            <h3>We get it done.</h3>
+            <h3>Get it done.</h3>
             <p>There's a reason we're called Makers</p>
           </div>
         </div>

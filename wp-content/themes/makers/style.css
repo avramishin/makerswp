@@ -1023,7 +1023,7 @@ video {
     text-align: center; }
 .container .companies-grid li:last-child {
     margin-right: 0; }
-    @media screen and (min-width: 53.75rem) {
+    @media screen and (min-width: 40rem) {
     .container .companies-grid li {
         float: left;
         display: block;
