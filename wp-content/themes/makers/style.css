@@ -1038,7 +1038,10 @@ video {
         margin-right: 2.35765%;
         width: 31.76157%; }
     .container .companies-grid li:last-child {
-        margin-right: 0; } }
+        margin-right: 0; }
+    .container .companies-grid li:nth-child(2n) {
+        margin-right: 2.35765%;
+        } }
 .container .companies-grid li img {
     height: 3.75rem;
     width: auto; }
