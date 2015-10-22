@@ -722,16 +722,12 @@ video {
     width: 100%; }
 .container .list-3 li:last-child {
     margin-right: 0; }
-.container .list-3 li:nth-child(2n+1) {
-    clear: left; }
 @media screen and (min-width: 53.75rem) {
     .container .list-3 li {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 31.76157%; }
-    .container .list-3 li:nth-child(2n+1) {
-        clear: none; }
     .container .list-3 li:last-child {
         margin-right: 0; } }
 .container .list-3 li p {
@@ -1023,13 +1019,22 @@ video {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 48.64235%; } }
+        width: 48.64235%; }
+    .container .companies-grid li:nth-child(2n) {
+        margin-right: 0;
+        } }
 @media screen and (min-width: 72.5rem) {
     .container .companies-grid li {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 31.76157%; }
+    .container .companies-grid li:nth-child(2n) {
+        margin-right: 2.35765%;
+        }
+    .container .companies-grid li:nth-child(3n) {
+        margin-right: 0 !important;
+        }
     .container .companies-grid li:last-child {
         margin-right: 0; } }
 .container .companies-grid li img {
