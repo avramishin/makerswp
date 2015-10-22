@@ -1420,7 +1420,7 @@ video {
     .process p {
         font-size: 20px; } }
 .process .process-content {
-    padding: 0.9375rem; }
+    padding: 1.25rem 1.25rem 3rem; }
 @media screen and (min-width: 40rem) {
     .process .process-content {
         padding: 1.25rem; } }
