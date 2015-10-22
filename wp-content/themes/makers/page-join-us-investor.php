@@ -47,16 +47,15 @@ foreach ($posts as $post) {
 get_header(); ?>
     <main>
 
-        <div class="hero" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/hero.jpg);">
-
-            <div class="overlay"></div>
-            <div class="texture"></div>
-            <div class="hero-inner">
-                <h2>Our community is our strength.</h2>
-
-                <p>Makers innovates through collaboration and hard work.</p>
-            </div>
-        </div>
+    <div class="container intro">
+        <article>
+          <section class="content">
+            <h4>Mission</h4>
+            <h2>Invest in the future of technology</h2>
+            <p>A startup's success is not only based on a great. market-ready product. but also on a complimentary and experienced team. Therefore we are always looking for entrepreneurial talents to join the MAKERS' team. These are our requirements a potential co-founder should meet:</p>
+          </section>
+        </article>
+      </div>
 
         <div class="sub-navigation">
             <div class="sub-navigation-inner">
@@ -70,16 +69,6 @@ get_header(); ?>
                 <?php include __DIR__ . "/common/sub-nav-newsletter.php";?>
             </div>
         </div>
-
-        <section class="container">
-            <article class="article">
-                <header>
-                    <h1>Invest in the future of technology</h1>
-                    <span class="subline">We build highly profitable companies at lowest costs.</span>
-                </header>
-                <p class="intro">A startup's success is not only based on a great. market-ready product. but also on a complimentary and experienced team. Therefore we are always looking for entrepreneurial talents to join the MAKERS' team. These are our requirements a potential co-founder should meet:</p>
-            </article>
-        </section><!-- /section.content -->
 
         <section class="quote">
             <div class="quote-media" style="background-image: url(<?php echo esc_url(get_template_directory_uri()); ?>/images/founder-2.jpg);">
@@ -180,14 +169,14 @@ get_header(); ?>
         <section class="portfolio">
             <div class="container">
                 <h2 class="portfolio-headline">Facts and figures for each of our portfolio companies:</h2>
-                <ul class="company-type">
-                    <li class="active" data-filter="All" ><a href="javascript: void(0)" title="All">All</a></li>
-                    <?php foreach ($categoriesAll as $filter=>$title): ?>
-                        <li class="" data-filter="<?php echo htmlspecialchars($filter);?>">
-                            <a href="javascript: void(0)" title="<?php echo htmlspecialchars(str_replace('-', ' ', $filter));?>"><?php echo htmlspecialchars(str_replace('-', ' ', $filter));?></a>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
+<!--                <ul class="company-type">-->
+<!--                    <li class="active" data-filter="All" ><a href="javascript: void(0)" title="All">All</a></li>-->
+<!--                    --><?php //foreach ($categoriesAll as $filter=>$title): ?>
+<!--                        <li class="" data-filter="--><?php //echo htmlspecialchars($filter);?><!--">-->
+<!--                            <a href="javascript: void(0)" title="--><?php //echo htmlspecialchars(str_replace('-', ' ', $filter));?><!--">--><?php //echo htmlspecialchars(str_replace('-', ' ', $filter));?><!--</a>-->
+<!--                        </li>-->
+<!--                    --><?php //endforeach; ?>
+<!--                </ul>-->
                 <ul class="companies-grid list-3">
                     <?php foreach ($members as $m): ?>
                     <li class="All <?php echo $m['type'];?>">
@@ -226,16 +215,16 @@ get_header(); ?>
         </div>
 
     </main>
-    <script>
-        $(function() {
-            $('ul.company-type > li').click(function() {
-                var el = this;
-                $('ul.company-type > li').removeClass('active');
-                $(el).addClass('active');
-                $('ul.companies-grid > li').addClass('hidden');
-                var filter = $(el).attr('data-filter');
-                $('ul.companies-grid li.' + filter).removeClass('hidden');
-            });
-        });
-    </script>
+<!--    <script>-->
+<!--        $(function() {-->
+<!--            $('ul.company-type > li').click(function() {-->
+<!--                var el = this;-->
+<!--                $('ul.company-type > li').removeClass('active');-->
+<!--                $(el).addClass('active');-->
+<!--                $('ul.companies-grid > li').addClass('hidden');-->
+<!--                var filter = $(el).attr('data-filter');-->
+<!--                $('ul.companies-grid li.' + filter).removeClass('hidden');-->
+<!--            });-->
+<!--        });-->
+<!--    </script>-->
 <?php get_footer(); ?>

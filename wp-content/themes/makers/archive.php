@@ -9,29 +9,12 @@ $search = @$_GET['s'];
 get_header(); ?>
     <main>
 
-        <div class="hero" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/hero.jpg);">
-
-            <div class="overlay"></div>
-            <div class="texture"></div>
-            <div class="hero-inner">
-                <h2>Our community is our strength.</h2>
-
-                <p>Makers innovates through collaboration and hard work.</p>
-            </div>
-        </div>
-
-        <div class="sub-navigation">
-            <div class="sub-navigation-inner">
-                <?php include __DIR__ . "/common/sub-nav-newsletter.php";?>
-            </div>
-        </div>
-
         <div class="container">
             <article>
                 <header class="center">
-                    <h2>Blog</h2>
+                   <h2>Blog</h2>
 
-                    <div class="search">
+                    <!--<div class="search">
                         <form action="<?php bloginfo('url') ?>/blog/"" method="get">
                         <label for="search">Search</label>
                         <input type="text" id="search" name="s" placeholder="Enter what you are loooking for..."
@@ -39,40 +22,40 @@ get_header(); ?>
                         <input type="submit" value="Search">
                         <input type="hidden" value="post" name="post_type" id="post_type"/>
                         </form>
-                    </div>
+                    </div>-->
                 </header>
                 <section class="content">
-                    <ul class="categories">
-                        <?php
-                        $args = array(
-                            'show_option_all'    => __( 'All' ),
-                            'orderby'            => 'name',
-                            'order'              => 'ASC',
-                            'style'              => 'list',
-                            'show_count'         => 0,
-                            'hide_empty'         => 1,
-                            'use_desc_for_title' => 1,
-                            'child_of'           => 0,
-                            'feed'               => '',
-                            'feed_type'          => '',
-                            'feed_image'         => '',
-                            'exclude'            => '3,4',
-                            'exclude_tree'       => '',
-                            'include'            => '',
-                            'hierarchical'       => 1,
-                            'title_li'           => null,
-                            'show_option_none'   => __( '' ),
-                            'number'             => null,
-                            'echo'               => 1,
-                            'depth'              => 0,
-                            'current_category'   => 0,
-                            'pad_counts'         => 0,
-                            'taxonomy'           => 'category',
-                            'walker'             => null
-                        );
-                        wp_list_categories( $args );
-                        ?>
-                    </ul>
+<!--                    <ul class="categories">-->
+<!--                        --><?php
+//                        $args = array(
+//                            'show_option_all'    => __( 'All' ),
+//                            'orderby'            => 'name',
+//                            'order'              => 'ASC',
+//                            'style'              => 'list',
+//                            'show_count'         => 0,
+//                            'hide_empty'         => 1,
+//                            'use_desc_for_title' => 1,
+//                            'child_of'           => 0,
+//                            'feed'               => '',
+//                            'feed_type'          => '',
+//                            'feed_image'         => '',
+//                            'exclude'            => '3,4',
+//                            'exclude_tree'       => '',
+//                            'include'            => '',
+//                            'hierarchical'       => 1,
+//                            'title_li'           => null,
+//                            'show_option_none'   => __( '' ),
+//                            'number'             => null,
+//                            'echo'               => 1,
+//                            'depth'              => 0,
+//                            'current_category'   => 0,
+//                            'pad_counts'         => 0,
+//                            'taxonomy'           => 'category',
+//                            'walker'             => null
+//                        );
+//                        wp_list_categories( $args );
+//                        ?>
+<!--                    </ul>-->
                     <ul class="posts">
                         <?php
                         global $query_string;

@@ -65,4 +65,10 @@ $(document).ready(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
   });
 
+  // Add active class to main navigation
+  $(".main-navigation li a").click(function(){
+    $(".main-navigation li a").removeClass("active");
+    $(this).addClass("active");
+  });
+
 });

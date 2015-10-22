@@ -6,14 +6,15 @@
 get_header(); ?>
 <main>
 
-  <div class="hero" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/hero.jpg);">
-    <div class="overlay"></div>
-    <div class="texture"></div>
-    <div class="hero-inner">
-      <h2>Our community is our strength.</h2>
-      <p>Makers innovates through collaboration and hard work.</p>
+  <div class="container intro">
+        <article>
+          <section class="content">
+            <h4>Mission</h4>
+            <h2>Building next generation tech companies</h2>
+            <p>Makers strives to be different. We at Makers strongly believe that innovation doesn’t happen by chance. Disruptive products and services are always designed by outstanding teams and founders don’t hesitate to challenge the status quo. Our vision is to provide a platform for entrepreneurs to think ahead and develop products that create true value.</p>
+          </section>
+        </article>
     </div>
-  </div>
 
   <div class="sub-navigation">
     <div class="sub-navigation-inner">
@@ -28,13 +29,13 @@ get_header(); ?>
     </div>
   </div>
 
-  <div class="container">
+  <!--<div class="container">
     <article>
       <header class="center">
         <h2>Four Steps from Ideation to Market</h2>
       </header>
     </article>
-  </div>
+  </div>-->
 
   <div id="identify" class="grid process">
     <div class="process-identify grid-item-wide">
@@ -48,6 +49,7 @@ get_header(); ?>
         <br>
         <br>
         One of the key questions we ask ourselves is “how can startups minimize the risks of failure?”. So we scrutinize the process of identifying a product/market fit. Once given a go-ahead, however, we execute fearlessly with an iterative, product-oriented approach and stride towards shipping minimum viable products.</p>
+        <a href="<?php bloginfo('url') ?>/join-us-career/" class="button">See open positions</a>
       </div>
     </div>
     <div class="grid-item-wide">
@@ -73,6 +75,7 @@ get_header(); ?>
           <br>
           With Labs, we are not only able to reduce the risks of investments, but also gain tons of valuable insights through research during the process of development. The early iteration and lean company-building practices definitely set Makers apart others, and enables us to scientifically measure what others can only guess at.
         </p>
+        <a href="<?php bloginfo('url') ?>/join-us-career/" class="button">See open positions</a>
       </div>
     </div>
   </div>
@@ -87,6 +90,7 @@ get_header(); ?>
           <br>
           Our experience with building highly profitable companies such as Run a Shop and IconPeak convinced us of the power of bootstrapping. Making things work at low cost can test the commitment of the founders and the potential of the idea. For that reason, we encourage and enable our portfolio companies to gain user traction and first revenues before they approach potential investors.
         </p>
+        <a href="<?php bloginfo('url') ?>/join-us-career/" class="button">See open positions</a>
       </div>
     </div>
     <div class="grid-item-wide">
@@ -112,6 +116,7 @@ get_header(); ?>
           <br>
           Having built companies such as BidderPlace, Run a Shop or IconPeak which are active in more 20 countries on four continents, we have outstanding knowledge in internationalizing and adapting existing business models too.
         </p>
+        <a href="<?php bloginfo('url') ?>/join-us-career/" class="button">See open positions</a>
       </div>
     </div>
   </div>

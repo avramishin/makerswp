@@ -6,15 +6,19 @@
 get_header(); ?>
     <main>
 
-        <div class="hero" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/hero.jpg);">
+        <div class="container intro">
+            <article>
+                <section class="content">
+                    <h4>Be smart</h4>
 
-            <div class="overlay"></div>
-            <div class="texture"></div>
-            <div class="hero-inner">
-                <h2>Our community is our strength.</h2>
+                    <h2>Develop your ideas and shape the future</h2>
 
-                <p>Makers innovates through collaboration and hard work.</p>
-            </div>
+                    <p>MAKERS offers an incredible package of technological expertise, all-round support and great terms
+                        all in exchange for your presence and open mind. We know that ideas gain bits and pieces as they
+                        bounce, and we cannot wait to hear about your exciting new project! Apply today and start acting
+                        on your ideas.</p>
+                </section>
+            </article>
         </div>
 
         <div class="sub-navigation">
@@ -28,21 +32,6 @@ get_header(); ?>
                 </nav>
                 <?php include __DIR__ . "/common/sub-nav-newsletter.php";?>
             </div>
-        </div>
-
-        <div class="container">
-            <article>
-                <section class="content">
-                    <h4>Be smart</h4>
-
-                    <h2>Develop your ideas and shape the future</h2>
-
-                    <p>MAKERS offers an incredible package of technological expertise, all-round support and great terms
-                        all in exchange for your presence and open mind. We know that ideas gain bits and pieces as they
-                        bounce, and we cannot wait to hear about your exciting new project! Apply today and start acting
-                        on your ideas.</p>
-                </section>
-            </article>
         </div>
 
         <div class="bottom-quote">
