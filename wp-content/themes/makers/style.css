@@ -733,11 +733,7 @@ video {
     .container .list-3 li:nth-child(2n+1) {
         clear: none; }
     .container .list-3 li:last-child {
-        margin-right: 0; }
-    .container .list-3 li:nth-child(3n) {
-        margin-right: 0; }
-    .container .list-3 li:nth-child(3n+1) {
-        clear: left; } }
+        margin-right: 0; } }
 .container .list-3 li p {
     color: #3e3e3e;
     font-size: 18px;
@@ -1027,10 +1023,7 @@ video {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 48.64235%; }
-    .container .companies-grid li:nth-child(2n) {
-        margin-right: 0;
-        } }
+        width: 48.64235%; } }
 @media screen and (min-width: 72.5rem) {
     .container .companies-grid li {
         float: left;
@@ -1038,10 +1031,7 @@ video {
         margin-right: 2.35765%;
         width: 31.76157%; }
     .container .companies-grid li:last-child {
-        margin-right: 0; }
-    .container .companies-grid li:nth-child(2n) {
-        margin-right: 2.35765%;
-        } }
+        margin-right: 0; } }
 .container .companies-grid li img {
     height: 3.75rem;
     width: auto; }
