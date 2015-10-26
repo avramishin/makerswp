@@ -41,7 +41,9 @@
         <ul class="main-navigation">
           <li><a href="<?php bloginfo('url') ?>/about/" class="<?php if (substr_count($_SERVER['REQUEST_URI'], '/about/')) echo"active"?>" title="">About</a></li>
           <li><a href="<?php bloginfo('url') ?>/companies/" class="<?php if (substr_count($_SERVER['REQUEST_URI'], '/companies/')) echo"active"?>" title="">Companies</a></li>
-          <li><a href="http://www.medium.com" target="_blank" class="<?php if (substr_count($_SERVER['REQUEST_URI'], '/blog/')) echo"active"?>" title="">Blog</a></li>
+          <li><a href="<?php bloginfo('url') ?>/blog/" class="<?php if (substr_count($_SERVER['REQUEST_URI'], '/blog/')) echo"active"?>" title="">Blog</a></li>
+
+          <!-- <li><a href="http://www.medium.com" target="_blank" class="<?php if (substr_count($_SERVER['REQUEST_URI'], '/blog/')) echo"active"?>" title="">Blog</a></li> -->
           <li class="join-us"><a href="<?php bloginfo('url') ?>/join-us/" class="<?php if (substr_count($_SERVER['REQUEST_URI'], '/join-us/')) echo"active"?>" title="">Join us</a></li>
         </ul>
       </nav>
