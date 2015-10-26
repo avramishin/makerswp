@@ -27,6 +27,7 @@
             <li><a href="<?php bloginfo('url') ?>/join-us-career/">Career</a></li>
             <li><a href="<?php bloginfo('url') ?>/labs/">Labs</a></li>
             <li><a href="<?php bloginfo('url') ?>/makers/">Makers</a></li>
+            <li><a href="<?php bloginfo('url') ?>/imprint/">Imprint</a></li>
         </ul>
     </nav>
 </footer>
