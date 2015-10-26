@@ -15,8 +15,8 @@
     <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/noty/packaged/jquery.noty.packaged.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic|Montserrat:400,700" type="text/css">
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/normalize.min.css">
-    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/style.css">
-    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/style2.css">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/style.css?t=<?=time()?>">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/style2.css?t=<?=time()?>">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Makers">

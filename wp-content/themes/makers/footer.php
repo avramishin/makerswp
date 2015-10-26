@@ -31,7 +31,7 @@
     </nav>
 </footer>
 
-<script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/main.js"></script>
+<script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/main.js?t=<?=time()?>"></script>
 <script type="text/javascript">
     $(function () {
         $('.signup .submit').click(function () {
