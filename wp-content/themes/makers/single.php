@@ -4,7 +4,7 @@
  * @package WordPress
  */
 get_header(); ?>
-    <main>
+    <main class="padding">
 
         <div class="hero" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/images/hero.jpg);">
 
@@ -13,12 +13,6 @@ get_header(); ?>
             <div class="hero-inner">
                 <h2>Our community is our strength.</h2>
                 <p>Makers innovates through collaboration and hard work.</p>
-            </div>
-        </div>
-
-        <div class="sub-navigation">
-            <div class="sub-navigation-inner">
-                <?php include __DIR__ . "/common/sub-nav-newsletter.php";?>
             </div>
         </div>
 

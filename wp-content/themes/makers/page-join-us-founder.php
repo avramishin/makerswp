@@ -4,6 +4,21 @@
  * @package WordPress
  */
 get_header(); ?>
+
+<div class="sub-navigation-container">
+    <div class="sub-navigation">
+        <div class="sub-navigation-inner">
+            <nav>
+                <ul class="sub-navigation-menu">
+                    <li><a href="<?php bloginfo('url') ?>/join-us-investor/">Investor</a></li>
+                    <li class="active"><a href="<?php bloginfo('url') ?>/join-us-founder/">Founder</a></li>
+                    <li><a href="<?php bloginfo('url') ?>/join-us-career/">Career</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
     <main>
 
     <div class="container intro">
@@ -14,19 +29,6 @@ get_header(); ?>
             <p>A startup's success is not only based on a great. market-ready product. but also on a complimentary and experienced team. Therefore we are always looking for entrepreneurial talents to join the MAKERS' team. These are our requirements a potential co-founder should meet:</p>
           </section>
         </article>
-    </div>
-
-    <div class="sub-navigation">
-        <div class="sub-navigation-inner">
-            <nav>
-                <ul class="sub-navigation-menu">
-                    <li><a href="<?php bloginfo('url') ?>/join-us-investor/">Investor</a></li>
-                    <li class="active"><a href="<?php bloginfo('url') ?>/join-us-founder/">Founder</a></li>
-                    <li><a href="<?php bloginfo('url') ?>/join-us-career/">Career</a></li>
-                </ul>
-            </nav>
-            <?php include __DIR__ . "/common/sub-nav-newsletter.php";?>
-        </div>
     </div>
 
         <section class="quote">

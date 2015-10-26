@@ -46,6 +46,21 @@ foreach ($posts as $post) {
 }
 
 get_header(); ?>
+
+<div class="sub-navigation-container">
+    <div class="sub-navigation">
+        <div class="sub-navigation-inner">
+            <nav>
+                <ul class="sub-navigation-menu">
+                    <li><a href="<?php bloginfo('url') ?>/about-culture/">Culture</a></li>
+                    <li class="active"><a href="<?php bloginfo('url') ?>/about-team/">Team</a></li>
+                    <li><a href="<?php bloginfo('url') ?>/about-process/">Process</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
     <main>
 
     <div class="container intro">
@@ -57,19 +72,6 @@ get_header(); ?>
           </section>
         </article>
       </div>
-
-        <div class="sub-navigation">
-            <div class="sub-navigation-inner">
-                <nav>
-                    <ul class="sub-navigation-menu">
-                        <li><a href="<?php bloginfo('url') ?>/about-culture/">Culture</a></li>
-                        <li class="active"><a href="<?php bloginfo('url') ?>/about-team/">Team</a></li>
-                        <li><a href="<?php bloginfo('url') ?>/about-process/">Process</a></li>
-                    </ul>
-                </nav>
-                <?php include __DIR__ . "/common/sub-nav-newsletter.php"; ?>
-            </div>
-        </div>
 
         <div class="container">
             <article>

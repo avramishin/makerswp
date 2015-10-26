@@ -45,6 +45,21 @@ foreach ($posts as $post) {
 }
 
 get_header(); ?>
+
+<div class="sub-navigation-container">
+  <div class="sub-navigation">
+      <div class="sub-navigation-inner">
+          <nav>
+              <ul class="sub-navigation-menu">
+                  <li class="active"><a href="<?php bloginfo('url') ?>/join-us-investor/">Investor</a></li>
+                  <li><a href="<?php bloginfo('url') ?>/join-us-founder/">Founder</a></li>
+                  <li><a href="<?php bloginfo('url') ?>/join-us-career/">Career</a></li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+</div>
+
     <main>
 
     <div class="container intro">
@@ -56,19 +71,6 @@ get_header(); ?>
           </section>
         </article>
       </div>
-
-        <div class="sub-navigation">
-            <div class="sub-navigation-inner">
-                <nav>
-                    <ul class="sub-navigation-menu">
-                        <li class="active"><a href="<?php bloginfo('url') ?>/join-us-investor/">Investor</a></li>
-                        <li><a href="<?php bloginfo('url') ?>/join-us-founder/">Founder</a></li>
-                        <li><a href="<?php bloginfo('url') ?>/join-us-career/">Career</a></li>
-                    </ul>
-                </nav>
-                <?php include __DIR__ . "/common/sub-nav-newsletter.php";?>
-            </div>
-        </div>
 
         <section class="quote">
             <div class="quote-media" style="background-image: url(<?php echo esc_url(get_template_directory_uri()); ?>/images/founder-2.jpg);">

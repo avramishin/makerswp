@@ -4,13 +4,7 @@
  * @package WordPress
  */
 get_header(); ?>
-<main class="process-labs">
-
-  <div class="sub-navigation">
-    <div class="sub-navigation-inner">
-        <?php include __DIR__ . "/common/sub-nav-newsletter.php";?>
-    </div>
-  </div>
+<main class="padding process-labs">
 
   <div class="container">
     <article>
