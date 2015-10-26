@@ -1918,7 +1918,7 @@ only screen and (min-resolution: 1.3dppx) {
     background-color: #e64d49;
 }
 .company-type {
-    margin: 0;
+    margin: 0 0 1.75rem 0;
     padding: 0;
 }
 .company-type::after {
@@ -1929,8 +1929,8 @@ only screen and (min-resolution: 1.3dppx) {
 .company-type li {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
+    margin-bottom: 2.35765%;
+    width: 100%;
     margin: 0.3125rem 0;
     padding: 0;
     text-align: center;
