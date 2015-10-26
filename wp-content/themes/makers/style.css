@@ -344,7 +344,7 @@ only screen and (min-resolution: 1.3dppx) {
 .header .navigation ul li a:focus,
 .header .navigation ul li a:hover {
     background-color: transparent;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #E64D49;
 }
 .header .navigation .main-navigation-button {
     overflow: hidden;
