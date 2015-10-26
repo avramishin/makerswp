@@ -1269,67 +1269,71 @@ only screen and (min-resolution: 1.3dppx) {
         margin-top: 2.5rem;
     }
 }
+
+
+/**
+ * Companies Grid
+ */
+
 .container .companies-grid {
     margin: 0;
-    padding: 0 0 0;
+    padding: 0;
+    list-style: none;
 }
+
 .container .companies-grid::after {
     clear: both;
     content: "";
     display: table;
 }
+
 .container .companies-grid li {
-    float: left;
     display: block;
-    margin-right: 2.35765%;
     width: 100%;
-    border: 1px solid #dcdddc;
     height: 12.5rem;
-    margin: 0 0 1.25rem;
-    padding: 0.625rem;
+    margin: 0 0 1.25rem 0;
     text-align: center;
 }
-.container .companies-grid li:last-child {
-    margin-right: 0;
+
+.container .companies-grid li > div {
+    padding: 0.625rem;
+    border: 1px solid #dcdddc;
 }
-@media screen and (min-width: 40rem) {
-    .container .companies-grid li {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 48.64235%;
-    }
-    .container .companies-grid li:nth-child(2n) {
-        margin-right: 0;
-    }
-}
-@media screen and (min-width: 72.5rem) {
-    .container .companies-grid li {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%;
-    }
-    .container .companies-grid li:nth-child(2n) {
-        margin-right: 2.35765%;
-    }
-    .container .companies-grid li:nth-child(3n) {
-        margin-right: 0 !important;
-    }
-    .container .companies-grid li:last-child {
-        margin-right: 0;
-    }
-}
+
 .container .companies-grid li img {
     height: 3.75rem;
     width: auto;
 }
+
 .container .companies-grid li p {
     color: #acacac;
     font-size: 14px;
     font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
     font-style: italic;
 }
+
+@media screen and (min-width: 40rem) {
+    .container .companies-grid {
+        margin-left: -0.625rem;
+        margin-right: -0.625rem;
+    }
+
+    .container .companies-grid li {
+        float: left;
+        display: block;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 72.5rem) {
+    .container .companies-grid li {
+        width: 33.3%;
+    }
+}
+
+
 .grid::after {
     clear: both;
     content: "";
