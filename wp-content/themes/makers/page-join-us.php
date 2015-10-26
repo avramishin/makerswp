@@ -12,6 +12,21 @@ if (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|
 }
 
 get_header(); ?>
+
+<div class="sub-navigation-container">
+    <div class="sub-navigation">
+        <div class="sub-navigation-inner">
+            <nav>
+                <ul class="sub-navigation-menu">
+                    <li><a href="<?php bloginfo('url') ?>/join-us-investor/">Investor</a></li>
+                    <li><a href="<?php bloginfo('url') ?>/join-us-founder/">Founder</a></li>
+                    <li><a href="<?php bloginfo('url') ?>/join-us-career/">Career</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
 <main>
 
     <div class="container intro">
@@ -26,19 +41,6 @@ get_header(); ?>
                     offer a salary plus a major equity stake.</p>
             </section>
         </article>
-    </div>
-
-    <div class="sub-navigation">
-        <div class="sub-navigation-inner">
-            <nav>
-                <ul class="sub-navigation-menu">
-                    <li><a href="<?php bloginfo('url') ?>/join-us-investor/">Investor</a></li>
-                    <li><a href="<?php bloginfo('url') ?>/join-us-founder/">Founder</a></li>
-                    <li><a href="<?php bloginfo('url') ?>/join-us-career/">Career</a></li>
-                </ul>
-            </nav>
-            <?php include __DIR__ . "/common/sub-nav-newsletter.php"; ?>
-        </div>
     </div>
 
     <div class="grid">
