@@ -24,7 +24,7 @@ $(document).ready(function() {
   });
 
   // Sticky navigation
-  var fixedOffset = $('.sub-navigation').offset().top;
+  /*var fixedOffset = $('.sub-navigation').offset().top;
   $(window).scroll(function () {
       var fixed = $('.sub-navigation');
       var scroll = $(window).scrollTop();
@@ -34,7 +34,7 @@ $(document).ready(function() {
       } else {
           fixed.removeClass('is-fixed');
       }
-  });
+  });*/
 
   // Scroll to top
   $('.scroll-to-top').on('click', function(e) {
