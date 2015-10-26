@@ -1,5 +1,4 @@
 <footer>
-    <a href="javascript:void(0)" class="scroll-to-top">Up</a>
     <h4>Learn more about us</h4>
     <ul class="social">
         <li class="facebook"><a href="http://www.facebook.com/makers.do" target="_blank">Facebook</a></li>

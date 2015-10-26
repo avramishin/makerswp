@@ -316,7 +316,7 @@ only screen and (min-resolution: 1.3dppx) {
     background: #262626;
     font-size: 0.9375rem;
     line-height: 60px;
-    text-align: right;
+    text-align: center;
     text-transform: uppercase;
     z-index: 9999;
 }
@@ -441,7 +441,7 @@ only screen and (min-resolution: 1.3dppx) {
     display: block;
 }
 .header .navigation .main-navigation a.active {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #E64D49;
 }
 /*.header .navigation .main-navigation .join-us a {
     background-image: url("images/icons/icon-join-us.png");
