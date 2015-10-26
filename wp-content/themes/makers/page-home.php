@@ -56,120 +56,100 @@ get_header(); ?>
         </article>
     </div>
 
-    <div class="grid">
-        <div class="labs">
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/home-labs.jpg" alt="">
-            <div class="overlay"></div>
-            <a href="<?php bloginfo('url') ?>/labs/" title="">
-                <div class="table">
-                    <div class="table-cell">
-                        <h3>Labs</h3>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="makers">
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/home-makers.jpg" alt="">
-            <div class="overlay"></div>
-            <a href="<?php bloginfo('url') ?>/makers/" title="">
-                <div class="table">
-                    <div class="table-cell">
-                        <h3>Makers</h3>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="identify hover-item">
-            <a href="<?php bloginfo('url') ?>/labs/" title="">
-                <div class="icon">
-                    <div class="table">
-                        <div class="table-cell">
+    <div class="steps">
+        <div class="steps-step steps-step--labs">
+            <div class="steps-intro">
+                <a href="<?php bloginfo('url') ?>/labs/" title="">
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/home-labs.jpg" alt="" class="steps-image">
+                    <div class="overlay"></div>
+                    <h3>Labs</h3>
+                </a>
+            </div>
+            <div class="steps-item">
+                <a href="<?php bloginfo('url') ?>/labs/" title="">
+                    <div class="steps-icon">
+                        <div class="steps-icon-inner">
                             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/action-identify.svg" alt="">
                             <h4>1. Identify</h4>
                         </div>
                     </div>
-                </div>
-                <div class="text">
-                    <div class="table">
-                        <div class="table-cell">
+                    <div class="steps-text">
+                        <div class="steps-text-inner">
                             We scrutinize the process of identifying a product/market fit. We execute fearlessly with an iterative, product-oriented approach and stride towards shipping minimum viable products.
-                            <p class="more">
+                            <p class="steps-more">
                                 <span>Read more</span>
                                 <i class="arrow arrow-icon-red"></i>
                             </p>
                         </div>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="test hover-item">
-            <a href="<?php bloginfo('url') ?>/labs/" title="">
-                <div class="icon">
-                    <div class="table">
-                        <div class="table-cell">
+                </a>
+            </div>
+            <div class="steps-item">
+                <a href="<?php bloginfo('url') ?>/labs/" title="">
+                    <div class="steps-icon">
+                        <div class="steps-icon-inner">
                             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/action-test.svg" alt="">
                             <h4>2. Test</h4>
                         </div>
                     </div>
-                </div>
-                <div class="text">
-                    <div class="table">
-                        <div class="table-cell">
+                    <div class="steps-text">
+                        <div class="steps-text-inner">
                             An idea that sounds innovative and convincing in theory may not necessarily work in practice. That is why we believe they should always be complemented by analytics and numbers, although we are advocates of entrepreneurs’ instincts.
-                            <p class="more">
+                            <p class="steps-more">
                                 <span>Read more</span>
                                 <i class="arrow arrow-icon-red"></i>
                             </p>
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
-        <div class="build hover-item">
-            <a href="<?php bloginfo('url') ?>/makers/" title="">
-                <div class="icon">
-                    <div class="table">
-                        <div class="table-cell">
+        <div class="steps-step steps-step--makers">
+            <div class="steps-intro">
+                <a href="<?php bloginfo('url') ?>/makers/" title="">
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/home-makers.jpg" alt="" class="steps-image">
+                    <div class="overlay"></div>
+                    <h3>Makers</h3>
+                </a>
+            </div>
+            <div class="steps-item">
+                <a href="<?php bloginfo('url') ?>/makers/" title="">
+                    <div class="steps-icon">
+                        <div class="steps-icon-inner">
                             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/action-build.svg" alt="">
                             <h4>3. Build</h4>
                         </div>
                     </div>
-                </div>
-                <div class="text">
-                    <div class="table">
-                        <div class="table-cell">
+                    <div class="steps-text">
+                        <div class="steps-text-inner">
                             Our experience with building highly profitable companies such as Run a Shop and IconPeak convinced us of the power of bootstrapping. Making things work at low cost can test the commitment of the founders and the potential of the idea.
-                            <p class="more">
+                            <p class="steps-more">
                                 <span>Read more</span>
                                 <i class="arrow arrow-icon-red"></i>
                             </p>
                         </div>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="scale hover-item">
-            <a href="<?php bloginfo('url') ?>/makers/" title="">
-                <div class="icon">
-                    <div class="table">
-                        <div class="table-cell">
+                </a>
+            </div>
+            <div class="steps-item">
+                <a href="<?php bloginfo('url') ?>/makers/" title="">
+                    <div class="steps-icon">
+                        <div class="steps-icon-inner">
                             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/action-scale.svg" alt="">
                             <h4>4. Scale</h4>
                         </div>
                     </div>
-                </div>
-                <div class="text">
-                    <div class="table">
-                        <div class="table-cell">
+                    <div class="steps-text">
+                        <div class="steps-text-inner">
                             Acting as partners in crime, we support founders of our portfolio companies to scale their business in various ways: They benefit from strategic guidance in fundraising, legal issues or human resources processes, as well as our expertise and insights.
-                            <p class="more">
+                            <p class="steps-more">
                                 <span>Read more</span>
                                 <i class="arrow arrow-icon-red"></i>
                             </p>
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
     </div>
 </main>
