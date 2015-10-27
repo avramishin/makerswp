@@ -15,7 +15,6 @@ get_header(); ?>
               <li class="active"><a href="<?php bloginfo('url') ?>/about-process/">Process</a></li>
             </ul>
           </nav>
-            <?php include __DIR__ . "/common/sub-nav-newsletter.php";?>
         </div>
     </div>
 </div>
