@@ -10,7 +10,7 @@
       Makers - We like to build startups    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="http://www.makers.do/apple-touch-icon.png">
-    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <!--<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>-->
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/vendor/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/noty/packaged/jquery.noty.packaged.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic|Montserrat:400,700" type="text/css">
