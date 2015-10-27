@@ -73,7 +73,7 @@ get_header(); ?>
         </article>
       </div>
 
-        <div class="container">
+        <div class="container container--follow">
             <article>
                 <!--<header>
                     <h2>Meet the Makers</h2>
